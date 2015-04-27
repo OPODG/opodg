@@ -32,4 +32,5 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>*.web</url-pattern>
 	</servlet-mapping>
+
 </web-app>
