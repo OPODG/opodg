@@ -3,7 +3,7 @@
    	<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
 		<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web"  data-ajax="false">Home</a></li>
 		<li data-filtertext="opodg introduction"><a href="../transitions/" data-ajax="false">Introduction</a></li>
-		<li data-filtertext="notification"><a href="../transitions/" data-ajax="false">Notification</a></li>
+		<li data-filtertext="notification"><a href="board.web?page=list" data-ajax="false">Notification</a></li>
 		<li data-filtertext="Consumer Center"><a href="../transitions/" data-ajax="false">Consumer Center</a></li>
 		<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
 			<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">

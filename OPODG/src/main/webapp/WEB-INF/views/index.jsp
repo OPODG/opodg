@@ -30,7 +30,6 @@
 	<div role="main" class="ui-content jqm-content">
 
 		<h1>당황하지마라</h1>
-
 		<p><strong>환영합니다. <br/>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 길이 보전하세</strong></p>
         <div class="ui-grid-a ui-responsive">
         	<div class="ui-block-a">

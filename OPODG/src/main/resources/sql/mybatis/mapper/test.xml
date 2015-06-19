@@ -3,8 +3,13 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="test">
  
-  <select id="getTest" resultType="string">
-    SELECT count(*) FROM TEST20150427  
+  <select id="getAPT" resultType="string">
+    SELECT count(*) FROM 아파트  
   </select>
- 
+   <select id="getAPTList" resultType="hashmap">
+   	<![CDATA[
+    SELECT * FROM 아파트
+    WHERE ROWNUM <10  
+    	]]>
+  </select>
 </mapper> 
