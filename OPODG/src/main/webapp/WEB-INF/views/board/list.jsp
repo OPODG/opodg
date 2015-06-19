@@ -69,7 +69,7 @@ $( document ).on( "pagecreate", "#demo-page", function() {
             dir = event.type === "swipeleft" ? "left" : "right",
             // Check if the browser supports the transform (3D) CSS transition
             transition = $.support.cssTransform3d ? dir : false;
-            confirmAndDelete( listitem, transition );
+            confirmAndDelete( listitem);
     });
     // If it's not a touch device...
     if ( ! $.mobile.support.touch ) {
@@ -122,18 +122,17 @@ $( document ).on( "pagecreate", "#demo-page", function() {
     }
 });
 </script>
-<div data-role="page" id="demo-page" data-title="Inbox" data-url="demo-page">
+<div data-role="page" id="demo-page" data-title="Inbox" data-url="demo-page" >
     <div data-role="header" data-position="fixed" data-theme="b">
-    <% 
-    	ArrayList arr = (ArrayList)request.getAttribute("arr");
-    %>
+
         <h1>LIST</h1>
         <a href="#demo-intro" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
         <a href="#" onclick="window.location.reload()" data-icon="back" data-iconpos="notext">Refresh</a>
     </div><!-- /header -->
     <div role="main" class="ui-content">
         <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete">
-        <%
+        <% 
+    	ArrayList arr = (ArrayList)request.getAttribute("arr");
         	for(int i=0;i<arr.size();i++){
         		HashMap hm = (HashMap)arr.get(i);
         %>
