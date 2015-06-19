@@ -38,7 +38,7 @@ public class TestController {
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
 		String formattedDate = dateFormat.format(date);
-		String return1 = query.selectOne("test.getTest");
+//		String return1 = query.selectOne("test.getTest");
 		ArrayList<String> arr = new ArrayList();
 		arr.add("1");
 		arr.add("2");
@@ -48,8 +48,8 @@ public class TestController {
 		mv.addObject("serverTime", formattedDate );
 		mv.addObject("test", "test" );
 		mv.addObject("arr", arr );
-		mv.addObject("count",return1);
-		
+//		mv.addObject("count",return1);
+//		
 		
 		return mv;
 	}
