@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile Demos</title>
+	<title>OPODG Welcome</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="jquery/css/themes/default/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="jquery/_assets/css/jqm-demos.css">
@@ -37,7 +37,7 @@
         			<h3>Item 01</h3>
 
         			<p><a href="pages/" data-ajax="false">Introduction</a></p>
-        			<p><a href="navigation/" data-ajax="false">Notification</a></p>
+        			<p><a href="board.web?page=list" data-transition="slide">Notification(ok)</a></p>
         			<p><a href="loader/" data-ajax="false">Consumer Center</a></p>
         		</div>
         	</div>
@@ -46,16 +46,13 @@
         			<h3>Item 02</h3>
 
         			<p><a href="theme-default/" data-ajax="false">Community</a></p>
-        			<p><a href="button-markup/" data-ajax="false">Shop</a></p>
+        			<p><a href="map.web" data-ajax="false">map</a></p>
         		</div>
         	</div>        	
         </div>
 
 	</div><!-- /content -->
-	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>OPODG Mobile Demos version <span class="jqm-version"></span></p>
-		<p>Copyright 2015 ©OPODG corop.</p>
-	</div><!-- /footer -->
+<%@ include file="cmn/include/footer.jsp" %>
 <%@ include file="cmn/include/menu.jsp" %>
 </div><!-- /page -->
 </body>

@@ -12,4 +12,10 @@
     WHERE ROWNUM <10  
     	]]>
   </select>
+  <select id="getAPTDetail" parameterType="hashmap" resultType="hashmap">
+   	<![CDATA[
+    SELECT * FROM 아파트
+    WHERE 아파트코드   = #{code}
+    	]]>
+  </select>
 </mapper> 

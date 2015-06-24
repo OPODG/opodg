@@ -3,6 +3,7 @@ package kr.co.opodg.board.action;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
@@ -39,10 +40,38 @@ public class BoardController {
 		String nextPage = "";
 		String count ="k";
 		if("list".equals(page)){
-			nextPage="list";
+			nextPage="list_count";
 			count = query.selectOne("test.getAPT");
 			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
 			mv.addObject("arr", arr );
+		}else if("detail".equals(page)){
+			nextPage="detail";
+			HashMap hm = new HashMap();
+			hm.put("code", "");
+			query.selectOne("getAPTDetail", hm);
+		}
+		mv.setViewName("/board/"+nextPage);
+		mv.addObject("count", count );
+		return mv;		
+	}
+	@RequestMapping(value = "/detail.web", method = RequestMethod.GET)
+	public ModelAndView goBoard( HttpServletRequest request, HttpServletResponse response, @RequestParam(value="page", required=true) String page, @RequestParam(value="code", required=true) String code) throws Exception{
+		logger.info("BoardController goBoard() page:{}.", page);
+		ModelAndView mv = new ModelAndView();
+		
+		String nextPage = "";
+		String count ="k";
+		if("list".equals(page)){
+			nextPage="list_count";
+			count = query.selectOne("test.getAPT");
+			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
+			mv.addObject("arr", arr );
+		}else if("detail".equals(page)){
+			nextPage="detail";
+			HashMap hm = new HashMap();
+			hm.put("code", code);
+			hm = query.selectOne("getAPTDetail", hm);
+			mv.addObject("hm", hm );
 		}
 		mv.setViewName("/board/"+nextPage);
 		mv.addObject("count", count );
