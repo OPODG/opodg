@@ -56,6 +56,7 @@ public class TEST {
           if (outAcctNo.length() != 11 && outAcctNo.length() != 12 && outAcctNo.length() != 13){
               System.out.println("123123");
           }
+          System.out.println("0000000000".length());
 		  
 	}
 }

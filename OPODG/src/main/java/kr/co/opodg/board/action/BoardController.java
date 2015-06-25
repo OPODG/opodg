@@ -63,6 +63,32 @@ public class BoardController {
 		String count ="k";
 		if("list".equals(page)){
 			nextPage="list_count";
+			count = query.selectOne("getNoticeCnt");
+			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
+			mv.addObject("arr", arr );
+		}else if("detail".equals(page)){
+			nextPage="detail";
+			HashMap hm = new HashMap();
+			hm.put("code", code);
+			hm = query.selectOne("getAPTDetail", hm);
+			mv.addObject("hm", hm );
+		}
+		mv.setViewName("/board/"+nextPage);
+		mv.addObject("count", count );
+		return mv;		
+	}
+	
+	@RequestMapping(value = "/detail1.web", method = {RequestMethod.GET, RequestMethod.POST})
+	public ModelAndView goBoardDetail1( HttpServletRequest request, HttpServletResponse response) throws Exception{
+		String page = request.getParameter("page");
+		String code = request.getParameter("code");
+		logger.info("BoardController goBoard() page:{}.", page);
+		ModelAndView mv = new ModelAndView();
+		
+		String nextPage = "";
+		String count ="k";
+		if("list".equals(page)){
+			nextPage="list_count";
 			count = query.selectOne("test.getAPT");
 			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
 			mv.addObject("arr", arr );

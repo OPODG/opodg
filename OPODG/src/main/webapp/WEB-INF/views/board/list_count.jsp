@@ -17,10 +17,21 @@
 	<script src="../jquery/js/jquery.js"></script>
 	<script src="../jquery/_assets/js/index.js"></script>
 	<script src="../jquery/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="../js/board.js"></script>
 </head>
 <body>
 <div data-role="page" class="jqm-demos jqm-home">
-
+<script>
+function goDetail(code){
+	var f = document.detail_form;
+	document.getElementById("code").value=code;
+	f.submit();
+}
+</script>
+<form id="detail_form" name="detail_form" method="POST" action="/detail1.web">
+	<input type="hidden" id="page" name="page" value="detail">
+	<input type="hidden" id="code" name="code" value=""/>
+</form>
 	<div data-role="header" class="jqm-header">
 		<h2>OPODG > List</h2>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
@@ -35,7 +46,8 @@
         	for(int i=0;i<arr.size();i++){
         		HashMap hm = (HashMap)arr.get(i);
         %>
-				<li><a href="detail.web?page=detail&code=<%=hm.get("아파트코드") %>" data-transition="slide"><%=hm.get("아파트명") %></a></li>
+				<li><a href="detail.web?page=detail&code=<%=hm.get("아파트코드") %>" data-transition="slide"><%=hm.get("아파트명") %></a></li> 
+<%-- 				onclick="goDetail('<%=hm.get("아파트코드") %>');return false;" --%>
 		       <%
         	}
         %>

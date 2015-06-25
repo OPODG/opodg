@@ -16,6 +16,7 @@
 	<script src="jquery/js/jquery.js"></script>
 	<script src="jquery/_assets/js/index.js"></script>
 	<script src="jquery/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="../js/board.js"></script>
 </head>
 <body>
 <div data-role="page" class="jqm-demos jqm-home">
