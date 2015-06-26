@@ -20,6 +20,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import util.constants.WebAppConstant;
+
 /**
  * Handles requests for the application home page.
  */
@@ -30,7 +32,7 @@ public class MapController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/map.web", method = RequestMethod.GET)
+	@RequestMapping(value = WebAppConstant.URL_MAP, method = RequestMethod.GET)
 	public ModelAndView goMap( HttpServletRequest request, HttpServletResponse response) throws Exception{
 		logger.info("mapController goMap() page:{}.", "");
 		ModelAndView mv = new ModelAndView();

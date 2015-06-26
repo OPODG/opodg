@@ -3,6 +3,7 @@
 <%@ page session="false" %>
 <%@ page import="java.util.*"%>
 <%@ page import="util.*" %>
+<%@ page import="util.constants.*"%>
 
 <!DOCTYPE html>
 <html>
@@ -46,7 +47,7 @@ function goDetail(code){
         	for(int i=0;i<arr.size();i++){
         		HashMap hm = (HashMap)arr.get(i);
         %>
-				<li><a href="detail.web?page=detail&code=<%=hm.get("아파트코드") %>" data-transition="slide"><%=hm.get("아파트명") %></a></li> 
+				<li><a href="<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&code=<%=hm.get("아파트코드") %>" data-transition="slide"><%=hm.get("아파트명") %></a></li> 
 <%-- 				onclick="goDetail('<%=hm.get("아파트코드") %>');return false;" --%>
 		       <%
         	}

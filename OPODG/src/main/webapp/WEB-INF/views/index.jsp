@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <%@ page import="java.util.ArrayList"%>
-
+<%@ page import="util.constants.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +38,7 @@
         			<h3>Item 01</h3>
 
         			<p><a href="pages/" data-ajax="false">Introduction</a></p>
-        			<p><a href="notification.web?page=list" data-transition="slide">Notification(ok)</a></p>
+        			<p><a href="<%=WebAppConstant.URL_NOTIFICATION_LIST %>?page=list" data-transition="slide">Notification(ok)</a></p>
         			<p><a href="loader/" data-ajax="false">Consumer Center</a></p>
         		</div>
         	</div>
@@ -47,7 +47,7 @@
         			<h3>Item 02</h3>
 
         			<p><a href="theme-default/" data-ajax="false">Community</a></p>
-        			<p><a href="map.web" data-ajax="false">map</a></p>
+        			<p><a href="<%=WebAppConstant.URL_MAP %>" data-ajax="false">map</a></p>
         		</div>
         	</div>        	
         </div>

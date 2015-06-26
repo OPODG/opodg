@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import util.constants.WebAppConstant;
+
 /**
  * Handles requests for the application home page.
  */
@@ -28,7 +30,7 @@ public class NotificationController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "/notification.web", method = RequestMethod.GET)
+	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_LIST, method = RequestMethod.GET)
 	public ModelAndView goBoard( HttpServletRequest request, HttpServletResponse response, @RequestParam(value="page", required=true) String page) throws Exception{
 		logger.info("NotificationController goBoard() page:{}.", page);
 		ModelAndView mv = new ModelAndView();
@@ -36,21 +38,21 @@ public class NotificationController {
 		String nextPage = "";
 		String count ="k";
 		if("list".equals(page)){
-			nextPage="list";
+			nextPage=WebAppConstant.JSP_NOTICE_LIST;
 			count = query.selectOne("test.getAPT");
 			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
 			mv.addObject("arr", arr );
 		}else if("detail".equals(page)){
-			nextPage="detail";
+			nextPage=WebAppConstant.URL_NOTIFICATION_DETAIL;
 			HashMap hm = new HashMap();
 			hm.put("code", "");
 			query.selectOne("getAPTDetail", hm);
 		}
-		mv.setViewName("/notification/"+nextPage);
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
 		mv.addObject("count", count );
 		return mv;		
 	}
-	@RequestMapping(value = "/detail.web", method = RequestMethod.GET)
+	@RequestMapping(value = WebAppConstant.JSP_NOTICE_DETAIL, method = RequestMethod.GET)
 	public ModelAndView goBoard( HttpServletRequest request, HttpServletResponse response, @RequestParam(value="page", required=true) String page, @RequestParam(value="code", required=true) String code) throws Exception{
 		logger.info("NotificationController goBoard() page:{}.", page);
 		ModelAndView mv = new ModelAndView();
@@ -58,18 +60,18 @@ public class NotificationController {
 		String nextPage = "";
 		String count ="k";
 		if("list".equals(page)){
-			nextPage="list";
+			nextPage=WebAppConstant.JSP_NOTICE_LIST;
 			count = query.selectOne("getNoticeCnt");
 			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
 			mv.addObject("arr", arr );
 		}else if("detail".equals(page)){
-			nextPage="detail";
+			nextPage=WebAppConstant.JSP_NOTICE_DETAIL;
 			HashMap hm = new HashMap();
 			hm.put("code", code);
 			hm = query.selectOne("getAPTDetail", hm);
 			mv.addObject("hm", hm );
 		}
-		mv.setViewName("/notification/"+nextPage);
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
 		mv.addObject("count", count );
 		return mv;		
 	}
@@ -84,18 +86,18 @@ public class NotificationController {
 		String nextPage = "";
 		String count ="k";
 		if("list".equals(page)){
-			nextPage="list_count";
+			nextPage=WebAppConstant.JSP_NOTICE_LIST;
 			count = query.selectOne("test.getAPT");
 			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
 			mv.addObject("arr", arr );
 		}else if("detail".equals(page)){
-			nextPage="detail";
+			nextPage=WebAppConstant.URL_NOTIFICATION_DETAIL;
 			HashMap hm = new HashMap();
 			hm.put("code", code);
 			hm = query.selectOne("getAPTDetail", hm);
 			mv.addObject("hm", hm );
 		}
-		mv.setViewName("/notification/"+nextPage);
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
 		mv.addObject("count", count );
 		return mv;		
 	}
