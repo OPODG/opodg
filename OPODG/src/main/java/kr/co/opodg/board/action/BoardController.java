@@ -62,7 +62,7 @@ public class BoardController {
 		String nextPage = "";
 		String count ="k";
 		if("list".equals(page)){
-			nextPage="list_count";
+			nextPage="list";
 			count = query.selectOne("getNoticeCnt");
 			ArrayList arr = (ArrayList) query.selectList("test.getAPTList");
 			mv.addObject("arr", arr );
