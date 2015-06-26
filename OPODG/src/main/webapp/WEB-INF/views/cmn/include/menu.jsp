@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
    	<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
-		<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web"  data-ajax="false">Home</a></li>
+		<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web" data-transition="slide">Home</a></li>
 		<li data-filtertext="opodg introduction"><a href="../transitions/" data-transition="slide">Introduction</a></li>
 		<li data-filtertext="notification"><a href="board.web?page=list" data-transition="slide">Notification(ok)</a></li>
 		<li data-filtertext="Consumer Center"><a href="../transitions/" data-ajax="false">Consumer Center</a></li>
@@ -26,7 +26,7 @@
 <div data-role="panel" class="jqm-search-panel" data-position="right" data-display="overlay" data-theme="a">
 	<div class="jqm-search">
 		<ul class="jqm-list" data-filter-placeholder="Search demos..." data-filter-reveal="true">
-			<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web"  data-ajax="false">Home</a></li>
+			<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web" data-transition="slide">Home</a></li>
 			<li data-filtertext="opodg introduction"><a href="../transitions/" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Introduction</a></li>
 			<li data-filtertext="notification"><a href="board.web?page=list" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Notification(ok)</a></li>
 			<li data-filtertext="Consumer Center"><a href="../transitions/" data-ajax="false" >Consumer Center</a></li>
