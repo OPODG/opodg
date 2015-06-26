@@ -37,7 +37,7 @@ public class MapController {
 		
 		String nextPage = "map2";
 
-		mv.setViewName("/notification/"+nextPage);
+		mv.setViewName("/map/"+nextPage);
 		return mv;		
 	}
 }
