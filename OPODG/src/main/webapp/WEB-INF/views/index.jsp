@@ -38,7 +38,7 @@
         			<h3>Item 01</h3>
 
         			<p><a href="pages/" data-ajax="false">Introduction</a></p>
-        			<p><a href="board.web?page=list" data-transition="slide">Notification(ok)</a></p>
+        			<p><a href="notification.web?page=list" data-transition="slide">Notification(ok)</a></p>
         			<p><a href="loader/" data-ajax="false">Consumer Center</a></p>
         		</div>
         	</div>

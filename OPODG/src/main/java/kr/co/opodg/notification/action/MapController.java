@@ -1,4 +1,4 @@
-package kr.co.opodg.board.action;
+package kr.co.opodg.notification.action;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -37,7 +37,7 @@ public class MapController {
 		
 		String nextPage = "map2";
 
-		mv.setViewName("/board/"+nextPage);
+		mv.setViewName("/notification/"+nextPage);
 		return mv;		
 	}
 }
