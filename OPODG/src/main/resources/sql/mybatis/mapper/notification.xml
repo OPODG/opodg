@@ -8,26 +8,21 @@
   </select>
    <select id="getNoticeList" resultType="hashmap">
    	<![CDATA[
-	SELECT  *
-	FROM (
-			SELECT 
-			@ROWNUM := @ROWNUM + 1 AS ROWNUM,
-			seq,
-			category,
-			title,
-			link_url,
-			content,
-			search_yn,
-			search_end_date,
-			reg_id,
-			reg_date,
-			up_id,
-			up_date
-			FROM notice
-			ORDER BY seq DESC
-			WHERE ROWNUM <= #{_LIST_END_RECORD}
-	    ) INNER_TABLE
-	WHERE ROW_SEQ >= #{_LIST_START_RECORD}
+	SELECT 
+	seq,
+	category,
+	title,
+	link_url,
+	content,
+	search_yn,
+	search_end_date,
+	reg_id,
+	reg_date,
+	up_id,
+	up_date
+	FROM notice
+	ORDER BY seq DESC
+	LIMIT #{_LIST_START_RECORD},#{_LIST_END_RECORD}
     	]]>
   </select>
   <select id="getNoticeDetail" parameterType="hashmap" resultType="hashmap">

@@ -46,14 +46,37 @@ function goDetail(code){
     	ArrayList arr = (ArrayList)request.getAttribute("arr");
         	for(int i=0;i<arr.size();i++){
         		HashMap hm = (HashMap)arr.get(i);
+        		String 아파트코드 = (String)hm.get("아파트코드") ;
         %>
-				<li><a href="<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&code=<%=hm.get("아파트코드") %>" data-transition="slide"><%=hm.get("아파트명") %></a></li> 
+				<li><a href="<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&pageNo=<%=request.getAttribute("pageNo") %>&code=<%=아파트코드 %>" data-transition="slide"><%=hm.get("아파트명") %></a></li> 
 <%-- 				onclick="goDetail('<%=hm.get("아파트코드") %>');return false;" --%>
 		       <%
         	}
         %>
 			</ul>
 		</div><!--/demo-html -->
+		<div class=" ">
+		<% 
+			int cnt = (Integer)request.getAttribute("count"); 
+			int totalPage = 0;
+			int currentPage= Integer.parseInt((String)request.getAttribute("currentPage"));
+			totalPage = cnt/10;
+			if(cnt%10>0){
+				totalPage ++;
+			}
+			
+		%>
+<fieldset data-role="controlgroup" data-type="horizontal">
+        <a href="#" class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-l ui-btn-icon-left">PRE<%=totalPage%> </a>
+<%
+	for(int i=0;i<5;i++){
+%>
+        <a href="#" class="ui-shadow ui-btn ui-corner-all "><%=currentPage++ %></a>
+<%} %>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right">NEXT</a>
+    </fieldset>
+		</div>
+
 	</div><!-- /content -->
 <%@ include file="../cmn/include/footer.jsp" %>
 <%@ include file="../cmn/include/menu.jsp" %>

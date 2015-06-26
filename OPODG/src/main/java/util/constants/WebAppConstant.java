@@ -22,4 +22,13 @@ public class WebAppConstant {
 	public static final String JSP_NOTICE_DETAIL = "notice_detail";
 	public static final String JSP_MAP = "map2";
 	
+	/**
+	 * 환경에 따라 다른 DB를 선택
+	 * KEB : 여기:)
+	 * RBP : 라즈베리파이 DB
+	 */
+	public static final String LOCATION = "KEB";  //
+	public static final String KEB = "KEB";  //
+	public static final String RBP = "RBP";  //
+	
 }

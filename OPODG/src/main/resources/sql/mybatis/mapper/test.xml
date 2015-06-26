@@ -3,19 +3,23 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="test">
  
-  <select id="getAPT" resultType="string">
+  <select id="getAPT" resultType="int">
     SELECT count(*) FROM 아파트  
   </select>
    <select id="getAPTList" resultType="hashmap">
    	<![CDATA[
-    SELECT * FROM 아파트
-    WHERE ROWNUM <10  
+		  SELECT * FROM (
+    			SELECT CEIL(ROWNUM/#{ROW_CNT}) page, INNER_TABLE.* FROM (
+				    SELECT * FROM 아파트
+					ORDER BY 아파트코드 DESC
+				) INNER_TABLE
+    		) WHERE page = #{PAGE}
     	]]>
   </select>
   <select id="getAPTDetail" parameterType="hashmap" resultType="hashmap">
    	<![CDATA[
     SELECT * FROM 아파트
-    WHERE 아파트코드   = #{code}
+    WHERE 아파트코드   = ${code}
     	]]>
   </select>
 </mapper> 
