@@ -3,23 +3,22 @@
 <%@ page session="false" %>
 <%@ page import="java.util.*"%>
 <%@ page import="util.*" %>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>OPODG - Maps</title>
-	<link rel="stylesheet" href="../jquery/css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="<%=request.getContextPath() %>/jquery/css/themes/default/jquery.mobile-1.4.5.min.css">
 	<style>
 		#map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
 	</style>
-	<link rel="stylesheet" href="../jquery/_assets/css/jqm-demos.css">
-	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" href="<%=request.getContextPath() %>/jquery/_assets/css/jqm-demos.css">
+	<link rel="shortcut icon" href="<%=request.getContextPath() %>/favicon.ico">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<script src="../jquery/js/jquery.js"></script>
-	<script src="../jquery/_assets/js/index.js"></script>
-	<script src="../jquery/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="<%=request.getContextPath() %>/jquery/js/jquery.js"></script>
+	<script src="<%=request.getContextPath() %>/jquery/_assets/js/index.js"></script>
+	<script src="<%=request.getContextPath() %>/jquery/js/jquery.mobile-1.4.5.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script>
 	/*

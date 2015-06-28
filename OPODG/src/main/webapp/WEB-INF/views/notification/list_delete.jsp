@@ -141,7 +141,7 @@ $( document ).on( "pagecreate", "#demo-page", function() {
                     <h3><%=hm.get("아파트명") %></h3>
                     <p class="topic"><strong><%=hm.get("영문주소") %></strong></p>
                     <p><%=hm.get("주소") %></p>
-                    <p class="ui-li-aside"><strong><%= FormatUtil.getFormattedDate((String)hm.get("최종변경일"), "yyyyMMdd", "yyyy-MM-dd") %></strong></p>
+<%--                     <p class="ui-li-aside"><strong><%= FormatUtil.getFormattedDate((String)hm.get("최종변경일"), "yyyyMMdd", "yyyy-MM-dd") %></strong></p> --%>
                 </a>
                 <a href="#" class="delete">Delete</a>
             </li>

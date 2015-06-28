@@ -18,4 +18,19 @@
 <!-- 임시은행코드          VARCHAR2(10)   -->
 <!-- 영문아파트명          VARCHAR2(30)   -->
 <!-- 영문주소          VARCHAR2(100)  -->
-	
+<!-- 	[mysql] -->
+<!-- default-character-set = utf8 -->
+
+<!-- [mysqld] -->
+<!-- character-set-client-handshake=FALSE -->
+<!-- init_connect="SET collation_connection = utf8_general_ci" -->
+<!-- init_connect="SET NAMES utf8" -->
+<!-- #default-character-set = utf8 -->
+<!-- character-set-server = utf8 -->
+<!-- collation-server = utf8_general_ci -->
+
+<!-- [client] -->
+<!-- default-character-set = utf8 -->
+
+<!-- [mysqldump] -->
+<!-- default-character-set = utf8 -->

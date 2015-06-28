@@ -3,8 +3,8 @@
  * 
  * Copyright (c) 2006-2007 ServerSide Corp. All Rights Reserved.
  * 
- * º» ¼Ò½º ¹× ¹ÙÀÌ³Ê¸® ÆÄÀÏ¿¡ ´ëÇÑ ±ÇÇÑÀº ¸ðµÎ ServerSide ¿¡ ÀÖ½À´Ï´Ù.
- * ÀúÀÛÀÚ¿ÍÀÇ ÇùÀÇ ¾øÀÌ ¼öÁ¤ ¹× ¹«´Ü ¹èÆ÷¸¦ ±ÝÇÕ´Ï´Ù.
+ * ï¿½ï¿½ ï¿½Ò½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ì³Ê¸ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ServerSide ï¿½ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½.
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
  */
 
 package util;
@@ -22,38 +22,38 @@ import org.apache.commons.lang.time.DateFormatUtils;
 
 /*******************************************************************
  * <pre>
- * 1.¼³¸í 
- * ¹®ÀÚ¿­ Formatting Utility
+ * 1.ï¿½ï¿½ï¿½ï¿½ 
+ * ï¿½ï¿½ï¿½Ú¿ï¿½ Formatting Utility
  * 
- * 2.»ç¿ë¹ý
+ * 2.ï¿½ï¿½ï¿½ï¿½
  * 
  * <font color="red">
- * 3.ÁÖÀÇ»çÇ×
+ * 3.ï¿½ï¿½ï¿½Ç»ï¿½ï¿½ï¿½
  * </font>
  *
- * @author $Author: ÀÌÁ¾°Ç $
+ * @author $Author: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ $
  * @version
  *******************************************************************
- * - º¯°æÀÌ·Â (¹öÀü/º¯°æÀÏ½Ã/ÀÛ¼ºÀÚ)
+ * - ï¿½ï¿½ï¿½ï¿½ï¿½Ì·ï¿½ (ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½/ï¿½Û¼ï¿½ï¿½ï¿½)
  * 
  * $Log: FormatUtil.java,v $
- * Revision 1.7  2013/12/26 08:59:09  ÀÌÁ¾°Ç
- * System.out.println Á¶Ä¡
+ * Revision 1.7  2013/12/26 08:59:09  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * System.out.println ï¿½ï¿½Ä¡
  *
- * Revision 1.6  2013/12/26 05:41:36  ÀÌÁ¾°Ç
- * fortifyÁ¶Ä¡(IPÇÏµåÄÚµù ±ÝÁö)
+ * Revision 1.6  2013/12/26 05:41:36  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * fortifyï¿½ï¿½Ä¡(IPï¿½Ïµï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½)
  *
- * Revision 1.5  2013/08/22 05:21:28  ÀÌÁ¾°Ç
+ * Revision 1.5  2013/08/22 05:21:28  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 2013-08-22 serverside source sync
  *
  * Revision 1.10  2013/07/09 01:02:51  brkim
  * 20130709 keb sync
  *
- * Revision 1.4  2012/02/08 06:58:30  ½ÅÁ¤¼·
+ * Revision 1.4  2012/02/08 06:58:30  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
  * Revision 1.5  2012/02/08 06:59:41  moon
- * Æ÷¸äÀ¯Æ¿ lpadding,rpadding ¼öÁ¤
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¿ lpadding,rpadding ï¿½ï¿½ï¿½ï¿½
  *
  * Revision 1.4  2011/12/22 10:24:16  moon
  * *** empty log message ***
@@ -67,1324 +67,1288 @@ import org.apache.commons.lang.time.DateFormatUtils;
  * Revision 1.1  2011/04/26 01:30:08  jglee
  * lastsync
  *
- * Revision 1.2  2011/01/05 01:33:35  ÀÌÁ¾°Ç
- * getGmtToday Ãß°¡
+ * Revision 1.2  2011/01/05 01:33:35  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * getGmtToday ï¿½ß°ï¿½
  *
- * Revision 1.1  2009/10/07 06:03:40  ±è¼º¼ö
+ * Revision 1.1  2009/10/07 06:03:40  ï¿½è¼ºï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.5.2.5  2009/04/01 00:22:16  ÃÖÁö¿ø
- * parseYYYYMMDD¿¡ °ø¹éÀ» ³ÖÀ¸¸é
- * 1111-11-11ÀÌ ¾Æ´Ï¶ó °ø¹éÀ¸·Î returnµÇµµ·Ï ¼öÁ¤
+ * Revision 1.5.2.5  2009/04/01 00:22:16  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * parseYYYYMMDDï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 1111-11-11ï¿½ï¿½ ï¿½Æ´Ï¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ returnï¿½Çµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *
  * Revision 1.5.2.4  2009/02/09 09:31:48  yshong
- * trimZero¸Þ¼Òµå ÀÎÀÚ Ãß°¡
+ * trimZeroï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½
  *
  * Revision 1.5.2.3  2008/12/16 07:45:26  shkim
- * ÁÖ¼® ¼öÁ¤
+ * ï¿½Ö¼ï¿½ ï¿½ï¿½ï¿½ï¿½
  *
  * Revision 1.5.2.2  2008/09/04 01:31:48  jbkim
- * ÁÖ¼® ÀÏ°ý¼öÁ¤
+ * ï¿½Ö¼ï¿½ ï¿½Ï°ï¿½ï¿½ï¿½ï¿½ï¿½
  *
  * Revision 1.5.2.1  2008/09/01 06:06:05  shkim
- * SpiderFramework ÇÁ·ÎÁ§Æ® merge
+ * SpiderFramework ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® merge
  *
  * Revision 1.5  2008/08/19 00:59:26  shkim
- * ¿ÜÈ¯ÀºÇà CommonAssist ÇÁ·ÎÁ§Æ®¿Í µ¿±âÈ­
+ * ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ CommonAssist ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­
  *
- * Revision 1.2  2007/06/28 02:07:20  ¾È°æ¾Æ
+ * Revision 1.2  2007/06/28 02:07:20  ï¿½È°ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.1  2007/06/15 04:57:57  ¾È°æ¾Æ
+ * Revision 1.1  2007/06/15 04:57:57  ï¿½È°ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.24  2006/11/03 01:19:49  ¿ÀÀçÈÆ
+ * Revision 1.24  2006/11/03 01:19:49  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.23  2006/11/03 00:53:23  ¿ÀÀçÈÆ
+ * Revision 1.23  2006/11/03 00:53:23  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.22  2006/11/02 13:07:15  ¿ÀÀçÈÆ
+ * Revision 1.22  2006/11/02 13:07:15  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.21  2006/11/02 12:21:51  ¿ÀÀçÈÆ
+ * Revision 1.21  2006/11/02 12:21:51  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.20  2006/11/02 03:40:04  ¿ÀÀçÈÆ
+ * Revision 1.20  2006/11/02 03:40:04  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.19  2006/10/30 12:53:40  ¿ÀÀçÈÆ
+ * Revision 1.19  2006/10/30 12:53:40  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.18  2006/10/27 06:29:09  ¿ÀÀçÈÆ
+ * Revision 1.18  2006/10/27 06:29:09  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.17  2006/10/24 11:27:02  ¿ÀÀçÈÆ
+ * Revision 1.17  2006/10/24 11:27:02  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.16  2006/10/20 12:11:00  ÀÌÁ¾¿ø
- * ÀÚ¸®¼ö°¡ Å« °æ¿ì¿¡ ´ëÇÑ doublePadding·ÎÁ÷ ¼öÁ¤
+ * Revision 1.16  2006/10/20 12:11:00  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ì¿¡ ï¿½ï¿½ï¿½ï¿½ doublePaddingï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *
- * Revision 1.15  2006/10/14 03:55:30  ±è¼º±Õ
- * trim ¹ö±× ¼öÁ¤
+ * Revision 1.15  2006/10/14 03:55:30  ï¿½è¼ºï¿½ï¿½
+ * trim ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
  *
- * Revision 1.14  2006/09/27 03:47:10  ¿ÀÀçÈÆ
- * makeNumeric() ¸Þ¼Òµå¿¡¼­ ½ºÆ®¸µ¿¡´Â . ÀÌ ¾ø°í, Æ÷¸Ë¿¡¸¸ . ÀÌ ÀÖÀ»°æ¿ì Ãß°¡.
+ * Revision 1.14  2006/09/27 03:47:10  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * makeNumeric() ï¿½Þ¼Òµå¿¡ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ . ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ë¿ï¿½ï¿½ï¿½ . ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½.
  *
- * Revision 1.13  2006/09/14 07:35:40  ¿ÀÀçÈÆ
+ * Revision 1.13  2006/09/14 07:35:40  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.12  2006/09/14 07:11:23  ¿ÀÀçÈÆ
+ * Revision 1.12  2006/09/14 07:11:23  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.11  2006/09/14 07:08:08  ¿ÀÀçÈÆ
+ * Revision 1.11  2006/09/14 07:08:08  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.10  2006/09/04 09:11:31  ¾È°æ¾Æ
+ * Revision 1.10  2006/09/04 09:11:31  ï¿½È°ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.9  2006/08/24 11:54:30  ¾È°æ¾Æ
+ * Revision 1.9  2006/08/24 11:54:30  ï¿½È°ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.8  2006/08/01 04:12:01  ¿ÀÀçÈÆ
+ * Revision 1.8  2006/08/01 04:12:01  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * *** empty log message ***
  *
- * Revision 1.7  2006/06/17 10:37:45  ±è¼º±Õ
+ * Revision 1.7  2006/06/17 10:37:45  ï¿½è¼ºï¿½ï¿½
  * *** empty log message ***
  *
  * </pre>
  ******************************************************************/
 public class FormatUtil {
 
-    /**
-    * ¿À´Ã ÀÏÀÚ¸¦ 8ÀÚ¸®(³â¿ùÀÏ:yyyyMMdd)ÀÇ ¹®ÀÚ¿­·Î µ¹·ÁÁØ´Ù. <BR><BR>
-    *
-    * »ç¿ë¿¹) getToday()<BR>
-    * °á °ú ) 20020930<BR><BR>
-    *
-    * @return String
-    */
-    public static String getToday()
-    {
-        return getToday( "yyyyMMdd" );
-    }
-    /**
-    * ¿À´Ã ÀÏÀÚ¸¦ ÁöÁ¤µÈ FormatÀÇ ³¯Â¥ Ç¥ÇöÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù. <BR><BR>
-    *
-    * »ç¿ë¿¹) getToday("yyyy/MM/dd hh:mm a")<BR>
-    * °á °ú ) 2002/09/30 10:10 ¿ÀÈÄ<BR><BR>
-    *
-    * FormatÀº J2SEÀÇ SimpleDateFormatÀÇ DocumentationÀ» Âü°íÇÑ´Ù.
-    *
-    * @param pOutformat String
-    * @return String
-    */
-    public static String getToday( String pOutformat )
-    {	
-    	//ksh ¼öÁ¤
-        /*SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
-
-        String rDateString = null;
-        Date vDate = new Date();
-
-        try
-        {
-            rDateString = pOutformatter.format( vDate );
-
-        }
-        catch( Exception e ) {}
-
-        return rDateString;*/
-        
-        return DateFormatUtils.format(System.currentTimeMillis(), pOutformat, java.util.Locale.KOREA);
-    }
-
-    /**
-     * ¿À´Ã ÀÏ½Ã¸¦ GMT½Ã°£À¸·Î µ¹·ÁÁØ´Ù.
-     * @param pOutformat
-     * @param gmt
-     * @return
-     */
-    public static String getGmtToday(String pOutformat, int gmt)
-    {	
-    	int t = -9;
-    	int re = gmt + t;
-    	
-        return DateFormatUtils.format(System.currentTimeMillis()+1000*60*60*re, pOutformat, java.util.Locale.KOREA);
-    }
-
-	/**
-	* ÀÏÀÚ¸¦ ÁöÁ¤µÈ FormatÀÇ ³¯Â¥ Ç¥ÇöÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù. <BR><BR>
-	*
-	* »ç¿ë¿¹) getFormattedDate(new Date(),"yyyy/MM/dd hh:mm a")<BR>
-	* °á °ú ) 2002/09/30 10:10 ¿ÀÈÄ<BR><BR>
-	*
-	* FormatÀº J2SEÀÇ SimpleDateFormatÀÇ DocumentationÀ» Âü°íÇÑ´Ù.
-	*
-	* @param pOutformat String
-	* @return String
-	*/
-	public static String getFormattedDate( Date vDate,String pOutformat )
-	{
-		//ksh ¼öÁ¤
-		return DateFormatUtils.format(vDate, pOutformat, java.util.Locale.KOREA);
-		/*SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
-
-		String rDateString = null;
-		
-		try
-		{
-			rDateString = pOutformatter.format( vDate );
-
-		}
-		catch( Exception e ) {}
-
-		return rDateString;*/
-	}
-	
-	/**
-	* ÀÏÀÚ¸¦ ÁöÁ¤µÈ FormatÀÇ ³¯Â¥ Ç¥ÇöÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù. <BR><BR>
-	*
-	* »ç¿ë¿¹) getFormattedDate(System.currentTimeMillis(),"yyyy/MM/dd hh:mm a")<BR>
-	* °á °ú ) 2002/09/30 10:10 ¿ÀÈÄ<BR><BR>
-	*
-	* FormatÀº J2SEÀÇ SimpleDateFormatÀÇ DocumentationÀ» Âü°íÇÑ´Ù.
-	*
-	* @param pOutformat String
-	* @return String
-	*/
-	public static String getFormattedDate( long time ,String pOutformat )
-	{
-		//ksh ¼öÁ¤
-		return DateFormatUtils.format(time, pOutformat, java.util.Locale.KOREA);
-		/*SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
-
-		String rDateString = null;
-		Date vDate = new Date(time);
-		try
-		{
-			rDateString = pOutformatter.format( vDate );
-
-		}
-		catch( Exception e ) {}
-
-		return rDateString;*/
-	}
-    /**
-     * ÀÔ·ÂµÈ FormatÀÇ ¹®ÀÚ¿­À» ÁöÁ¤µÈ FormatÀÇ ³¯Â¥ Ç¥ÇöÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù. <BR><BR>
-     *
-     * »ç¿ë¿¹) getFormattedDate("200102042345","yyyyMMddhhmm","yyyy/MM/dd hh:mm a")<BR>
-     * °á °ú ) 2002/09/30 11:45 ¿ÀÈÄ<BR><BR>
-     *
-     * FormatÀº J2SEÀÇ SimpleDateFormatÀÇ DocumentationÀ» Âü°íÇÑ´Ù.
-     *
-     * @param pIndate String
-     * @param pInformat String
-     * @param pOutformat String
-     * @return String
-     */
-    public static String getFormattedDate( String pIndate, String pInformat, String pOutformat )
-    {
-            
-    	if("00000000".equals(pIndate)) return "";
-    	
-    		//ksh ¼öÁ¤ ::DateFormatUtilsÀÌ¿ë
-    	
-    		SimpleDateFormat pInformatter =  new SimpleDateFormat ( pInformat, java.util.Locale.KOREA );
-            //SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
-
-            String rDateString = "";
-            Date vDate = null;
-
-            try
-            {
-                    vDate = pInformatter.parse( pIndate );
-                    //rDateString = pOutformatter.format( vDate );
-                    rDateString = DateFormatUtils.format(vDate, pOutformat, java.util.Locale.KOREA );
-            }
-            catch( Exception e )
-            {
-                    rDateString = pIndate;
-            }
-
-            return rDateString;
-    }
-
-    /**
-    * ¿À´Ã ÀÏÀÚ ±âÁØÀ¸·Î diff¸¸Å­ ´õÇÑ(»«) ÀÏ¸¦ ÁöÁ¤µÈ FormatÀÇ ³¯Â¥ Ç¥ÇöÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù. <BR><BR>
-    *
-    * »ç¿ë¿¹) getEvalDate( "20021001", -1 )<BR>
-    * °á °ú ) 2002/09/30<BR><BR>
-    *
-    * FormatÀº J2SEÀÇ SimpleDateFormatÀÇ DocumentationÀ» Âü°íÇÑ´Ù.
-    *
-    * @param date String
-    * @param diff int
-    * @return String
-    */
-    public static String getEvalDate( String date, int diff )
-    {
-        //String evalDate = null;
-
-        //SimpleDateFormat formatter = new SimpleDateFormat( "yyyyMMdd" );
-        Calendar today = Calendar.getInstance();
-
-        today.set( Integer.parseInt( date.substring( 0, 4 ) ), Integer.parseInt( date.substring( 4, 6 ) ) - 1, Integer.parseInt( date.substring( 6 ) ) );
-        today.add( Calendar.DATE, diff );
-        
-        //ksh ¼öÁ¤
-        //evalDate = formatter.format( today.getTime() );
-        //return evalDate;
-        return DateFormatUtils.format(today.getTime(), "yyyyMMdd");
-    }
-
-    /**
-     * Àü´Þ¹ÞÀº ¹®ÀÚ¿­À» ±ÝÀüÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù.
-     * ¼ýÀÚ°¡ ¾Æ´Ñ °ªÀÌ µé¾î¿À¸é ÀÔ·Â°ªÀ» ±×´ë·Î µ¹·ÁÁØ´Ù.<BR><BR>
-     *
-     * »ç¿ë¿¹) getFormattedMoney("200102042345")<BR>
-     * °á °ú ) 200,102,042,345<BR><BR>
-     *
-     * @param pInstr String
-     * @return String
-     */
-    public static String getFormattedMoney( String pInstr )
-    {
-        if(pInstr ==null || pInstr.equals("") || pInstr.equals("null")){
-            return null;
-        }   	
-    		pInstr = parseSignedAmount(pInstr)+"";
-            String rStr = getFormattedMoney( Long.parseLong( pInstr ) );
-
-            return rStr;
-    }
-    
-    /**
-     * ¹®ÀÚ¿­À» µÎ¹øÂ° ÀÎÀÚ¸¸Å­ µÚ¿¡¼­ ¼Ò¼öÁ¡À¸·Î Ã³¸®ÇØ¼­ ½Ç¼öÇüÀ» ±ÝÀüÇü½ÄÀ» ¸®ÅÏ
-     * ¸Ç ¾ÕÀÚ¸®¿¡ ºÎÈ£°¡ - ÀÏ °æ¿ì -¸®ÅÏ. ¾ç¼ö¸é »èÁ¦ÈÄ ¸®ÅÏ ¹®ÀÚ¿­¿¡ ¼Ò¼öÁ¡ÀÌ ¾øÀ»¶§¸¸ »ç¿ë
-     * »ç¿ë¿¹) 
-     * getIndexFloatMoney("1234000,2) °á°ú : 12,340
-     * getIndexFloatMoney("+1234010,2) °á°ú : 12,340.1
-     * getIndexFloatMoney("-1234078,2) °á°ú : -12,340.78
-     * 
-     * @param str : String
-     * @param len : Stirng ¸Ç µÚ ¸îÀÚ¸®ºÎÅÍ ¼Ò¼öÁ¡ÀÌ´Ù.
-     * @return String
-     */
-    public static String getIndexFloatMoney(String str, int len){
-    	String ret = new String();
-    	str = str.trim();
-    	if(str == null || str.length()==0) return null;
-    	if(str.length() < len) return str;
-    	
-    	String high = str.substring(0,str.length()-len);
-    	String low = str.substring(str.length()-len);
- 
-    	high = getFormattedMoney(high);
-    	low = trimRZero(low);
-
-    	if(low.length() != 0) 
-    	{
-    		ret = high+"."+low; 
-    	}else {
-    		ret = high;
-    	}
-    	return ret;
-    }
-    
-	/**
-	 * ¹®ÀÚ¿­À» 2¸¸Å­ µÚ¿¡¼­ ¼Ò¼öÁ¡À¸·Î Ã³¸®ÇØ¼­ ½Ç¼öÇüÀ» ±ÝÀüÇü½ÄÀ» ¸®ÅÏ
-	 * ¸Ç ¾ÕÀÚ¸®¿¡ ºÎÈ£°¡ - ÀÏ °æ¿ì -¸®ÅÏ. ¾ç¼ö¸é »èÁ¦ÈÄ ¸®ÅÏ ¹®ÀÚ¿­¿¡ ¼Ò¼öÁ¡ÀÌ ¾øÀ»¶§¸¸ »ç¿ë
-	 * »ç¿ë¿¹) 
-	 * getIndexFloatMoney("1234000) °á°ú : 12,340.00
-	 * getIndexFloatMoney("+1234010) °á°ú : 12,340.10
-	 * getIndexFloatMoney("-1234078) °á°ú : -12,340.78
-	 * 
-	 * @param str : String
-	 * @return String
-	 */
-	public static String getFormattedIndextMoney(String str){
-		return getFormattedIndextMoney(str, 2);
-	}
-	
-	/**
-	 * ¹®ÀÚ¿­À» µÎ¹øÂ° ÀÎÀÚ¸¸Å­ µÚ¿¡¼­ ¼Ò¼öÁ¡À¸·Î Ã³¸®ÇØ¼­ ½Ç¼öÇüÀ» ±ÝÀüÇü½ÄÀ» ¸®ÅÏ
-	 * ¸Ç ¾ÕÀÚ¸®¿¡ ºÎÈ£°¡ - ÀÏ °æ¿ì -¸®ÅÏ. ¾ç¼ö¸é »èÁ¦ÈÄ ¸®ÅÏ ¹®ÀÚ¿­¿¡ ¼Ò¼öÁ¡ÀÌ ¾øÀ»¶§¸¸ »ç¿ë
-	 * »ç¿ë¿¹) 
-	 * getIndexFloatMoney("1234000,2) °á°ú : 12,340.00
-	 * getIndexFloatMoney("+1234010,2) °á°ú : 12,340.10
-	 * getIndexFloatMoney("-1234078,2) °á°ú : -12,340.78
-	 * 
-	 * @param str : String
-	 * @param len : Stirng ¸Ç µÚ ¸îÀÚ¸®ºÎÅÍ ¼Ò¼öÁ¡ÀÌ´Ù.
-	 * @return String
-	 */
-	public static String getFormattedIndextMoney(String str, int len){
-		str = str.trim();
-		if(str == null || str.length()==0) return null;
-		if(str.length() < len) return str;
-
-		int index = str.indexOf('.');
-		if(index != -1){
-			str = getFormattedMoney(str);
-		}else{
-			String high = str.substring(0,str.length()-len);
-			String low = str.substring(str.length()-len);
-			high = getFormattedMoney(high);
-
-			str = high+"."+low; 
-		}
-		return str;
-	}	    
-    
-    /**
-     * ÁöÁ¤µÈ FormatÀ¸·Î Àü´Þ ¹ÞÀº ¹®ÀÚ¿­À» µ¹·ÁÁØ´Ù. ÀÔ·Â¹ÞÀº Àü´Þ ¹ÞÀº ¹®ÀÚ¿­ÀÌ ¼ýÀÚÀÏ¶§ ÇØ´çµÈ´Ù.
-     * ¼ýÀÚ°¡ ¾Æ´Ñ °ªÀÌ µé¾î¿À¸é ÀÔ·Â°ªÀ» ±×´ë·Î µ¹·ÁÁØ´Ù.<BR><BR>
-     *
-     * »ç¿ë¿¹) getFormattedNumber("200102042345","'$'####,####0")<BR>
-     * °á °ú ) $20,01020,42345<BR><BR>
-     *
-     * FormatÀº J2SEÀÇ MessageFormatÀÇ DocumentationÀ» Âü°íÇÑ´Ù.
-     *
-     * @param pInstr String
-     * @param pInformat String
-     * @return String
-     */
-    public static String getFormattedNumber( String pInstr, String pInformat )
-    {
-            String rStr = pInstr;
-
-            try
-            {
-                    Object[] testArgs = {new Long( pInstr )};
-                    MessageFormat form = new MessageFormat( "{0,number,"+pInformat+"}" );
-                    rStr =  form.format( testArgs );
-            } catch ( Exception e ) {}
-
-            return rStr;
-    }
-
-    /**
-     * ÁöÁ¤µÈ FormatÀ¸·Î Àü´Þ ¹ÞÀº ¹®ÀÚ¿­À» µ¹·ÁÁØ´Ù. <BR><BR>
-     *
-     * ±×´ë·Î »ç¿ëÇÒ ¹®ÀÚ´Â '#'À¸·Î Ç¥ÇöµÈ´Ù. ±× ¿ÜÀÇ ¹®ÀÚ¿­Àº ¾Æ¹«±âÈ£³ª »ó°ü¾ø´Ù.
-     * ±×·¯¹Ç·Î '#'ÀÚÃ¼´Â »ç¿ëÀÌ ºÒ°¡´ÉÇÏ´Ù.
-     * ¾ÏÈ£È­ Ã³¸® µÇ¾ß ÇÒ ¹®ÀÚ´Â *·Î Ç¥ÇöÇÑ´Ù( ex)******-#######)
-     * ÀÔ·Â¹ÞÀº ¹®ÀÚ°¡ Formatº¸´Ù ±æ´Ù¸é Format±æÀÌ ÀÌÈÄÀÇ ¹®ÀÚ¿­Àº Àß¸®°Ô µÈ´Ù.
-     * FormatÀÌ ÀÔ·Â¹ÞÀº ¹®ÀÚ¿­º¸´Ù ±æ´Ù¸é ¹®ÀÚ¿­¸¸Å­¸¸ Ãâ·ÂµÈ´Ù.
-     *
-     * @param pInstr Æ÷¸ËÆÃ Àü ¹®ÀÚString
-     * @param pInformat Æ÷ÅÈÇü½ÄString(######-######} µî
-     * @return String
-     */
-    public static String getFormattedText( String pInstr, String pInformat )
-    {
-            StringBuffer rStr = new StringBuffer();
-
-            try {
-                    for ( int i = 0, j = 0 ; pInstr != null && !pInstr.equals("") && i < pInformat.length() ; i ++ ) {
-                            if ( pInformat.charAt(i) == '#' ) {
-                                    rStr.append( pInstr.charAt( j ) );
-                                    j++;
-                            } else if ( pInformat.charAt(i) == '*' ) {
-                                    rStr.append( pInformat.charAt( i ) );
-                                    j++;
-                            }
-                            else {
-                                    rStr.append( pInformat.charAt( i ) );
-                            }
-                    }
-            }
-            catch ( Exception e ) {};
-
-            return rStr.toString().trim();
-    }
-
-    /**
-    * Àü´Þ¹ÞÀº ¹®ÀÚ¿­À» ±ÝÀüÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù.
-    * ¼ýÀÚ°¡ ¾Æ´Ñ °ªÀÌ µé¾î¿À¸é ÀÔ·Â°ªÀ» ±×´ë·Î µ¹·ÁÁØ´Ù.<BR><BR>
-    *
-    * »ç¿ë¿¹) getFormattedMoney(200102042345)<BR>
-    * °á °ú ) 200,102,042,345<BR><BR>
-    *
-    * @param pInstr long
-    * @return String
-    */
-    public static String getFormattedMoney( long pInstr )
-    {
-        String rStr = "" + pInstr;
-
-         try
-         {
-             Object[] testArgs = {new Long( rStr )};
-             MessageFormat form = new MessageFormat( "{0,number,###,###,###,##0}" );
-             rStr = form.format( testArgs );
-         }
-         catch ( Exception e ) {}
-
-         return rStr;
-        }
-
-    /**
-    * Àü´Þ¹ÞÀº ¼ýÀÚ¸¦ ÁöÁ¤µÈ ÇüÅÂ·Î Ãâ·ÂÇÑ´Ù.
-    * ¼ýÀÚ°¡ ¾Æ´Ñ °ªÀÌ µé¾î¿À¸é ÀÔ·Â°ªÀ» ±×´ë·Î µ¹·ÁÁØ´Ù.<BR><BR>
-    *
-    * »ç¿ë¿¹) getFormattedNumber(1, "00000")<BR>
-    * °á °ú ) "00001"<BR><BR>
-    *
-    * @param pInstr long
-    * @return String
-    */
-    public static String getFormmatedNumber( long num, String format ) {
-        StringBuffer formattedNum = new StringBuffer();
-        String strNum = "" + num;
-
-        try {
-            for ( int i=0 ; i < format.length()-strNum.length(); i++ ) {
-                formattedNum.append(format.charAt(i));
-            }
-            formattedNum.append(strNum);
-        } catch ( Exception e ) {};
-
-        return formattedNum.toString();
-    }
-
-    /**
-     * Àü´Þ¹ÞÀº ¹®ÀÚ¿­À» ±ÝÀüÇü½ÄÀ¸·Î µ¹·ÁÁØ´Ù.
-     * ¼ýÀÚ°¡ ¾Æ´Ñ °ªÀÌ µé¾î¿À¸é ÀÔ·Â°ªÀ» ±×´ë·Î µ¹·ÁÁØ´Ù.<BR><BR>
-     *
-     * »ç¿ë¿¹) getFormattedMoney(200102042345)<BR>
-     * °á °ú ) 200,102,042,345<BR><BR>
-     *
-     * @param pInstr double
-     * @return String
-     */
-    public static String getFormattedMoney(double pInstr)
-    {
-        String rStr = "" + pInstr;
-
-        try
-        {
-            Object[] testArgs = {new Double( rStr )};
-            MessageFormat form = new MessageFormat( "{0,number,###,###,###,##0}" );
-            rStr = form.format( testArgs );
-        }
-        catch ( Exception e ) {}
-
-        return rStr;
-    }
-
-    /**
-     * Æ¯Á¤ ½ºÆ®¸µ³»ÀÇ ÀÏÁ¤ÇÑ pattern subStringÀ» replace ¹®ÀÚ¿­·Î
-     *	´ëÄ¡ÇÑ´Ù.
-     *
-     * »ç¿ë¿¹) replace("2002-02-10", "-", "/")<BR>
-     * °á °ú ) "2002/02/10"<BR><BR>
-     *
-     * @return String
-     */
-    public static String replace(String str, String pattern, String replace) {
-        int s = 0, e = 0;
-        StringBuffer result = new StringBuffer();
-
-        while ((e = str.indexOf(pattern, s)) >= 0) {
-            result.append(str.substring(s, e));
-            result.append(replace);
-            s = e+pattern.length();
-        }
-
-        result.append(str.substring(s));
-        return result.toString();
-    }
-    
-
-
-
-        /**
-        * ÇØ´ç¹®ÀÚ¿­À» ltrim, rtrim ÇÑ´Ù. <BR><BR>
-        *
-        * »ç¿ë¿¹) trim("  spaces  " )<BR>
-        * °á °ú ) "spaces"<BR><BR>
-        *
-        * @param pInstr String
-        * @return String trimµÈ ¹®ÀÚ¿­
-        */
-       /*
-    public static String trim(String pInstr) {
-        int st = 0;
-        char[] val = pInstr.toCharArray();
-        int count = val.length;
-        int len = count;
-
-        while ((st < len) && ((val[st] <= ' ') || (val[st] == '¡¡') ) ){
-            st++;
-        }
-        while ((st < len) && ((val[len - 1] <= ' ') || (val[len-1] == '¡¡'))){
-            len--;
-        }
-
-        return ((st > 0) || (len < count)) ? pInstr.substring(st, len) : pInstr ;
-
-    }
-*/
-    /**
-    * LT TypeÀ» BIC TypeÀ» º¯È¯ÇÑ´Ù. <BR><BR>
-    *
-    * »ç¿ë¿¹) makeLt2Bic("KOEXKRS0X" )<BR>
-    * °á °ú ) "KOEXKRS0"<BR><BR>
-    *
-    * @param pInstr String
-    * @return String trimµÈ ¹®ÀÚ¿­
-    */
-    public static String makeLt2Bic(String input){
-      String ret = input;
-      if(input.length()>11) {
-        ret = input.substring(0,8) + input.substring(9,12);
-      }
-      return ret;
-    }
-
-    /**
-     * BIC TypeÀ» LT TypeÀ» º¯È¯ÇÑ´Ù. <BR><BR>
-     *
-     * »ç¿ë¿¹) makeBic2Lt("KOEXKRS0X", "A" )<BR>
-     * °á °ú ) "KOEXKRS0A"<BR><BR>
-     *
-     * @param pInstr String
-     * @return String trimµÈ ¹®ÀÚ¿­
-     */
-    public static String makeBic2Lt(String input, String terminalCode){
-
-      String ret = input;
-
-      if( input==null )
-           return "";
-
-       if( input.length()==8 ){
-           ret = input +terminalCode+"XXX";
-       }else if(input.length()==11) {
-           ret = input.substring(0,8) + terminalCode + input.substring(8);
-       }else{
-           ret = input.substring(0,8) + terminalCode + "XXX";
-       }
-
-       return ret;
-
-    }
-
-    /**
-     * ÁöÁ¤µÈ ¹®ÀÚ¿­·Î ÁÖ¾îÁø Å©±â ¸¸Å­ÀÇ ±æÀÌ¸¦ °¡Áø ¹®ÀÚ¿­·Î
-     * ÃÊ±âÈ­ µÈ ¹®ÀÚ¿­À» ¸®ÅÏÇÕ´Ï´Ù.<BR><BR>
-     *
-     * »ç¿ë¿¹) makeTemplateString(5, 'A')<BR>
-     * °á °ú ) "AAAAA"<BR><BR>
-     *
-     * @param size int ÇüÅÂÀÇ ÃÊ±âÈ­ ÇÒ ¹®ÀÚ¿­ÀÇ ±æÀÌ
-     * @param initialChar ÃÊ±âÈ­¿¡ »ç¿ë ÇÒ ¹®ÀÚ
-     * @return ÁöÁ¤µÈ ¹®ÀÚ¿­·Î ÁÖ¾îÁø Å©±â¸¸Å­ ÃÊ±âÈ­ µÈ ¹®ÀÚ¿­
-     */
-    public static String makeTemplateString(int size, char initialChar) {
-        StringBuffer buffer = new StringBuffer();
-        for (int i = 0; i < size; i++) {
-            buffer.append(initialChar);
-        }//end for
-        return buffer.toString();
-    }//end of makeTemplateString()
-
-    /**
-     * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ ±æÀÌ(getBytes() °á°ú ±æÀÌ)°¡
-     * ÁÖ¾îÁø Å©±âº¸´Ù ÀÛÀ¸¸é padding char ¸¦ ºÎÁ·ÇÑ ±æÀÌ¸¸Å­ ¿ÞÂÊ¿¡ Ãß°¡ÇÕ´Ï´Ù.<BR>
-     * ´Ü, ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ ±æÀÌ°¡ ÁÖ¾îÁø Å©±âº¸´Ù Å¬ °æ¿ì,
-     * ¹®ÀÚ¿­ÀÇ ¸Ç ¾Õ ºÎºÐºÎÅÍ ÁÖ¾îÁø ±æÀÌ¸¸Å­¸¸ Àß·ÁÁø ¹®ÀÚ¿­ÀÌ ¸®ÅÏµË´Ï´Ù.<BR><BR>
-     *
-     * »ç¿ë¿¹) lPadding("A", 3, '0')<BR>
-     * °á °ú ) "00A"<BR><BR>
-     * »ç¿ë¿¹) lPadding("ABCD", 3, '0')<BR>
-     * °á °ú ) "ABC"<BR><BR>
-     *
-     * @param src padding ÇÏ±â À§ÇÑ ¹®ÀÚ¿­
-     * @param size padding ÇÏ±â À§ÇÑ ±æÀÌ
-     * @param paddingChar padding ÇÒ ¹®ÀÚ
-     * @return padding ÀÌ ¿Ï·áµÈ ¹®ÀÚ¿­
-     */
-	public static String lPadding(String src, int size, char paddingChar) {
-
-		// ¼º´É °³¼±À» À§ÇÏ¿©, ¾Æ·¡¿Í °°Àº °øÅë È£Ãâ°ú °ü·ÃµÈ ºÎºÐÀ»,
-		// µ¿ÀÏÇÏ°Ô º¹»çÇÏ¿´À½.
-
-		int srcLength = 0;
-		byte [] srcBytes;
-		if (src == null) {
-			StringBuffer result = new StringBuffer();
-			for (int i = 0; i < size; i++) {
-				result.append(paddingChar);
-			}//end for
-			return result.toString();
-		} else {
-            srcBytes = src.getBytes();
-			srcLength = srcBytes.length;
-		}//end if else
-		if (size == srcLength) {
-			return src;
-		} else if (size < srcLength) {
-			//return new String(srcBytes, 0, size) ;
-			
-			// >>> * 2011-12-07 ¹®Ã¶¿Ë : ½ÇÁ¦ ¹®ÀÚ¿­º¸´Ù padding ±æÀÌ°¡ ÀÛÀº°æ¿ì Àü°¢¹®ÀÚ°¡ ? ·Î Ç¥½ÃµÇ´Â ¹®Á¦°¡ ÀÖ¾î ¼öÁ¤ÇÔ.
-			boolean isFront = isFront2ByteString(srcBytes, size);	// Àü°¢(2byte¹®ÀÚ)ÀÇ °æ¿ì ÇöÀ§Ä¡°¡ Àü°¢ÀÇ ¾ÕºÎºÐÀÎÁö ¾Æ´ÑÁö¸¦ ÆÇ´Ü
-			if(isFront) return paddingChar + new String(srcBytes, 0, size-1);	// Àü°¢¹®ÀÚ¾ÕºÎºÐÀÌ¸é ¹ö¸®°í, SPACEÃ³¸®
-			else 		return new String(srcBytes, 0, size);
-			// <<< * ¼öÁ¤ ³¡. 
-		}//end if else
-		int paddingCount = size - srcLength;
-		StringBuffer result = new StringBuffer();
-		for (int i = 0; i < paddingCount; i++) {
-			result.append(paddingChar);
-		}//end for
-		result.append(src);
-		return result.toString();
-	}//end of lPadding()
-
-	
-	/**
-	 * 2byte¹®ÀÚÀÇ °æ¿ì indexÀÇ À§Ä¡°¡ Àü°¢¹®ÀÚÀÇ ¾Õ/µÚ¸¦ ÆÇ´Ü
-	 * @param str
-	 * @param size
-	 * @return
-	 */
-	private static boolean isFront2ByteString(byte[] srcBytes, int index) {
-		boolean isFront = false;
-		for (int i = 0; i < index; i++) {
-			byte now = srcBytes[i];
-			if(((int)now & 0x80) != 0) {	// 0x80!=0   -> 2byte¹®ÀÚ ÆÇ´Ü(ascii°æ¿ì 0À» ¸®ÅÏ)
-				isFront = isFront ? false : true;
-				//if(isFront) System.out.print("¾Õ");//else 		  System.out.print("µÚ");
-			}
-		}
-		return isFront;
-	}
-	
-    /**
-     * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ ±æÀÌ(getBytes() °á°ú ±æÀÌ)°¡
-     * ÁÖ¾îÁø Å©±âº¸´Ù ÀÛÀ¸¸é padding char ¸¦ ºÎÁ·ÇÑ ±æÀÌ¸¸Å­ ¿À¸¥ÂÊ¿¡ Ãß°¡ÇÕ´Ï´Ù.<BR><BR>
-     *
-     * »ç¿ë¿¹) lPadding("A", 3, '0')<BR>
-     * °á °ú ) "A00"<BR><BR>
-     * »ç¿ë¿¹) lPadding("ABCD", 3, '0')<BR>
-     * °á °ú ) "ABC"<BR><BR>
-     *
-     * @param src padding ÇÏ±â À§ÇÑ ¹®ÀÚ¿­
-     * @param size padding ÇÏ±â À§ÇÑ ±æÀÌ
-     * @param paddingChar padding ÇÒ ¹®ÀÚ
-     * @return padding ÀÌ ¿Ï·áµÈ ¹®ÀÚ¿­
-     */
-	public static String rPadding(String src, int size, char paddingChar) {
-
-		// ¼º´É °³¼±À» À§ÇÏ¿©, ¾Æ·¡¿Í °°Àº °øÅë È£Ãâ°ú °ü·ÃµÈ ºÎºÐÀ»,
-		// µ¿ÀÏÇÏ°Ô º¹»çÇÏ¿´À½.
-		int srcLength = 0;
-		byte [] srcBytes;
-		if (src == null) {
-			StringBuffer result = new StringBuffer();
-			for (int i = 0; i < size; i++) {
-				result.append(paddingChar);
-			}//end for
-			return result.toString();
-		} else {
-            srcBytes = src.getBytes();
-			srcLength = srcBytes.length;
-		}//end if else
-		
-		if (size == srcLength) {
-			return src;
-		}
-		
-		// >>> * 2011-12-07 ¹®Ã¶¿Ë : ½ÇÁ¦ ¹®ÀÚ¿­º¸´Ù padding ±æÀÌ°¡ ÀÛÀº°æ¿ì Àü°¢¹®ÀÚ°¡ ? ·Î Ç¥½ÃµÇ´Â ¹®Á¦°¡ ÀÖ¾î ¼öÁ¤ÇÔ.
-		else if (size < srcLength) {
-			//return new String(srcBytes, 0, size)   + paddingChar;
-			boolean isFront = isFront2ByteString(srcBytes, size);	// Àü°¢(2byte¹®ÀÚ)ÀÇ °æ¿ì ÇöÀ§Ä¡°¡ Àü°¢ÀÇ ¾ÕºÎºÐÀÎÁö ¾Æ´ÑÁö¸¦ ÆÇ´Ü
-			if(isFront) return new String(srcBytes, 0, size-1) + paddingChar;	// Àü°¢¹®ÀÚ¾ÕºÎºÐÀÌ¸é ¹ö¸®°í, SPACEÃ³¸®
-			else 		return new String(srcBytes, 0, size);
-		}
-		// <<< * ¼öÁ¤ ³¡. 
-		
-		int paddingCount = size - srcLength;
-		StringBuffer result = new StringBuffer();
-		result.append(src);
-		for (int i = 0; i < paddingCount; i++) {
-			result.append(paddingChar);
-		}//end for
-		return result.toString();
-	}//end of rPadding()
-	
-	
-	/**
-	 * padding Ã³¸®
-	 * @param src paddingÇÒ ¹®ÀÚ¿­
-	 * @param size ¹®ÀÚ¿­ÀÇ ÃÑ±æÀÌ
-	 * @param paddingChar PaddingÇÒ ¹®ÀÚ
-	 * @param rightOrLeft "left" : left Padding , "Right" : right Padding.
-	 * @return padding Ã³¸®µÈ ¹®ÀÚ¿­
-	 */
-	public static String padding(String src, int size, char paddingChar,String rightOrLeft){
-		if("left".equals(rightOrLeft)){
-			return lPadding(src, size, paddingChar);
-		}else{
-			return rPadding(src, size, paddingChar);
-		}
-	}
-	
-	/**
-	 * space padding Ã³¸®
-	 * @param src paddingÇÒ ¹®ÀÚ¿­
-	 * @param size ¹®ÀÚ¿­ÀÇ ÃÑ±æÀÌ
-	 * @param rightOrLeft "left" : left Padding , "Right" : right Padding.
-	 * @return padding Ã³¸®µÈ ¹®ÀÚ¿­
-	 */
-	public static String padding(String src, int size, String rightOrLeft){
-		char paddingChar=' ';
-		if("left".equals(rightOrLeft)){
-			return lPadding(src, size, paddingChar);
-		}else{
-			return rPadding(src, size, paddingChar);
-		}
-	}
-	
-	/**
-	 * default·Î left¿¡ '0'À» padding Ã³¸®
-	 * @param src
-	 * @return
-	 */
-	public static String numberPadding(String src, int size){
-		char paddingChar='0';
-		return lPadding(src, size, paddingChar);		
-	}
-	
-	/**
-	 * default·Î left¿¡ '0'À» padding Ã³¸®
-	 * @param src
-	 * @return
-	 */
-	public static String longPadding(long num, int size){
-		String src = Long.toString(num);
-		char paddingChar='0';
-		return lPadding(src, size, paddingChar);
-		
-	}
-	
-	/**
-	 * default·Î left¿¡ '0'À» padding Ã³¸®. 
-	 * <font color=red>¼Ò¼öÁ¡ÀÌ µé¾î°¡Áö ¾Ê´Â´Ù.</font>
-	 * @param src
-	 * @param size ÀüÃ¼ ÀÚ¸®¼ö 
-	 * @param sosuSize ¼Ò¼öÁ¡ ÀÌÇÏ ÀÚ¸®¼ö 
-	 * @return
-	 */
-//	public static String doublePadding(double num, int size,int sosuSize){
-//		return doublePadding(num,size,sosuSize,'0');
-//	}
-	
-	/**
-	 * default·Î left¿¡ '0'À» padding Ã³¸®. 
-	 * <font color=red>¼Ò¼öÁ¡ÀÌ µé¾î°¡Áö ¾Ê´Â´Ù.</font>
-	 * @param src
-	 * @param size ÀüÃ¼ ÀÚ¸®¼ö 
-	 * @param sosuSize ¼Ò¼öÁ¡ ÀÌÇÏ ÀÚ¸®¼ö 
-	 * @return
-	 */
-//	public static String doublePadding(double num, int size,int sosuSize,char paddingChar){
-//		String src = new BigDecimal(num).toString();
-//		String[] splited = StringUtil.splitDouble(src);
-//		if(splited[0].length() > size-sosuSize){
-//			throw new SysException("Á¤¼öºÎ¿¡ ÇØ´çÇÏ´Â °ªº¸´Ù Ç¥Çö½ÄÀÇ ÀÚ¸®¼ö°¡ ÀÛÀ¸¸é ¾ÈµË´Ï´Ù.");
+//    /**
+//    * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ 8ï¿½Ú¸ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½:yyyyMMdd)ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//    *
+//    * ï¿½ï¿½ë¿¹) getToday()<BR>
+//    * ï¿½ï¿½ ï¿½ï¿½ ) 20020930<BR><BR>
+//    *
+//    * @return String
+//    */
+//    public static String getToday()
+//    {
+//        return getToday( "yyyyMMdd" );
+//    }
+//    /**
+//    * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ ï¿½ï¿½Â¥ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//    *
+//    * ï¿½ï¿½ë¿¹) getToday("yyyy/MM/dd hh:mm a")<BR>
+//    * ï¿½ï¿½ ï¿½ï¿½ ) 2002/09/30 10:10 ï¿½ï¿½ï¿½ï¿½<BR><BR>
+//    *
+//    * Formatï¿½ï¿½ J2SEï¿½ï¿½ SimpleDateFormatï¿½ï¿½ Documentationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//    *
+//    * @param pOutformat String
+//    * @return String
+//    */
+//    public static String getToday( String pOutformat )
+//    {	
+//    	//ksh ï¿½ï¿½ï¿½ï¿½
+//        /*SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
+//
+//        String rDateString = null;
+//        Date vDate = new Date();
+//
+//        try
+//        {
+//            rDateString = pOutformatter.format( vDate );
+//
+//        }
+//        catch( Exception e ) {}
+//
+//        return rDateString;*/
+//        
+//        return DateFormatUtils.format(System.currentTimeMillis(), pOutformat, java.util.Locale.KOREA);
+//    }
+//
+//    /**
+//     * ï¿½ï¿½ï¿½ï¿½ ï¿½Ï½Ã¸ï¿½ GMTï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.
+//     * @param pOutformat
+//     * @param gmt
+//     * @return
+//     */
+//    public static String getGmtToday(String pOutformat, int gmt)
+//    {	
+//    	int t = -9;
+//    	int re = gmt + t;
+//    	
+//        return DateFormatUtils.format(System.currentTimeMillis()+1000*60*60*re, pOutformat, java.util.Locale.KOREA);
+//    }
+//
+//	/**
+//	* ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ ï¿½ï¿½Â¥ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//	*
+//	* ï¿½ï¿½ë¿¹) getFormattedDate(new Date(),"yyyy/MM/dd hh:mm a")<BR>
+//	* ï¿½ï¿½ ï¿½ï¿½ ) 2002/09/30 10:10 ï¿½ï¿½ï¿½ï¿½<BR><BR>
+//	*
+//	* Formatï¿½ï¿½ J2SEï¿½ï¿½ SimpleDateFormatï¿½ï¿½ Documentationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	*
+//	* @param pOutformat String
+//	* @return String
+//	*/
+//	public static String getFormattedDate( Date vDate,String pOutformat )
+//	{
+//		//ksh ï¿½ï¿½ï¿½ï¿½
+//		return DateFormatUtils.format(vDate, pOutformat, java.util.Locale.KOREA);
+//		/*SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
+//
+//		String rDateString = null;
+//		
+//		try
+//		{
+//			rDateString = pOutformatter.format( vDate );
+//
 //		}
-//		String longPart = lPadding(splited[0],size-sosuSize,paddingChar);
-//		String sosuPart = rPadding(splited[1],sosuSize,paddingChar);		
-//		return longPart+sosuPart;
+//		catch( Exception e ) {}
+//
+//		return rDateString;*/
 //	}
-	
-	/**
-	 * default·Î left¿¡ '0'À» padding Ã³¸®. 
-	 * <font color=red>¼Ò¼öÁ¡µµ µé¾î °£´Ù.</font>
-	 * @param src
-	 * @param size ÀüÃ¼ ÀÚ¸®¼ö 
-	 * @param sosuSize ¼Ò¼öÁ¡ ÀÌÇÏ ÀÚ¸®¼ö 
-	 * @return
-	 */
-//	public static String doubleDotPadding(double num, int size,int sosuSize){
-//		return doubleDotPadding( num,  size, sosuSize, '0');
-//	}
-	
-	/**
-	 * default·Î left¿¡ '0'À» padding Ã³¸®. 
-	 * <font color=red>¼Ò¼öÁ¡µµ µé¾î °£´Ù.</font>
-	 * @param src
-	 * @param size ÀüÃ¼ ÀÚ¸®¼ö 
-	 * @param sosuSize ¼Ò¼öÁ¡ ÀÌÇÏ ÀÚ¸®¼ö 
-	 * @return
-	 */
-//	public static String doubleDotPadding(double num, int size,int sosuSize,char paddingChar){
-//        String src = new BigDecimal(num).toString();
-//		String[] splited = StringUtil.splitDouble(src);
-//		if(splited[0].length() > size-sosuSize-1){
-//			throw new SysException("Á¤¼öºÎ¿¡ ÇØ´çÇÏ´Â °ªº¸´Ù Ç¥Çö½ÄÀÇ ÀÚ¸®¼ö°¡ ÀÛÀ¸¸é ¾ÈµË´Ï´Ù.");
+//	
+//	/**
+//	* ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ ï¿½ï¿½Â¥ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//	*
+//	* ï¿½ï¿½ë¿¹) getFormattedDate(System.currentTimeMillis(),"yyyy/MM/dd hh:mm a")<BR>
+//	* ï¿½ï¿½ ï¿½ï¿½ ) 2002/09/30 10:10 ï¿½ï¿½ï¿½ï¿½<BR><BR>
+//	*
+//	* Formatï¿½ï¿½ J2SEï¿½ï¿½ SimpleDateFormatï¿½ï¿½ Documentationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	*
+//	* @param pOutformat String
+//	* @return String
+//	*/
+//	public static String getFormattedDate( long time ,String pOutformat )
+//	{
+//		//ksh ï¿½ï¿½ï¿½ï¿½
+//		return DateFormatUtils.format(time, pOutformat, java.util.Locale.KOREA);
+//		/*SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
+//
+//		String rDateString = null;
+//		Date vDate = new Date(time);
+//		try
+//		{
+//			rDateString = pOutformatter.format( vDate );
+//
 //		}
-//		String longPart = lPadding(splited[0],size-sosuSize-1,paddingChar);
-//		String sosuPart = rPadding(splited[1],sosuSize,paddingChar);		
-//		return longPart+"."+sosuPart;
+//		catch( Exception e ) {}
+//
+//		return rDateString;*/
 //	}
-	
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­¿¡ 0x1F(US:UNIT SEPARATOR) ¸¦ ¸Ç µÚ¿¡ ´õÇØ¼­ ¸®ÅÏÇÕ´Ï´Ù.
-	 * 
-	 * @param src ´ë»ó ¹®ÀÚ¿­
-	 * @return ¸Ç µÚ¿¡ 0x1F °¡ Ãß°¡µÈ ¹®ÀÚ¿­
-	 */
-	public static String append0x1f(String src) {
-	    return new String(append0x1f(src.getBytes()));
-	}//end of append0x1f()
-	
-	/**
-	 * ÁÖ¾îÁø byte [] ¿¡ 0x1F(US:UNIT SEPARATOR) ¸¦ ¸Ç µÚ¿¡ ´õÇØ¼­ ¸®ÅÏÇÕ´Ï´Ù.
-	 * 
-	 * Âü°í) String Å¬·¡½ºÀÇ trim() À» »ç¿ëÇØµµ control character ´Â Á¦°Å °¡´ÉÇÏ³ª,
-	 * ½ÇÁ¦ Á¦°ÅÇÏ·Á´Â control character0x1F(US:UNIT SEPARATOR) °¡ ¾Æ´Ñ ´Ù¸¥ ´ë»óÀÌ Á¦°Å µÉ ¼ö ÀÖÀ¸¹Ç·Î,
-	 * º°µµÀÇ ¸Þ¼Òµå¸¦ Á¦°øÇÔ.
-	 * 
-	 * @param src ´ë»ó byte []
-	 * @return ¸Ç µÚ¿¡ 0x1F °¡ Ãß°¡µÈ byte []
-	 */
-	public static byte [] append0x1f(byte [] src) {
-	    byte [] result = new byte[src.length + 1];
-	    
-	    System.arraycopy(src, 0, result, 0, src.length);
-	    result[src.length] = 0x1f;
-	    
-	    return result;
-	}//end of append0x1f()
-	
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ ¸Ç µÚ¿¡ ÀÖ´Â 0x1F(US:UNIT SEPARATOR) ¸¦ Á¦°ÅÇØ¼­ ¸®ÅÏÇÕ´Ï´Ù.
-	 * 
-	 * @param src ´ë»ó ¹®ÀÚ¿­
-	 * @return ¸Ç µÚ¿¡ 0x1F °¡ Á¦°ÅµÈ ¹®ÀÚ¿­
-	 */
-	public static String removeTail0x1f(String src) {
-	    return new String(removeTail0x1f(src.getBytes()));
-	}//end of removeTail0x1f()
-	
-	/**
-	 * ÁÖ¾îÁø byte [] ÀÇ ¸Ç µÚ¿¡ ÀÖ´Â 0x1F(US:UNIT SEPARATOR) ¸¦ Á¦°ÅÇØ¼­ ¸®ÅÏÇÕ´Ï´Ù.
-	 * 
-	 * @param src ´ë»ó byte []
-	 * @return ¸Ç µÚ¿¡ 0x1F °¡ Á¦°ÅµÈ byte []
-	 */
-	public static byte [] removeTail0x1f(byte [] src) {
-	    if (src[src.length - 1] != 0x1f) {
-	        return src;
-	    }//end if
-	    
-	    byte [] result = new byte[src.length - 1];	    
-	    System.arraycopy(src, 0, result, 0, src.length - 1);	    
-	    return result;
-	}//end of removeTail0x1f()
-
-	/**
-	 * ¿À¸¥ÂÊ¸¸ trimÇÕ´Ï´Ù.
-	 * @param str String ÀÔ·Â ¹®ÀÚ¿­
-	 * @return String ¿À¸¥ÂÊ¸¸ trimÇÑ ¸®ÅÏ°ª
-	 */
-	public static String TRIM( String str ){
-	    String tmpStr="";
-	
-	    if( str == null ) return "";
-	
-	    tmpStr = str.trim();
-	
-	    return tmpStr;
-	}
-	
-	/**
-	 * ³â¿ùÀÏÀÌ³ª ³â¿ùÀÏ½ÃºÐÃÊÀÇ ³¯Â¥ ¹®ÀÚ¿­À» ¹Þ¾Æ¼­ longÇü ½Ã°£À¸·Î º¯È¯ÇÏ¿© ¸®ÅÏÇÑ´Ù. 
-	 * 
-	 * @param dateArg ³¯Â¥ ½ºÆ®¸µ 
-	 * @param dateFormat ³¯Â¥ ½ºÆ®¸µÀÇ Æ÷¸Ë Çü½Ä (¿¹) yyyy-MM-dd HH:mm:ss
-	 * @return
-	 */
-	public static long getTimeInMillis(String dateArg, String dateFormat){
-	    
-	    Calendar cal = Calendar.getInstance();
-	    String dateStr = getFormattedDate(dateArg, dateFormat, "yyyyMMddHHmmssSSS");
-	    
-	    int year 	= Integer.parseInt(dateStr.substring(0,4));
-	    int month 	= Integer.parseInt(dateStr.substring(4,6))-1;
-	    int date 	= Integer.parseInt(dateStr.substring(6,8));
-	    int hour 	= Integer.parseInt(dateStr.substring(8,10));
-        int minute 	= Integer.parseInt(dateStr.substring(10,12));
-        int second 	= Integer.parseInt(dateStr.substring(12,14));
-        int milliSecond 	= Integer.parseInt(dateStr.substring(14));
-	    
-	    cal.set(Calendar.YEAR, year);
-	    cal.set(Calendar.MONTH, month);
-	    cal.set(Calendar.DATE, date);
-	    cal.set(Calendar.HOUR_OF_DAY, hour);
-	    cal.set(Calendar.MINUTE, minute);
-	    cal.set(Calendar.SECOND, second);
-	    cal.set(Calendar.MILLISECOND, milliSecond);
-	    
-	    return cal.getTimeInMillis(); 
-	    
-	}
-	
-	/**
-	 * ³â¿ùÀÏÀÌ³ª ³â¿ùÀÏ½ÃºÐÃÊÀÇ ³¯Â¥ ¹®ÀÚ¿­À» ¹Þ¾Æ¼­ longÇü ½Ã°£À¸·Î º¯È¯ÇÏ¿© ¸®ÅÏÇÑ´Ù. 
-	 * 
-	 * @param dateArg ³¯Â¥ ½ºÆ®¸µ 
-	 * @return
-	 */
-	public static long getTimeInMillis(String dateArg){
-	    int len = dateArg.length();
-	    if (len == 8) {
-	        
-	        return getTimeInMillis(dateArg, "yyyyMMdd");
-	    } else if (len == 14){
-	        return getTimeInMillis(dateArg, "yyyyMMddHHmmss");
-	    } else {
-	        throw new IllegalArgumentException("³¯Â¥ Æ÷¸ËÀº 'yyyyMMdd', 'yyyyMMddHHmmss' µÎ °¡Áö¸¸ °¡´ÉÇÕ´Ï´Ù.");
-	    }//end if else	    
-	}//end of getTimeInMillis()
-	
-	
-	/**
-	 * ³¯Â¥¸¦ ³ªÅ¸³»´Â ¹®ÀÚ¿­À» ÀÎÀÚ·Î ¹Þ¾Æ¼­ java.sql.Date °´Ã¼·Î º¯È¯ÇÏ¿© ¸®ÅÏÇÑ´Ù.
-	 * 
-	 * @param dateArg : yyyyMMdd ¶Ç´Â yyyyMMddHHmmss Æ÷¸ËÀÇ ³¯Â¥¸¦ ³ªÅ¸³»´Â ¹®ÀÚ¿­ 
-	 * @return java.sql.Date °´Ã¼
-	 */
-	public static Timestamp getDate(String dateArg){
-	    return new Timestamp(getTimeInMillis(dateArg));
-	}
-
-	public final static int SIZE_OVER = 100;
-	public final static int TYPE_MISMATCH = 99;
-	public final static int DATE_INCORRECT = 98;
-	public final static int SPACE_INPUT = 97;
-	public final static int OK = 0;
-	public final static int FAIL = -1;
-
-
-	/**
-	 * ¸Å ¿ùÀÇ ÀÏ ¼ö 
-	 */
-	private static int maxdd[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-    
-
-
-
-
-	/**
-	 * doubleÇüÀ» longÇüÀ¸·Î ¹Ù²Ù¾î ÁØ´Ù.¹Ý¿Ã¸²ÇÑ °ªÀ» ¾ò´Â´Ù.
-	 *
-	 * @param d double
-	 * @return long
-	 */
-	public static long dtol(double d){
-		double dtmp = Math.rint(d);
-		return (long)dtmp;
-	} // End of dtol
-
-
-	/**
-	 * doubleÇüÀ» longÇüÀ¸·Î ¹Ù²Ù¾î ÁØ´Ù. 
-	 * ³»¸² Ã³¸®.
-	 * @param d double
-	 * @return long
-	 */
-
-	public static long dtoltrim(double d){
-		double dtmp = Math.floor(d);
-		return (long)dtmp;
-	} // End of dtol
-    
-	/**
-	 * doubleÇüÀ» longÇüÀ¸·Î ¹Ù²Ù¾î ÁØ´Ù. 
-	 * ¹Ý¿Ã¸² Ã³¸®.
-	 * @param d double
-	 * @return long
-	 */
-	public static long dtoltrim_round(double d){
-		double dtmp = Math.round(d);
-		return (long)dtmp;
-	} // End of dtol
-
-
-	/**
-	 * ÁÖ¾îÁø ¼ýÀÚ¸¸Å­ÀÇ °ø¹éÀ¸·Î Ã¤¿öÁø ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param count int
-	 * @return String
-	 * @see #getZero
-	 */ 
-	public static String getString(int count) {
-
-		StringBuffer str = new StringBuffer("") ;
-		for(int i=0 ; i<count ; i++) {
-			str.append(" ") ;
-		}
-
-		return str.toString();
-	} // End of String
-
-
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÌ ÁÖ¾îÁø ±æÀÌ¸¦ °¡Áø ¿À¸¥ÂÊ Á¤·Ä Çü½ÄÀÌ µÇµµ·Ï
-	 * ¹®ÀÚ¿­ ¾Õ¿¡ °ø¹é¹®ÀÚÀ» »ðÀÔÇÑ´Ù.
-	 * CICS COMMAREA¿¡¼­ ¿À¸¥ÂÊ Á¤·ÄµÈ ¹®ÀÚ¿­ ÇÊµå¸¦ ¾ò±âÀ§ÇØ »ç¿ëÇÑ´Ù.
-	 *
-	 * @param str String ¿À¸¥ÂÊ Á¤·ÄÇÒ ¹®ÀÚ¿­
-	 * @param count int  ¿øÇÏ´Â ¹®ÀÚ¿­ÀÇ ±æÀÌ
-	 * @return String    °ø¹é¹®ÀÚ »ðÀÔ¿¡ ÀÇÇØ Á¤·ÄµÈ ¹®ÀÚ¿­
-	 * @see #getZero
-	 */ 
-	public static  String getString(String str,int count) {
-		if(str != null ){
-			for(int i=0 ; i<count ; i++) {
-				if(str.length() == count)break;
-	//          if(str.length() < count)str=" "+str;
-				if(str.length() < count)str=str+" ";
-				if(str.length() > count)str=str.substring(0,count);
-			}
-		}
-		else str = getString(count);
-
-		return str;
-
-	} // End of getString
-
-
-	/**
-	 * ÁÖ¾îÁø Á¤·Ä¹æÇâ¿¡ ¸Â°Ô ÁÖ¾îÁø ¹®ÀÚ¿­ Å©±â°¡ µÇµµ·Ï °ø¹é¹®ÀÚ¸¦ »ðÀÔÇÑ´Ù.
-	 * CICS COMMAREA¿¡¼­ Á¤·ÄµÈ ¹®ÀÚ¿­ ÇÊµå¸¦ ¾ò±âÀ§ÇØ »ç¿ëÇÑ´Ù.
-	 *
-	 * @param str String    Á¤·ÄÇÒ ¹®ÀÚ¿­
-	 * @param count int     ¿øÇÏ´Â ¹®ÀÚ¿­ÀÇ Å©±â
-	 * @param align String  Á¤·Ä ¹æÇâ
-	 *                      ¿ÞÂÊÀº "LEFT", ±×¿Ü´Â ¿À¸¥ÂÊ Á¤·Ä
-	 * @return String       Á¤·ÄµÈ ¹®ÀÚ¿­
-	 * @see #getZero
-	 */ 
-	public static String getString(String str,int count, String align) {
-		if(str != null ){
-			for(int i=0 ; i<count ; i++) {
-				if(str.length() == count)break;
-				if (align.equals("LEFT")) //¿ÞÂÊ 
-					if(str.length() < count)str=str+" ";
-				else           //¿À¸¥ÂÊ 
-					if(str.length() < count)str=" "+str;
-				if(str.length() > count)str=str.substring(0,count);
-			}
-		}
-		else str = getString(count);
-
-		return str;
-
-	} // End of getString
-
-
-	/**
-	 * ÁÖ¾îÁø Å©±â¸¸Å­ '0'À¸·Î Ã¤¿öÁø ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param count int ¹®ÀÚ¿­ÀÇ Å©±â
-	 * @return String   ÁÖ¾îÁø Å©±â¸¸Å­ '0'À¸·Î Ã¤¿öÁø ¹®ÀÚ¿­
-	 * @see #getString
-	 */ 
-	public static String getZero(int count) {
-
-		StringBuffer str = new StringBuffer() ;
-		for(int i=0 ; i<count ; i++) {
-			str.append("0") ;
-		}
-
-		return str.toString();
-
-	} // End of getZero
-
-
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­À» ¿À¸¥ÂÊ Á¤·ÄÇÏ±â À§ÇÏ¿©
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ Å©±â°¡ µÇµµ·Ï ¹®ÀÚ¿­ ¾Õ¿¡ '0'À» »ðÀÔÇÑ´Ù.
-	 * CICS COMMAREA¿¡¼­ ¿À¸¥ÂÊ Á¤·ÄµÈ ¼ýÀÚ ÇÊµå¸¦ ¾ò±â À§ÇØ »ç¿ëÇÑ´Ù.
-	 *
-	 * @param str String
-	 * @param count int
-	 * @return String
-	 * @see #getString
-	 */ 
-	public static String getZero(String str,int count) {
-		if(str != null ){
-			for(int i=0 ; i<count ; i++) {
-				if(str.length() == count)break;
-				if(str.length() < count)str="0"+str;
-				if(str.length() > count)str=str.substring(0,count);
-			}
-		}
-		else str = getZero(count);
-
-		return str;
-	} // End of getZero
-
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­¿¡¼­ ÁÖ¾îÁø ¹®ÀÚ¿­ ÆÐÅÏÀ» Á¦°ÅÇÏ¿© ÁØ´Ù.
-	 *
-	 * @param target String ¼Ò½º ¹®ÀÚ¿­
-	 * @param del String    Á¦°ÅÇÒ ¹®ÀÚ¿­ ÆÐÅÏ
-	 * @return String       ¹®ÀÚ¿­ ÆÐÅÏÀÌ Á¦°ÅµÈ ¹®ÀÚ¿­
-	 */
-	public static String delString(String target,String del) {
-		String retval = new String();
-		int strlen ;
-		int idx = 0;
-		int i = 0;
-
-		if(target == null)
-			return target;
-
-		try{
-			strlen = target.length();
-			if(strlen == 0 )
-				return target;
-			while( idx < strlen ){
-				idx = target.indexOf(del, i);
-				if(idx < 0){
-					idx = strlen;
-				}
-				if(idx > strlen){
-					idx = strlen;
-				}
-				retval += target.substring(i, idx);
-				i = idx+del.length();
-			}
-		}catch(java.lang.StringIndexOutOfBoundsException e){
-			e.printStackTrace();
-		}catch(java.lang.Exception e){
-			e.printStackTrace();
-		}
-
-		return retval;
-	} // End of delString
-
-
-	/**
-	 * ±Ý¾× ÇÊµå¿Í °°ÀÌ ¹®ÀÚ¿­¿¡ Ãµ´ÜÀ§ Ç¥½Ã(,)°¡ ÀÖ´Â °æ¿ì
-	 * ±Ý¾×À» ¼ýÀÚ·Î Ã³¸®ÇÏ±â À§ÇØ¼­ ¹®ÀÚ¿­¿¡¼­ ½°Ç¥(,)°¡ Á¦°ÅµÇ¾î¾ß ÇÑ´Ù.
-	 * ÀÌ·± °æ¿ì¿¡ ±Ý¾× ÇÊµå·Î Ã³¸®µÈ ¹®ÀÚ¿­À» ¸Å°³º¯¼ö·Î ÇÏ¿© 
-	 * ½°Æ÷(,)°¡ Á¦°ÅµÈ ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target String Ãµ´ÜÀ§ Ç¥½Ã°¡ Æ÷ÇÔµÈ ¹®ÀÚ¿­
-	 * @return String       Ãµ´ÜÀ§ Ç¥½Ã°¡ Á¦°ÅµÈ ¹®ÀÚ¿­
-	 * @see #getComma
-	 */ 
-	public static String delString(String target) {
-
-		return delString(target,","); 
-
-	} // End of delString
-    
-
-	/**
-	 * ÁÖ¾îÁø ¿¬µµ°¡ À±³âÀÎÁö ¿©ºÎ¸¦ ÆÇ´ÜÇÑ´Ù.
-	 *
-	 * @param year int  ³âµµ
-	 * @return boolean  À±³âÀÎÁö ¾Æ´ÑÁö ¿©ºÎ
-	 */ 
-	public static  boolean isLeapYear( int year) {
-		if( (year % 4 == 0) && ( year % 100 != 0 ) || ( year % 400 == 0) ){
-			return true;
-		}else {
-			return false;
-		}
-	} // End of isLeapYear
-
-	
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ µÞºÎºÐ¿¡ ÀÖ´Â '0'¹®ÀÚ¸¦ Á¦°ÅÇÑ´Ù.
-	 * È£½ºÆ®·ÎºÎÅÍ Àü´Þ¹ÞÀº ½Ç¼öÇü Á¤¼öÀÇ ¼Ò¼öÁ¡ ÀÚ¸®Áß ¸Ç ÇÏÀ§°ªÀÌ 0ÀÏ °æ¿ì »èÁ¦ÇÏ´Âµ¥ »ç¿ëÇÑ´Ù.
-	 *
-	 * @param str String    µÚ¿¡ 0ÀÌ Ã¤¿öÁø ½Ç¼öÇü ¹®ÀÚ¿­
-	 * @return String       µÚ¿¡ Ã¤¿öÁø '0'ÀÌ Á¦°ÅµÈ ¹®ÀÚ¿­
-	 */ 
-	public static String trimRZero(String str) {
-		String retval = new String();
-
-		try{
-			retval = str.trim();
-			if (retval == null || retval.equals("") || retval.length() == 0){
-				return "";
-			}
-			
-			if( retval.substring(retval.length()-1).equals("0")){
-				for(int i= retval.length(); i > 0 ; i--){
-					if(retval.substring(retval.length()-1).equals("0") ){
-						retval = retval.substring(0,retval.length()-1);
-					}else{
-						break;
-					}
-				}
-			}
-
-		}catch(Exception e){
-			System.err.println("error :trimRZero() in UtilFmt : "+e.toString());
-		}
-		return retval;  
-	} 
-	
-	
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ ¾ÕºÎºÐ¿¡ ÀÖ´Â '0'¹®ÀÚ¸¦ Á¦°ÅÇÑ´Ù.
-	 * È£½ºÆ®·ÎºÎÅÍ Àü´Þ¹ÞÀº CICS COMMAREAÀÇ ¼ýÀÚ ÇÊµåÀÎ °æ¿ì¿¡ ¾ÕºÎºÐ¿¡ Ã¤¿öÁø '0'À» Á¦°ÅÇÏ±âÀ§ÇØ »ç¿ëµÉ ¼ö ÀÖ´Ù.
-	 *
-	 * @param str String    ¾Õ¿¡ 0ÀÌ Ã¤¿öÁø (¿À¸¥ÂÊ Á¤·ÄµÈ) ¹®ÀÚ¿­
-	 * @return String       ¾Õ¿¡ Ã¤¿öÁø '0'ÀÌ Á¦°ÅµÈ ¹®ÀÚ¿­
-	 */ 
-	public static String trimZero(String str) {
-		String retval = new String();
-
-		try{
-			retval = str.trim();
-			if (retval == null || retval.equals("") || retval.length() == 0){
-				return "";
-			}
-			if( retval.substring(0,1).equals("0")){
-				int cnt = retval.length();
-				for(int i= 0; i< cnt ; i++){
-					if(retval.substring(0,1).equals("0") ){
-						retval = retval.substring(1);
-					}else{
-						break;
-					}
-				}
-			}
-
-		}catch(Exception e){
-			System.err.println("error :trimZero() in UtilFmt : "+e.toString());
-		}
-
-		return retval;  
-
-	} // End of trimZero
-	
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ ¾ÕºÎºÐ¿¡ ÀÖ´Â '0'¹®ÀÚ¸¦ Á¦°ÅÇÑ´Ù.
-	 * È£½ºÆ®·ÎºÎÅÍ Àü´Þ¹ÞÀº CICS COMMAREAÀÇ ¼ýÀÚ ÇÊµåÀÎ °æ¿ì¿¡ ¾ÕºÎºÐ¿¡ Ã¤¿öÁø '0'À» Á¦°ÅÇÏ±âÀ§ÇØ »ç¿ëµÉ ¼ö ÀÖ´Ù.
-	 * '0'À» Á¦°ÅÇÑ ¹®ÀÚ¿­ÀÌ ''ÀÏ °æ¿ì¿¡ default°ªÀ» ³Ñ°ÜÁØ´Ù
-	 *
-	 * @param str String    ¾Õ¿¡ 0ÀÌ Ã¤¿öÁø (¿À¸¥ÂÊ Á¤·ÄµÈ) ¹®ÀÚ¿­
-	 * @param deflt         default °ª
-	 * @return String       ¾Õ¿¡ Ã¤¿öÁø '0'ÀÌ Á¦°ÅµÈ ¹®ÀÚ¿­ '0'À» Á¦°ÅÇÑ ¹®ÀÚ¿­ÀÌ ''ÀÏ °æ¿ì¿¡ default°ªÀ» ³Ñ°ÜÁØ´Ù
-	 */ 
-//	public static String trimZero(String str, String deflt) {
+//    /**
+//     * ï¿½Ô·Âµï¿½ Formatï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ ï¿½ï¿½Â¥ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) getFormattedDate("200102042345","yyyyMMddhhmm","yyyy/MM/dd hh:mm a")<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) 2002/09/30 11:45 ï¿½ï¿½ï¿½ï¿½<BR><BR>
+//     *
+//     * Formatï¿½ï¿½ J2SEï¿½ï¿½ SimpleDateFormatï¿½ï¿½ Documentationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//     *
+//     * @param pIndate String
+//     * @param pInformat String
+//     * @param pOutformat String
+//     * @return String
+//     */
+//    public static String getFormattedDate( String pIndate, String pInformat, String pOutformat )
+//    {
+//            
+//    	if("00000000".equals(pIndate)) return "";
+//    	
+//    		//ksh ï¿½ï¿½ï¿½ï¿½ ::DateFormatUtilsï¿½Ì¿ï¿½
+//    	
+//    		SimpleDateFormat pInformatter =  new SimpleDateFormat ( pInformat, java.util.Locale.KOREA );
+//            //SimpleDateFormat pOutformatter =  new SimpleDateFormat ( pOutformat, java.util.Locale.KOREA );
+//
+//            String rDateString = "";
+//            Date vDate = null;
+//
+//            try
+//            {
+//                    vDate = pInformatter.parse( pIndate );
+//                    //rDateString = pOutformatter.format( vDate );
+//                    rDateString = DateFormatUtils.format(vDate, pOutformat, java.util.Locale.KOREA );
+//            }
+//            catch( Exception e )
+//            {
+//                    rDateString = pIndate;
+//            }
+//
+//            return rDateString;
+//    }
+//
+//    /**
+//    * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ diffï¿½ï¿½Å­ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½) ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ ï¿½ï¿½Â¥ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//    *
+//    * ï¿½ï¿½ë¿¹) getEvalDate( "20021001", -1 )<BR>
+//    * ï¿½ï¿½ ï¿½ï¿½ ) 2002/09/30<BR><BR>
+//    *
+//    * Formatï¿½ï¿½ J2SEï¿½ï¿½ SimpleDateFormatï¿½ï¿½ Documentationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//    *
+//    * @param date String
+//    * @param diff int
+//    * @return String
+//    */
+//    public static String getEvalDate( String date, int diff )
+//    {
+//        //String evalDate = null;
+//
+//        //SimpleDateFormat formatter = new SimpleDateFormat( "yyyyMMdd" );
+//        Calendar today = Calendar.getInstance();
+//
+//        today.set( Integer.parseInt( date.substring( 0, 4 ) ), Integer.parseInt( date.substring( 4, 6 ) ) - 1, Integer.parseInt( date.substring( 6 ) ) );
+//        today.add( Calendar.DATE, diff );
+//        
+//        //ksh ï¿½ï¿½ï¿½ï¿½
+//        //evalDate = formatter.format( today.getTime() );
+//        //return evalDate;
+//        return DateFormatUtils.format(today.getTime(), "yyyyMMdd");
+//    }
+//
+//    /**
+//     * ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.
+//     * ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.<BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) getFormattedMoney("200102042345")<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) 200,102,042,345<BR><BR>
+//     *
+//     * @param pInstr String
+//     * @return String
+//     */
+//    public static String getFormattedMoney( String pInstr )
+//    {
+//        if(pInstr ==null || pInstr.equals("") || pInstr.equals("null")){
+//            return null;
+//        }   	
+//    		pInstr = parseSignedAmount(pInstr)+"";
+//            String rStr = getFormattedMoney( Long.parseLong( pInstr ) );
+//
+//            return rStr;
+//    }
+//    
+//    /**
+//     * ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½Å­ ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ç¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ - ï¿½ï¿½ ï¿½ï¿½ï¿½ -ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+//     * ï¿½ï¿½ë¿¹) 
+//     * getIndexFloatMoney("1234000,2) ï¿½ï¿½ï¿½ : 12,340
+//     * getIndexFloatMoney("+1234010,2) ï¿½ï¿½ï¿½ : 12,340.1
+//     * getIndexFloatMoney("-1234078,2) ï¿½ï¿½ï¿½ : -12,340.78
+//     * 
+//     * @param str : String
+//     * @param len : Stirng ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½Ì´ï¿½.
+//     * @return String
+//     */
+//    public static String getIndexFloatMoney(String str, int len){
+//    	String ret = new String();
+//    	str = str.trim();
+//    	if(str == null || str.length()==0) return null;
+//    	if(str.length() < len) return str;
+//    	
+//    	String high = str.substring(0,str.length()-len);
+//    	String low = str.substring(str.length()-len);
+// 
+//    	high = getFormattedMoney(high);
+//    	low = trimRZero(low);
+//
+//    	if(low.length() != 0) 
+//    	{
+//    		ret = high+"."+low; 
+//    	}else {
+//    		ret = high;
+//    	}
+//    	return ret;
+//    }
+//    
+//	/**
+//	 * ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ 2ï¿½ï¿½Å­ ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ç¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ - ï¿½ï¿½ ï¿½ï¿½ï¿½ -ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ë¿¹) 
+//	 * getIndexFloatMoney("1234000) ï¿½ï¿½ï¿½ : 12,340.00
+//	 * getIndexFloatMoney("+1234010) ï¿½ï¿½ï¿½ : 12,340.10
+//	 * getIndexFloatMoney("-1234078) ï¿½ï¿½ï¿½ : -12,340.78
+//	 * 
+//	 * @param str : String
+//	 * @return String
+//	 */
+//	public static String getFormattedIndextMoney(String str){
+//		return getFormattedIndextMoney(str, 2);
+//	}
+//	
+//	/**
+//	 * ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Î¹ï¿½Â° ï¿½ï¿½ï¿½Ú¸ï¿½Å­ ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ç¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ - ï¿½ï¿½ ï¿½ï¿½ï¿½ -ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ë¿¹) 
+//	 * getIndexFloatMoney("1234000,2) ï¿½ï¿½ï¿½ : 12,340.00
+//	 * getIndexFloatMoney("+1234010,2) ï¿½ï¿½ï¿½ : 12,340.10
+//	 * getIndexFloatMoney("-1234078,2) ï¿½ï¿½ï¿½ : -12,340.78
+//	 * 
+//	 * @param str : String
+//	 * @param len : Stirng ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½Ì´ï¿½.
+//	 * @return String
+//	 */
+//	public static String getFormattedIndextMoney(String str, int len){
+//		str = str.trim();
+//		if(str == null || str.length()==0) return null;
+//		if(str.length() < len) return str;
+//
+//		int index = str.indexOf('.');
+//		if(index != -1){
+//			str = getFormattedMoney(str);
+//		}else{
+//			String high = str.substring(0,str.length()-len);
+//			String low = str.substring(str.length()-len);
+//			high = getFormattedMoney(high);
+//
+//			str = high+"."+low; 
+//		}
+//		return str;
+//	}	    
+//    
+//    /**
+//     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ ï¿½Ø´ï¿½È´ï¿½.
+//     * ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.<BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) getFormattedNumber("200102042345","'$'####,####0")<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) $20,01020,42345<BR><BR>
+//     *
+//     * Formatï¿½ï¿½ J2SEï¿½ï¿½ MessageFormatï¿½ï¿½ Documentationï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//     *
+//     * @param pInstr String
+//     * @param pInformat String
+//     * @return String
+//     */
+//    public static String getFormattedNumber( String pInstr, String pInformat )
+//    {
+//            String rStr = pInstr;
+//
+//            try
+//            {
+//                    Object[] testArgs = {new Long( pInstr )};
+//                    MessageFormat form = new MessageFormat( "{0,number,"+pInformat+"}" );
+//                    rStr =  form.format( testArgs );
+//            } catch ( Exception e ) {}
+//
+//            return rStr;
+//    }
+//
+//    /**
+//     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Formatï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½. <BR><BR>
+//     *
+//     * ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú´ï¿½ '#'ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½È´ï¿½. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Æ¹ï¿½ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+//     * ï¿½×·ï¿½ï¿½Ç·ï¿½ '#'ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.
+//     * ï¿½ï¿½È£È­ Ã³ï¿½ï¿½ ï¿½Ç¾ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú´ï¿½ *ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½Ñ´ï¿½( ex)******-#######)
+//     * ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ Formatï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½ Formatï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ï¿½ï¿½ ï¿½È´ï¿½.
+//     * Formatï¿½ï¿½ ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Å­ï¿½ï¿½ ï¿½ï¿½ÂµÈ´ï¿½.
+//     *
+//     * @param pInstr ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½String
+//     * @param pInformat ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½String(######-######} ï¿½ï¿½
+//     * @return String
+//     */
+//    public static String getFormattedText( String pInstr, String pInformat )
+//    {
+//            StringBuffer rStr = new StringBuffer();
+//
+//            try {
+//                    for ( int i = 0, j = 0 ; pInstr != null && !pInstr.equals("") && i < pInformat.length() ; i ++ ) {
+//                            if ( pInformat.charAt(i) == '#' ) {
+//                                    rStr.append( pInstr.charAt( j ) );
+//                                    j++;
+//                            } else if ( pInformat.charAt(i) == '*' ) {
+//                                    rStr.append( pInformat.charAt( i ) );
+//                                    j++;
+//                            }
+//                            else {
+//                                    rStr.append( pInformat.charAt( i ) );
+//                            }
+//                    }
+//            }
+//            catch ( Exception e ) {};
+//
+//            return rStr.toString().trim();
+//    }
+//
+//    /**
+//    * ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.
+//    * ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.<BR><BR>
+//    *
+//    * ï¿½ï¿½ë¿¹) getFormattedMoney(200102042345)<BR>
+//    * ï¿½ï¿½ ï¿½ï¿½ ) 200,102,042,345<BR><BR>
+//    *
+//    * @param pInstr long
+//    * @return String
+//    */
+//    public static String getFormattedMoney( long pInstr )
+//    {
+//        String rStr = "" + pInstr;
+//
+//         try
+//         {
+//             Object[] testArgs = {new Long( rStr )};
+//             MessageFormat form = new MessageFormat( "{0,number,###,###,###,##0}" );
+//             rStr = form.format( testArgs );
+//         }
+//         catch ( Exception e ) {}
+//
+//         return rStr;
+//        }
+//
+//    /**
+//    * ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â·ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//    * ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.<BR><BR>
+//    *
+//    * ï¿½ï¿½ë¿¹) getFormattedNumber(1, "00000")<BR>
+//    * ï¿½ï¿½ ï¿½ï¿½ ) "00001"<BR><BR>
+//    *
+//    * @param pInstr long
+//    * @return String
+//    */
+//    public static String getFormmatedNumber( long num, String format ) {
+//        StringBuffer formattedNum = new StringBuffer();
+//        String strNum = "" + num;
+//
+//        try {
+//            for ( int i=0 ; i < format.length()-strNum.length(); i++ ) {
+//                formattedNum.append(format.charAt(i));
+//            }
+//            formattedNum.append(strNum);
+//        } catch ( Exception e ) {};
+//
+//        return formattedNum.toString();
+//    }
+//
+//    /**
+//     * ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.
+//     * ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.<BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) getFormattedMoney(200102042345)<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) 200,102,042,345<BR><BR>
+//     *
+//     * @param pInstr double
+//     * @return String
+//     */
+//    public static String getFormattedMoney(double pInstr)
+//    {
+//        String rStr = "" + pInstr;
+//
+//        try
+//        {
+//            Object[] testArgs = {new Double( rStr )};
+//            MessageFormat form = new MessageFormat( "{0,number,###,###,###,##0}" );
+//            rStr = form.format( testArgs );
+//        }
+//        catch ( Exception e ) {}
+//
+//        return rStr;
+//    }
+//
+//    /**
+//     * Æ¯ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ pattern subStringï¿½ï¿½ replace ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½
+//     *	ï¿½ï¿½Ä¡ï¿½Ñ´ï¿½.
+//     *
+//     * ï¿½ï¿½ë¿¹) replace("2002-02-10", "-", "/")<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "2002/02/10"<BR><BR>
+//     *
+//     * @return String
+//     */
+//    public static String replace(String str, String pattern, String replace) {
+//        int s = 0, e = 0;
+//        StringBuffer result = new StringBuffer();
+//
+//        while ((e = str.indexOf(pattern, s)) >= 0) {
+//            result.append(str.substring(s, e));
+//            result.append(replace);
+//            s = e+pattern.length();
+//        }
+//
+//        result.append(str.substring(s));
+//        return result.toString();
+//    }
+//    
+//
+//
+//
+//        /**
+//        * ï¿½Ø´ç¹®ï¿½Ú¿ï¿½ï¿½ï¿½ ltrim, rtrim ï¿½Ñ´ï¿½. <BR><BR>
+//        *
+//        * ï¿½ï¿½ë¿¹) trim("  spaces  " )<BR>
+//        * ï¿½ï¿½ ï¿½ï¿½ ) "spaces"<BR><BR>
+//        *
+//        * @param pInstr String
+//        * @return String trimï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//        */
+//       /*
+//    public static String trim(String pInstr) {
+//        int st = 0;
+//        char[] val = pInstr.toCharArray();
+//        int count = val.length;
+//        int len = count;
+//
+//        while ((st < len) && ((val[st] <= ' ') || (val[st] == 'ï¿½ï¿½') ) ){
+//            st++;
+//        }
+//        while ((st < len) && ((val[len - 1] <= ' ') || (val[len-1] == 'ï¿½ï¿½'))){
+//            len--;
+//        }
+//
+//        return ((st > 0) || (len < count)) ? pInstr.substring(st, len) : pInstr ;
+//
+//    }
+//*/
+//    /**
+//    * LT Typeï¿½ï¿½ BIC Typeï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½. <BR><BR>
+//    *
+//    * ï¿½ï¿½ë¿¹) makeLt2Bic("KOEXKRS0X" )<BR>
+//    * ï¿½ï¿½ ï¿½ï¿½ ) "KOEXKRS0"<BR><BR>
+//    *
+//    * @param pInstr String
+//    * @return String trimï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//    */
+//    public static String makeLt2Bic(String input){
+//      String ret = input;
+//      if(input.length()>11) {
+//        ret = input.substring(0,8) + input.substring(9,12);
+//      }
+//      return ret;
+//    }
+//
+//    /**
+//     * BIC Typeï¿½ï¿½ LT Typeï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½. <BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) makeBic2Lt("KOEXKRS0X", "A" )<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "KOEXKRS0A"<BR><BR>
+//     *
+//     * @param pInstr String
+//     * @return String trimï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//     */
+//    public static String makeBic2Lt(String input, String terminalCode){
+//
+//      String ret = input;
+//
+//      if( input==null )
+//           return "";
+//
+//       if( input.length()==8 ){
+//           ret = input +terminalCode+"XXX";
+//       }else if(input.length()==11) {
+//           ret = input.substring(0,8) + terminalCode + input.substring(8);
+//       }else{
+//           ret = input.substring(0,8) + terminalCode + "XXX";
+//       }
+//
+//       return ret;
+//
+//    }
+//
+//    /**
+//     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½ï¿½Å­ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½
+//     * ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.<BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) makeTemplateString(5, 'A')<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "AAAAA"<BR><BR>
+//     *
+//     * @param size int ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * @param initialChar ï¿½Ê±ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½â¸¸Å­ ï¿½Ê±ï¿½È­ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//     */
+//    public static String makeTemplateString(int size, char initialChar) {
+//        StringBuffer buffer = new StringBuffer();
+//        for (int i = 0; i < size; i++) {
+//            buffer.append(initialChar);
+//        }//end for
+//        return buffer.toString();
+//    }//end of makeTemplateString()
+//
+//    /**
+//     * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(getBytes() ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½
+//     * ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½âº¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ padding char ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½Å­ ï¿½ï¿½ï¿½Ê¿ï¿½ ï¿½ß°ï¿½ï¿½Õ´Ï´ï¿½.<BR>
+//     * ï¿½ï¿½, ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½âº¸ï¿½ï¿½ Å¬ ï¿½ï¿½ï¿½,
+//     * ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ÎºÐºï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½Å­ï¿½ï¿½ ï¿½ß·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÏµË´Ï´ï¿½.<BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) lPadding("A", 3, '0')<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "00A"<BR><BR>
+//     * ï¿½ï¿½ë¿¹) lPadding("ABCD", 3, '0')<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "ABC"<BR><BR>
+//     *
+//     * @param src padding ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//     * @param size padding ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * @param paddingChar padding ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * @return padding ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//     */
+//	public static String lPadding(String src, int size, char paddingChar) {
+//
+//		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½, ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ãµï¿½ ï¿½Îºï¿½ï¿½ï¿½,
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½.
+//
+//		int srcLength = 0;
+//		byte [] srcBytes;
+//		if (src == null) {
+//			StringBuffer result = new StringBuffer();
+//			for (int i = 0; i < size; i++) {
+//				result.append(paddingChar);
+//			}//end for
+//			return result.toString();
+//		} else {
+//            srcBytes = src.getBytes();
+//			srcLength = srcBytes.length;
+//		}//end if else
+//		if (size == srcLength) {
+//			return src;
+//		} else if (size < srcLength) {
+//			//return new String(srcBytes, 0, size) ;
+//			
+//			// >>> * 2011-12-07 ï¿½ï¿½Ã¶ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ padding ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ? ï¿½ï¿½ Ç¥ï¿½ÃµÇ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+//			boolean isFront = isFront2ByteString(srcBytes, size);	// ï¿½ï¿½ï¿½ï¿½(2byteï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÕºÎºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½
+//			if(isFront) return paddingChar + new String(srcBytes, 0, size-1);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾ÕºÎºï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, SPACEÃ³ï¿½ï¿½
+//			else 		return new String(srcBytes, 0, size);
+//			// <<< * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. 
+//		}//end if else
+//		int paddingCount = size - srcLength;
+//		StringBuffer result = new StringBuffer();
+//		for (int i = 0; i < paddingCount; i++) {
+//			result.append(paddingChar);
+//		}//end for
+//		result.append(src);
+//		return result.toString();
+//	}//end of lPadding()
+//
+//	
+//	/**
+//	 * 2byteï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ indexï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½/ï¿½Ú¸ï¿½ ï¿½Ç´ï¿½
+//	 * @param str
+//	 * @param size
+//	 * @return
+//	 */
+//	private static boolean isFront2ByteString(byte[] srcBytes, int index) {
+//		boolean isFront = false;
+//		for (int i = 0; i < index; i++) {
+//			byte now = srcBytes[i];
+//			if(((int)now & 0x80) != 0) {	// 0x80!=0   -> 2byteï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½(asciiï¿½ï¿½ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)
+//				isFront = isFront ? false : true;
+//				//if(isFront) System.out.print("ï¿½ï¿½");//else 		  System.out.print("ï¿½ï¿½");
+//			}
+//		}
+//		return isFront;
+//	}
+//	
+//    /**
+//     * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(getBytes() ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½
+//     * ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½âº¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ padding char ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ï¿½Ê¿ï¿½ ï¿½ß°ï¿½ï¿½Õ´Ï´ï¿½.<BR><BR>
+//     *
+//     * ï¿½ï¿½ë¿¹) lPadding("A", 3, '0')<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "A00"<BR><BR>
+//     * ï¿½ï¿½ë¿¹) lPadding("ABCD", 3, '0')<BR>
+//     * ï¿½ï¿½ ï¿½ï¿½ ) "ABC"<BR><BR>
+//     *
+//     * @param src padding ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//     * @param size padding ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * @param paddingChar padding ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//     * @return padding ï¿½ï¿½ ï¿½Ï·ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//     */
+//	public static String rPadding(String src, int size, char paddingChar) {
+//
+//		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½, ï¿½Æ·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ãµï¿½ ï¿½Îºï¿½ï¿½ï¿½,
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½.
+//		int srcLength = 0;
+//		byte [] srcBytes;
+//		if (src == null) {
+//			StringBuffer result = new StringBuffer();
+//			for (int i = 0; i < size; i++) {
+//				result.append(paddingChar);
+//			}//end for
+//			return result.toString();
+//		} else {
+//            srcBytes = src.getBytes();
+//			srcLength = srcBytes.length;
+//		}//end if else
+//		
+//		if (size == srcLength) {
+//			return src;
+//		}
+//		
+//		// >>> * 2011-12-07 ï¿½ï¿½Ã¶ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ padding ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ? ï¿½ï¿½ Ç¥ï¿½ÃµÇ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+//		else if (size < srcLength) {
+//			//return new String(srcBytes, 0, size)   + paddingChar;
+//			boolean isFront = isFront2ByteString(srcBytes, size);	// ï¿½ï¿½ï¿½ï¿½(2byteï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÕºÎºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½
+//			if(isFront) return new String(srcBytes, 0, size-1) + paddingChar;	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¾ÕºÎºï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, SPACEÃ³ï¿½ï¿½
+//			else 		return new String(srcBytes, 0, size);
+//		}
+//		// <<< * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. 
+//		
+//		int paddingCount = size - srcLength;
+//		StringBuffer result = new StringBuffer();
+//		result.append(src);
+//		for (int i = 0; i < paddingCount; i++) {
+//			result.append(paddingChar);
+//		}//end for
+//		return result.toString();
+//	}//end of rPadding()
+//	
+//	
+//	/**
+//	 * padding Ã³ï¿½ï¿½
+//	 * @param src paddingï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param size ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ñ±ï¿½ï¿½ï¿½
+//	 * @param paddingChar Paddingï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @param rightOrLeft "left" : left Padding , "Right" : right Padding.
+//	 * @return padding Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String padding(String src, int size, char paddingChar,String rightOrLeft){
+//		if("left".equals(rightOrLeft)){
+//			return lPadding(src, size, paddingChar);
+//		}else{
+//			return rPadding(src, size, paddingChar);
+//		}
+//	}
+//	
+//	/**
+//	 * space padding Ã³ï¿½ï¿½
+//	 * @param src paddingï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param size ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ñ±ï¿½ï¿½ï¿½
+//	 * @param rightOrLeft "left" : left Padding , "Right" : right Padding.
+//	 * @return padding Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String padding(String src, int size, String rightOrLeft){
+//		char paddingChar=' ';
+//		if("left".equals(rightOrLeft)){
+//			return lPadding(src, size, paddingChar);
+//		}else{
+//			return rPadding(src, size, paddingChar);
+//		}
+//	}
+//	
+//	/**
+//	 * defaultï¿½ï¿½ leftï¿½ï¿½ '0'ï¿½ï¿½ padding Ã³ï¿½ï¿½
+//	 * @param src
+//	 * @return
+//	 */
+//	public static String numberPadding(String src, int size){
+//		char paddingChar='0';
+//		return lPadding(src, size, paddingChar);		
+//	}
+//	
+//	/**
+//	 * defaultï¿½ï¿½ leftï¿½ï¿½ '0'ï¿½ï¿½ padding Ã³ï¿½ï¿½
+//	 * @param src
+//	 * @return
+//	 */
+//	public static String longPadding(long num, int size){
+//		String src = Long.toString(num);
+//		char paddingChar='0';
+//		return lPadding(src, size, paddingChar);
+//		
+//	}
+//	
+//	/**
+//	 * defaultï¿½ï¿½ leftï¿½ï¿½ '0'ï¿½ï¿½ padding Ã³ï¿½ï¿½. 
+//	 * <font color=red>ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½Ê´Â´ï¿½.</font>
+//	 * @param src
+//	 * @param size ï¿½ï¿½Ã¼ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @param sosuSize ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @return
+//	 */
+////	public static String doublePadding(double num, int size,int sosuSize){
+////		return doublePadding(num,size,sosuSize,'0');
+////	}
+//	
+//	/**
+//	 * defaultï¿½ï¿½ leftï¿½ï¿½ '0'ï¿½ï¿½ padding Ã³ï¿½ï¿½. 
+//	 * <font color=red>ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ ï¿½Ê´Â´ï¿½.</font>
+//	 * @param src
+//	 * @param size ï¿½ï¿½Ã¼ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @param sosuSize ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @return
+//	 */
+////	public static String doublePadding(double num, int size,int sosuSize,char paddingChar){
+////		String src = new BigDecimal(num).toString();
+////		String[] splited = StringUtil.splitDouble(src);
+////		if(splited[0].length() > size-sosuSize){
+////			throw new SysException("ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµË´Ï´ï¿½.");
+////		}
+////		String longPart = lPadding(splited[0],size-sosuSize,paddingChar);
+////		String sosuPart = rPadding(splited[1],sosuSize,paddingChar);		
+////		return longPart+sosuPart;
+////	}
+//	
+//	/**
+//	 * defaultï¿½ï¿½ leftï¿½ï¿½ '0'ï¿½ï¿½ padding Ã³ï¿½ï¿½. 
+//	 * <font color=red>ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.</font>
+//	 * @param src
+//	 * @param size ï¿½ï¿½Ã¼ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @param sosuSize ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @return
+//	 */
+////	public static String doubleDotPadding(double num, int size,int sosuSize){
+////		return doubleDotPadding( num,  size, sosuSize, '0');
+////	}
+//	
+//	/**
+//	 * defaultï¿½ï¿½ leftï¿½ï¿½ '0'ï¿½ï¿½ padding Ã³ï¿½ï¿½. 
+//	 * <font color=red>ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.</font>
+//	 * @param src
+//	 * @param size ï¿½ï¿½Ã¼ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @param sosuSize ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ 
+//	 * @return
+//	 */
+////	public static String doubleDotPadding(double num, int size,int sosuSize,char paddingChar){
+////        String src = new BigDecimal(num).toString();
+////		String[] splited = StringUtil.splitDouble(src);
+////		if(splited[0].length() > size-sosuSize-1){
+////			throw new SysException("ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµË´Ï´ï¿½.");
+////		}
+////		String longPart = lPadding(splited[0],size-sosuSize-1,paddingChar);
+////		String sosuPart = rPadding(splited[1],sosuSize,paddingChar);		
+////		return longPart+"."+sosuPart;
+////	}
+//	
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ 0x1F(US:UNIT SEPARATOR) ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+//	 * 
+//	 * @param src ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return ï¿½ï¿½ ï¿½Ú¿ï¿½ 0x1F ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String append0x1f(String src) {
+//	    return new String(append0x1f(src.getBytes()));
+//	}//end of append0x1f()
+//	
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ byte [] ï¿½ï¿½ 0x1F(US:UNIT SEPARATOR) ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+//	 * 
+//	 * ï¿½ï¿½ï¿½ï¿½) String Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ trim() ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Øµï¿½ control character ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï³ï¿½,
+//	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ control character0x1F(US:UNIT SEPARATOR) ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½,
+//	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+//	 * 
+//	 * @param src ï¿½ï¿½ï¿½ byte []
+//	 * @return ï¿½ï¿½ ï¿½Ú¿ï¿½ 0x1F ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ byte []
+//	 */
+//	public static byte [] append0x1f(byte [] src) {
+//	    byte [] result = new byte[src.length + 1];
+//	    
+//	    System.arraycopy(src, 0, result, 0, src.length);
+//	    result[src.length] = 0x1f;
+//	    
+//	    return result;
+//	}//end of append0x1f()
+//	
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½Ö´ï¿½ 0x1F(US:UNIT SEPARATOR) ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+//	 * 
+//	 * @param src ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return ï¿½ï¿½ ï¿½Ú¿ï¿½ 0x1F ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String removeTail0x1f(String src) {
+//	    return new String(removeTail0x1f(src.getBytes()));
+//	}//end of removeTail0x1f()
+//	
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ byte [] ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½Ö´ï¿½ 0x1F(US:UNIT SEPARATOR) ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
+//	 * 
+//	 * @param src ï¿½ï¿½ï¿½ byte []
+//	 * @return ï¿½ï¿½ ï¿½Ú¿ï¿½ 0x1F ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ byte []
+//	 */
+//	public static byte [] removeTail0x1f(byte [] src) {
+//	    if (src[src.length - 1] != 0x1f) {
+//	        return src;
+//	    }//end if
+//	    
+//	    byte [] result = new byte[src.length - 1];	    
+//	    System.arraycopy(src, 0, result, 0, src.length - 1);	    
+//	    return result;
+//	}//end of removeTail0x1f()
+//
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½ trimï¿½Õ´Ï´ï¿½.
+//	 * @param str String ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½ trimï¿½ï¿½ ï¿½ï¿½ï¿½Ï°ï¿½
+//	 */
+//	public static String TRIM( String str ){
+//	    String tmpStr="";
+//	
+//	    if( str == null ) return "";
+//	
+//	    tmpStr = str.trim();
+//	
+//	    return tmpStr;
+//	}
+//	
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¼ï¿½ longï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. 
+//	 * 
+//	 * @param dateArg ï¿½ï¿½Â¥ ï¿½ï¿½Æ®ï¿½ï¿½ 
+//	 * @param dateFormat ï¿½ï¿½Â¥ ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½) yyyy-MM-dd HH:mm:ss
+//	 * @return
+//	 */
+//	public static long getTimeInMillis(String dateArg, String dateFormat){
+//	    
+//	    Calendar cal = Calendar.getInstance();
+//	    String dateStr = getFormattedDate(dateArg, dateFormat, "yyyyMMddHHmmssSSS");
+//	    
+//	    int year 	= Integer.parseInt(dateStr.substring(0,4));
+//	    int month 	= Integer.parseInt(dateStr.substring(4,6))-1;
+//	    int date 	= Integer.parseInt(dateStr.substring(6,8));
+//	    int hour 	= Integer.parseInt(dateStr.substring(8,10));
+//        int minute 	= Integer.parseInt(dateStr.substring(10,12));
+//        int second 	= Integer.parseInt(dateStr.substring(12,14));
+//        int milliSecond 	= Integer.parseInt(dateStr.substring(14));
+//	    
+//	    cal.set(Calendar.YEAR, year);
+//	    cal.set(Calendar.MONTH, month);
+//	    cal.set(Calendar.DATE, date);
+//	    cal.set(Calendar.HOUR_OF_DAY, hour);
+//	    cal.set(Calendar.MINUTE, minute);
+//	    cal.set(Calendar.SECOND, second);
+//	    cal.set(Calendar.MILLISECOND, milliSecond);
+//	    
+//	    return cal.getTimeInMillis(); 
+//	    
+//	}
+//	
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Þ¾Æ¼ï¿½ longï¿½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. 
+//	 * 
+//	 * @param dateArg ï¿½ï¿½Â¥ ï¿½ï¿½Æ®ï¿½ï¿½ 
+//	 * @return
+//	 */
+//	public static long getTimeInMillis(String dateArg){
+//	    int len = dateArg.length();
+//	    if (len == 8) {
+//	        
+//	        return getTimeInMillis(dateArg, "yyyyMMdd");
+//	    } else if (len == 14){
+//	        return getTimeInMillis(dateArg, "yyyyMMddHHmmss");
+//	    } else {
+//	        throw new IllegalArgumentException("ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 'yyyyMMdd', 'yyyyMMddHHmmss' ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
+//	    }//end if else	    
+//	}//end of getTimeInMillis()
+//	
+//	
+//	/**
+//	 * ï¿½ï¿½Â¥ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½Þ¾Æ¼ï¿½ java.sql.Date ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * 
+//	 * @param dateArg : yyyyMMdd ï¿½Ç´ï¿½ yyyyMMddHHmmss ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ 
+//	 * @return java.sql.Date ï¿½ï¿½Ã¼
+//	 */
+//	public static Timestamp getDate(String dateArg){
+//	    return new Timestamp(getTimeInMillis(dateArg));
+//	}
+//
+//	public final static int SIZE_OVER = 100;
+//	public final static int TYPE_MISMATCH = 99;
+//	public final static int DATE_INCORRECT = 98;
+//	public final static int SPACE_INPUT = 97;
+//	public final static int OK = 0;
+//	public final static int FAIL = -1;
+//
+//
+//	/**
+//	 * ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ 
+//	 */
+//	private static int maxdd[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+//    
+//
+//
+//
+//
+//	/**
+//	 * doubleï¿½ï¿½ï¿½ï¿½ longï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²Ù¾ï¿½ ï¿½Ø´ï¿½.ï¿½Ý¿Ã¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â´ï¿½.
+//	 *
+//	 * @param d double
+//	 * @return long
+//	 */
+//	public static long dtol(double d){
+//		double dtmp = Math.rint(d);
+//		return (long)dtmp;
+//	} // End of dtol
+//
+//
+//	/**
+//	 * doubleï¿½ï¿½ï¿½ï¿½ longï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²Ù¾ï¿½ ï¿½Ø´ï¿½. 
+//	 * ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½.
+//	 * @param d double
+//	 * @return long
+//	 */
+//
+//	public static long dtoltrim(double d){
+//		double dtmp = Math.floor(d);
+//		return (long)dtmp;
+//	} // End of dtol
+//    
+//	/**
+//	 * doubleï¿½ï¿½ï¿½ï¿½ longï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²Ù¾ï¿½ ï¿½Ø´ï¿½. 
+//	 * ï¿½Ý¿Ã¸ï¿½ Ã³ï¿½ï¿½.
+//	 * @param d double
+//	 * @return long
+//	 */
+//	public static long dtoltrim_round(double d){
+//		double dtmp = Math.round(d);
+//		return (long)dtmp;
+//	} // End of dtol
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½Å­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param count int
+//	 * @return String
+//	 * @see #getZero
+//	 */ 
+//	public static String getString(int count) {
+//
+//		StringBuffer str = new StringBuffer("") ;
+//		for(int i=0 ; i<count ; i++) {
+//			str.append(" ") ;
+//		}
+//
+//		return str.toString();
+//	} // End of String
+//
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Çµï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Õ¿ï¿½ ï¿½ï¿½ï¿½é¹®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * CICS COMMAREAï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Êµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param str String ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param count int  ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String    ï¿½ï¿½ï¿½é¹®ï¿½ï¿½ ï¿½ï¿½ï¿½Ô¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @see #getZero
+//	 */ 
+//	public static  String getString(String str,int count) {
+//		if(str != null ){
+//			for(int i=0 ; i<count ; i++) {
+//				if(str.length() == count)break;
+//	//          if(str.length() < count)str=" "+str;
+//				if(str.length() < count)str=str+" ";
+//				if(str.length() > count)str=str.substring(0,count);
+//			}
+//		}
+//		else str = getString(count);
+//
+//		return str;
+//
+//	} // End of getString
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½â¿¡ ï¿½Â°ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ Å©ï¿½â°¡ ï¿½Çµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¹®ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * CICS COMMAREAï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Êµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param str String    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param count int     ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ Å©ï¿½ï¿½
+//	 * @param align String  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 *                      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "LEFT", ï¿½×¿Ü´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½Äµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @see #getZero
+//	 */ 
+//	public static String getString(String str,int count, String align) {
+//		if(str != null ){
+//			for(int i=0 ; i<count ; i++) {
+//				if(str.length() == count)break;
+//				if (align.equals("LEFT")) //ï¿½ï¿½ï¿½ï¿½ 
+//					if(str.length() < count)str=str+" ";
+//				else           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+//					if(str.length() < count)str=" "+str;
+//				if(str.length() > count)str=str.substring(0,count);
+//			}
+//		}
+//		else str = getString(count);
+//
+//		return str;
+//
+//	} // End of getString
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½â¸¸Å­ '0'ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param count int ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ Å©ï¿½ï¿½
+//	 * @return String   ï¿½Ö¾ï¿½ï¿½ï¿½ Å©ï¿½â¸¸Å­ '0'ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @see #getString
+//	 */ 
+//	public static String getZero(int count) {
+//
+//		StringBuffer str = new StringBuffer() ;
+//		for(int i=0 ; i<count ; i++) {
+//			str.append("0") ;
+//		}
+//
+//		return str.toString();
+//
+//	} // End of getZero
+//
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ Å©ï¿½â°¡ ï¿½Çµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Õ¿ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * CICS COMMAREAï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Êµå¸¦ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param str String
+//	 * @param count int
+//	 * @return String
+//	 * @see #getString
+//	 */ 
+//	public static String getZero(String str,int count) {
+//		if(str != null ){
+//			for(int i=0 ; i<count ; i++) {
+//				if(str.length() == count)break;
+//				if(str.length() < count)str="0"+str;
+//				if(str.length() > count)str=str.substring(0,count);
+//			}
+//		}
+//		else str = getZero(count);
+//
+//		return str;
+//	} // End of getZero
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ø´ï¿½.
+//	 *
+//	 * @param target String ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param del String    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String delString(String target,String del) {
+//		String retval = new String();
+//		int strlen ;
+//		int idx = 0;
+//		int i = 0;
+//
+//		if(target == null)
+//			return target;
+//
+//		try{
+//			strlen = target.length();
+//			if(strlen == 0 )
+//				return target;
+//			while( idx < strlen ){
+//				idx = target.indexOf(del, i);
+//				if(idx < 0){
+//					idx = strlen;
+//				}
+//				if(idx > strlen){
+//					idx = strlen;
+//				}
+//				retval += target.substring(i, idx);
+//				i = idx+del.length();
+//			}
+//		}catch(java.lang.StringIndexOutOfBoundsException e){
+//			e.printStackTrace();
+//		}catch(java.lang.Exception e){
+//			e.printStackTrace();
+//		}
+//
+//		return retval;
+//	} // End of delString
+//
+//
+//	/**
+//	 * ï¿½Ý¾ï¿½ ï¿½Êµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ Ãµï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½(,)ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
+//	 * ï¿½Ý¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ Ã³ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥(,)ï¿½ï¿½ ï¿½ï¿½ï¿½ÅµÇ¾ï¿½ï¿½ ï¿½Ñ´ï¿½.
+//	 * ï¿½Ì·ï¿½ ï¿½ï¿½ì¿¡ ï¿½Ý¾ï¿½ ï¿½Êµï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¿ï¿½ 
+//	 * ï¿½ï¿½ï¿½ï¿½(,)ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target String Ãµï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String       Ãµï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @see #getComma
+//	 */ 
+//	public static String delString(String target) {
+//
+//		return delString(target,","); 
+//
+//	} // End of delString
+//    
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¸ï¿½ ï¿½Ç´ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param year int  ï¿½âµµ
+//	 * @return boolean  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 */ 
+//	public static  boolean isLeapYear( int year) {
+//		if( (year % 4 == 0) && ( year % 100 != 0 ) || ( year % 400 == 0) ){
+//			return true;
+//		}else {
+//			return false;
+//		}
+//	} // End of isLeapYear
+//
+//	
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ÞºÎºÐ¿ï¿½ ï¿½Ö´ï¿½ '0'ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * È£ï¿½ï¿½Æ®ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ ï¿½Ç¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´Âµï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param str String    ï¿½Ú¿ï¿½ 0ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String       ï¿½Ú¿ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String trimRZero(String str) {
+//		String retval = new String();
+//
+//		try{
+//			retval = str.trim();
+//			if (retval == null || retval.equals("") || retval.length() == 0){
+//				return "";
+//			}
+//			
+//			if( retval.substring(retval.length()-1).equals("0")){
+//				for(int i= retval.length(); i > 0 ; i--){
+//					if(retval.substring(retval.length()-1).equals("0") ){
+//						retval = retval.substring(0,retval.length()-1);
+//					}else{
+//						break;
+//					}
+//				}
+//			}
+//
+//		}catch(Exception e){
+//			System.err.println("error :trimRZero() in UtilFmt : "+e.toString());
+//		}
+//		return retval;  
+//	} 
+//	
+//	
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ÕºÎºÐ¿ï¿½ ï¿½Ö´ï¿½ '0'ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * È£ï¿½ï¿½Æ®ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ CICS COMMAREAï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½ ï¿½ï¿½ì¿¡ ï¿½ÕºÎºÐ¿ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
+//	 *
+//	 * @param str String    ï¿½Õ¿ï¿½ 0ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½) ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String       ï¿½Õ¿ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String trimZero(String str) {
 //		String retval = new String();
 //
 //		try{
@@ -1407,852 +1371,888 @@ public class FormatUtil {
 //			System.err.println("error :trimZero() in UtilFmt : "+e.toString());
 //		}
 //
-//		if(StringUtil.isNull(retval)){
-//			retval = deflt;
-//		}
-//		
 //		return retval;  
 //
 //	} // End of trimZero
-
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÇ µÞºÎºÐ 2ÀÚ¸®¸¦ ¼Ò¼ýÁ¡ ÀÌÇÏ·Î Ã³¸®ÇÏ±â À§ÇØ 
-	 * ¹®ÀÚ¿­ÀÇ µÞºÎºÐ 2ÀÚ¸® ¹Ù·Î ¾Õ¿¡ ¼Ò¼ýÁ¡(.)À» »ðÀÔÇÑ´Ù.
-	 *
-	 * @param target String Á¤¼ö¿Í ¼Ò¼ö°¡ ±¸º°µÇÁö ¾ÊÀº ¹®ÀÚ¿­
-	 * @return String       ¼Ò¼ýÁ¡ÀÌ »ðÀÔµÈ ¹®ÀÚ¿­
-	 */
-	public static String makeRate(String target) {
-		target = trimZero(target.trim());
-		int len = target.length();
-		if(len == 0 || target.equals("") || target == null){
-			return "";
-		}
-		if(len <=2 ){
-			return "0." +target;
-		}else{
-			return target.substring(0,len-2) + "." + target.substring(len-2);
-		}
-
-	} // End of makeRate
-
-	// ¼Ò¼öÁ¡ ±¸ºÐ¾ø´Â ¼ýÀÚ·Î µÈ ÀÌÀ²¿¡ ´ëÇØ....
-	// ³¡ float_lengthÀÚ¸®¸¸Å­À» ¼Ò¼öÁ¡ ÀÌÇÏ·Î Ã³¸®ÇÏ°í '.'¸¦ »ðÀÔÇÔ...
-	public static String makeRate(String target,int float_length) {
-		target = trimZero(target.trim());
-		int len = target.length();
-		if(len == 0 || target.equals("") || target == null){
-			return "";
-		}
-		if(len <= float_length ){
-			return "0." +target;
-		}else{
-			return ( target.substring(0,len-float_length) + "."
-					 + target.substring(len-float_length) );
-		}             
-	}
-
-	/**
-	 * ¼ýÀÚ ¹®ÀÚ¿­À» »èÁ¦ÇÒ ±æÀÌ¸¸Å­ »èÁ¦ ÈÄ ÁÖ¾îÁø Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹ÝÈ¯ÇÑ´Ù.
-	 * ÁÖÀÇ : ¹®ÀÚ¿­¿¡ ¼Ò¼öÁ¡ÀÌ ÀÔ·ÂµÇ¸é ¾ÈµÊ.
-	 * @param target String ¼Ò½º ¹®ÀÚ¿­
-	 * @param fmt String    ¹®ÀÚ¿­ Çü½Ä
-	 * @param cutLength int ¹®ÀÚ¿­ µÚºÎÅÍ »èÁ¦ÇÒ ±æÀÌ
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String subStrMakeFormat(String target, String fmt,int cutLength){
-		
-		if(target == null || target.length() == 0) 
-			return "";
-		
-		if(cutLength < 0 ) 
-			return target;
-		
-		String ret = "";
-		if(target.length() > cutLength ) {
-			ret = target.substring(0,target.length()-cutLength);
-		} else {
-			ret = target;
-		}
-		
-		ret = makeFormat(ret,fmt);
-		return ret;
-	}
-	
-	/**
-	 * ¼ýÀÚ ¹®ÀÚ¿­À» ÁÖ¾îÁø Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target String ¼Ò½º ¹®ÀÚ¿­
-	 * @param fmt String    ¹®ÀÚ¿­ Çü½Ä
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(String target, String fmt) {
-		String retval = new String();
-		String sign = "";
-
-		try{
-			fmt = trimZero(fmt.trim());
-			char first = fmt.charAt(0);
-
-			if( first == 'd' || first == 'D') {
-				if(target.length() != 6){
-					throw new java.lang.Exception("Date Incorrect");
-				}
-				retval = makeDate(target);
-			}else{
-				switch(first){
-					case 'S' :
-					case 's' :
-						 sign = "S";
-					case '9' :
-						if(!"0".equals(target))
-							target = trimZero(target.trim());
-						
-						if (target == null || target.equals("") || target.length() == 0){
-							return "0";
-						}
-//						if (target.length() > 0 || target.indexOf('-') > 0 ){
-//							return "-1";
-//						}
-						retval = makeNumeric(target, fmt, sign);
-						break;
-					default : 
-						retval = "";
-				}
-			}
-		}catch(java.lang.Exception e){
-			e.printStackTrace();
-		//  log.printLog(e.toString());
-		}
-
-		return retval;
-
-	} // End of makeFormat
-
-
-
-	/**
-	 * floatÇüÀ» ÁÖ¾îÁø Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹®ÀÚ¿­·Î ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target float  Çü½ÄÈ­ÇÒ float
-	 * @param fmt String    ¹®ÀÚ¿­ Çü½Ä
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(float target, String fmt){
-		return makeFormat( String.valueOf(target), fmt);
-	}
-
-
-	/**
-	 * floatÇüÀ» "9.99"Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹®ÀÚ¿­·Î ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target float  Çü½ÄÈ­ÇÒ float
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(float target){
-		return makeFormat( String.valueOf(target), "9.99");
-	}
-
-
-	/**
-	 * doubleÇüÀ» ÁÖ¾îÁø Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹®ÀÚ¿­·Î ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target double Çü½ÄÈ­ÇÒ double
-	 * @param fmt String    ¹®ÀÚ¿­ Çü½Ä
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(double target, String fmt){
-		return makeFormat( Double.toString(target), fmt);
-	}
-
-	/**
-	 * doubleÇüÀ» "9.99"Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹®ÀÚ¿­·Î ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target double Çü½ÄÈ­ÇÒ double
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static  String makeFormat(double target){
-		return makeFormat( String.valueOf(target), "9.99");
-	}
-
-
-	/**
-	 * doubleÇüÀ» "9" Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹®ÀÚ¿­·Î ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target double Çü½ÄÈ­ÇÒ double
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(long target){
-		return makeFormat( String.valueOf(target), "9");
-	}
-
-	/**
-	 * ¼ýÀÚ ¹®ÀÚ¿­¿¡ ¼Ò¼ýÁ¡ÀÌ ÀÖÀ¸¸é "9.99" Çü½ÄÀ¸·Î, ¾øÀ¸¸é "9" Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target String ¼Ò½º ¹®ÀÚ¿­
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(String target){
-		if(target.indexOf('.') > -1 ){
-			return makeFormat( target, "9.99");
-		}else{
-			return makeFormat( target, "9");
-		}
-	}
-
-    
-	/**
-	 * ¼ýÀÚ ¹®ÀÚ¿­À» ÁÖ¾îÁø Çü½ÄÀ¸·Î Çü½ÄÈ­ÇÏ¿© ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param target String ¼Ò½º ¹®ÀÚ¿­
-	 * @param code int      ¹®ÀÚ¿­ Çü½Ä
-	 *                      "9" Çü½ÄÀÏ ¶§ 1
-	 *                      "9.99" Çü½ÄÀÏ ¶§ 2
-	 * @return String       Çü½ÄÈ­µÈ ¹®ÀÚ¿­
-	 */ 
-	public static String makeFormat(String target, int code){
-		if (code == 1) {
-			return makeFormat( target,"9") ;
-		} else if( code == 2) {
-			return makeFormat( target,"9.99");
-		} else {
-			return "unknown code";
-		}
-	}
-
-    
-
-	/**
-	 * ÁÖ¾îÁø ±¸ºÐÀÚ(Delimiter)°¡ »ðÀÔµÈ ³¯Â¥Çü½ÄÀÇ ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param date String   ³¯Â¥ Çü½ÄÀÇ ¹®ÀÚ¿­
-	 *                      ±¸ºÐÀÚ°¡ Æ÷ÇÔµÇ¾ú°Å³ª Æ÷ÇÔµÇÁö ¾Ê¾Ò°Å³ª »ó°ü¾øÀ½.
-	 * @param fmt String    ±¸ºÐÀÚ(Delimiter)
-	 * @return String       ÁÖ¾îÁø ±¸ºÐÀÚ(Delimiter)°¡ »ðÀÔµÈ ³¯Â¥ Çü½ÄÀÇ ¹®ÀÚ¿­
-	 */
-	public static String makeDate(String date, String fmt) {
-
-		String yy = new String();
-		String mm = new String();
-		String dd = new String();
-		String retval = date;
-		if(retval.indexOf(fmt) == -1)
-		{
-			try{
-				if(date.length() == 6){
-					yy = date.substring(0,2);
-					mm = date.substring(2,4);
-					dd =  date.substring(4,6);
-					retval = yy + fmt + mm + fmt + dd;
-				}else if(date.length() == 8){
-					yy = date.substring(0,4);
-					mm = date.substring(4,6);
-					dd =  date.substring(6,8);
-					retval = yy + fmt + mm + fmt + dd;
-				}
-			}catch(java.lang.StringIndexOutOfBoundsException e){
-				e.printStackTrace();
-			}
-		}   
-		return retval;
-
-	} // End of makeDate
-
-
-	/**
-	 * ½½·¡½¬ (/)°¡ ±¸ºÐÀÚ(Delimiter)·Î »ðÀÔµÈ ³¯Â¥Çü½ÄÀÇ ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param date String   ³¯Â¥ Çü½ÄÀÇ ¹®ÀÚ¿­
-	 *                      ±¸ºÐÀÚ°¡ Æ÷ÇÔµÇ¾ú°Å³ª Æ÷ÇÔµÇÁö ¾Ê¾Ò°Å³ª »ó°ü¾øÀ½.
-	 * @return String       ½½·¡½¬(/)°¡ »ðÀÔµÈ ³¯Â¥ Çü½ÄÀÇ ¹®ÀÚ¿­
-	 */
-	public static String makeDate(String date){
-		return makeDate(date,"/");
-	}
-
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÌ ÁöÁ¤µÈ Çü½Ä¿¡ ¸Â´Â µ¥ÀÌÅÍÀÎÁö È®ÀÎÇÑ´Ù.
-	 * CGI·Î ºÎÅÍÀÇ ÀÌÁÖ¸¦ µ½±â À§ÇÑ ¸Þ¼ÒµåÀÌ´Ù.
-	 *
-	 * @param src String Çü½Ä¿¡ ¸Â´ÂÁö È®ÀÎÇÒ ¹®ÀÚ¿­
-	 * @param fmt String µ¥ÀÌÅÍ Çü½Ä
-	 * @return int  0(OK) ÀÌ¸é Çü½Ä¿¡ ¸Â´Â µ¥ÀÌÅÍ,
-	 *              ±×·¸Áö ¾ÊÀ¸¸é Çü½Ä¿¡ ¸ÂÁö ¾Ê´Â µ¥ÀÌÅÍÀÌ´Ù. 
-	 *              ¿À·ù ÄÚµå´Â ´ÙÀ½°ú °°´Ù.
-	 *              ÁöÁ¤µÈ Å©±â¸¦ ÃÊ°úÇÑ °æ¿ì: SIZE_OVER
-	 *              Çü½Ä ºÒÀÏÄ¡: TYPE_MISMATCH
-	 *              ³¯Â¥ Çü½Ä ºÒÀÏÄ¡: DATE_INCORRECT
-	 *              ÁÖ¾îÁø Çü½ÄÀ» ¾Ë ¼ö ¾øÀ½: FAIL
-	 * @deprecated  CGI¿ÍÀÇ È£È¯À» À§ÇØ Áö¿ø
-	 */
-	public static int chkDataFormat(String src, String fmt) {
-		char sign = ' ';
-		int yy, mm, dd;
-		try{    
-		switch(fmt.charAt(0)){
-			case 'x' : // ¹®ÀÚ¿­
-			case 'X' :
-				if( src.length() > fmt.length() ){
-				for( int i= 0; i< src.length() ; i++){
-					if(src.charAt(i) < ' '){
-						return TYPE_MISMATCH ;
-					}
-				}
-				}
-				break;
-			case 's' : // ºÎÈ£°¡ ÀÖ´Â ¼ýÀÚ ¹®ÀÚ¿­
-			case 'S' :
-				sign = 'S';
-			case '9' : // ¼ýÀÚ ¹®ÀÚ¿­
-				if( src.length() > fmt.length() ){
-					return SIZE_OVER ;
-				}
-				for( int i= 0; i< src.length() ; i++){
-					switch(src.charAt(i) ){
-						case '-' :
-						case '+' :
-							if( sign != 'S'){
-								return TYPE_MISMATCH;
-							}
-							break;
-						case ',' :
-						case '.' :
-							break;
-						default :
-							if( !Character.isDigit(src.charAt(i)) ){
-								return TYPE_MISMATCH;
-							}
-							break;
-					}
-				}
-				break;
-			case 'd' : // ³¯Â¥
-			case 'D' :
-				if( src.length() !=6 ){
-					return DATE_INCORRECT;
-				}
-				yy = Integer.valueOf(src.substring(0,2)).intValue();
-				mm = Integer.valueOf(src.substring(2,4)).intValue();
-				dd = Integer.valueOf(src.substring(4,6)).intValue();
-
-				if(yy < 10 ){
-					yy += 100;
-				}               
-				if( isLeapYear(1900 + yy) ) {
-					maxdd[1] +=1;
-				}
-				if( yy < 0 || yy > 199 || mm <= 0 || mm > 12 ||
-					dd <= 0 || dd > maxdd[mm-1] ){
-						return DATE_INCORRECT;
-				}
-				break;
-			default : // ±âÅ¸
-				return FAIL;
-		}
-		}catch(Exception e){
-			e.printStackTrace();
-			return FAIL;
-		}
-		return OK;
-	} // End of chkDataFormat
-
-
-	/**
-	 * ÇÊ¿ä½Ã ºÎÈ£ Ã³¸®¸¦ ÇÏ°í³ª¼­
-	 * ÁÖ¾îÁø ¼ýÀÚÇü½Ä¿¡ ¸Â´Â ¹®ÀÚ¿­·Î ¼Ò¼ýÁ¡ Ã³¸®ÇÑ ÈÄ¿¡
-	 * Ãµ´ÜÀ§ Ç¥½Ã(,)¸¦ »ðÀÔÇÑ´Ù.
-	 *
-	 * @param target String ´ë»ó ¹®ÀÚ¿­
-	 * @param fmt String    Çü½Ä ¹®ÀÚ¿­
-	 * @param sign String   ºÎÈ£ÀÖ´Â ¼ýÀÚ¹®ÀÚ¿­ÀÎÁö ¿©ºÎ
-	 * @return String       ±Ý¾× ÇÊµå Çü½ÄÀÇ ¹®ÀÚ¿­
-	 */
-	private static String makeNumeric(String target, String fmt, String sign) {
-	//Log log = new Log("/db2/nwww/src/test/nf.log");
-		String fract = "";
-		String retval = "";
-		String tmp = "";
-
-//log.printLog("target >> " + target);
-
-  try {
-		// COMMAREA ¿¡¼­ À½¼ö°¡ µé¾î¿À´Â °æ¿ì¿¡¸¸ ....È°¿ëµÊ...
-		// ÀÏ¹ÝÀûÀ¸·Î ¾ËÆÄºªÀ» ¼ýÀÚ·Î ¹Ù²Ù´Â °æ¿ì¿¡´Â ¾ÈµÊ..ÁÖÀÇ...
-		// HOST¿¡¼± ¸¶Áö¸· ¹®ÀÚ°¡ À½¼ö¸¦ °áÁ¤ÇÔ...
-		/*************************************************
-		J => -1  } => -0   ¿¹) 12J => -121
-		K => -2
-		L => -3
-		M => -4
-		N => -5
-		O => -6
-		P => -7
-		Q => -8
-		R => -9
-		*************************************************/
-		int target_size = target.length();
-		String last_char = target.substring(target_size - 1, target_size);
-		if ( last_char.equals("J")) {
-			target = "-" + target.substring(0,target_size -1)+"1";
-		} else if ( last_char.equals("K")) {
-			target = "-" + target.substring(0,target_size -1)+"2";
-		} else if ( last_char.equals("L")) {
-			target = "-" + target.substring(0,target_size -1)+"3";
-		} else if ( last_char.equals("M")) {
-			target = "-" + target.substring(0,target_size -1)+"4";
-		} else if ( last_char.equals("N")) {
-			target = "-" + target.substring(0,target_size -1)+"5";
-		} else if ( last_char.equals("O")) {
-			target = "-" + target.substring(0,target_size -1)+"6";
-		} else if ( last_char.equals("P")) {
-			target = "-" + target.substring(0,target_size -1)+"7";
-		} else if ( last_char.equals("Q")) {
-			target = "-" + target.substring(0,target_size -1)+"8";
-		} else if ( last_char.equals("R")) {
-			target = "-" + target.substring(0,target_size -1)+"9";
-		} else if ( last_char.equals("}")) {
-			target = "-" + target.substring(0,target_size -1)+"0";
-		}       
-
-		// ¿ä±â±îÁö »õ·Ó°Ô Ãß°¡µÈ ºÎºÐ....
-
-		// sign Ãâ·Â ¿©ºÎ °áÁ¤
-		float target_value = 0;
-		try { 
-		  target_value = Float.valueOf(target).floatValue(); 
-		} catch(Exception float_error) {
-		  target_value = 0;  
-		} 
-		if( target_value < 0 ){
-				sign = "-";
-				target = target.substring(1);
-		}else if( sign == "S") {
-				sign = "+";
-		}else{
-				sign = ""; // no sign
-		}
-
-		//¼Ò¼öÁ¡ ÀÌÇÏ Ã³¸® °áÁ¤
-		int pidx = target.indexOf('.');
-		int fpidx = fmt.indexOf('.');
-
-		if( pidx >= 0 && fpidx >= 0) {
-			if(pidx == 0){  
-				tmp = "0";
-			}else{
-				tmp = target.substring(0, pidx);//¼Ò¼öÁ¡ ÀÌ»ó
-			}
-			if(pidx+1 > target.length()){
-				pidx = pidx-1;
-			}
-			if(fpidx+1 > fmt.length()){
-				fpidx = fpidx-1;
-			}
-			fract = "." + makeFract(target.substring(pidx+1), fmt.substring(fpidx+1) );
-
-//log.printLog("74 : fract " + fract);
-		}else if( pidx >=0 && fpidx < 0){ //¼Ò¼öÁ¡ ÀÌÇÏ Àý»è
-			tmp = target.substring(0,pidx);
-
-		}else if( pidx < 0 && fpidx >= 0){ //¼Ò¼öÁ¡ ÀÌÇÏ Àý»è
-//			int len = (fmt.length()-1) - fpidx;
-			tmp = target;
-			fract = "." + makeFract("", fmt.substring(fpidx+1) );
-		}else{
-			tmp = target;
-		}
-
-		retval = getComma(tmp);
-//log.printLog("returned retval >> " + retval);
-	}catch(Exception e){
-		//log.printLog(e.toString());
-		e.printStackTrace();
-	}
-		return sign + retval + fract;
-
-	} // End of makeNumeric
-            
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­¿¡ Ãµ´ÜÀ§ Ç¥½Ã(,)¸¦ »ðÀÔÇÑ´Ù. 
-	 *
-	 * @param target String ¼ýÀÚ ¹®ÀÚ¿­
-	 * @return String       Ãµ´ÜÀ§ Ç¥½Ã(,)°¡ »ðÀÔµÈ ¹®ÀÚ¿­
-	 * @see #delString
-	 */
-	public static String getComma(String target){
-	//  Log log = new Log("/db2/nwww/src/test/nf.log");
-		if(target == null){
-			return "";
-		}
-		StringBuffer tmp = new StringBuffer(target);
-		int len = tmp.length();
-		int cnt = len/3;
-
-	//','°¡ ÇÊ¿ä¾ø´Â ÀÛÀº¼ö
-		if( len <=3){
-			return target;
-		}
-
-		try{
-			for(int i=1; i<= cnt ; i++){
-				int offset = len -i*3;
-				if( offset !=0){
-					tmp.insert(offset,','); 
-				}
-			}   
-		}catch(Exception e){
-			//log.printLog(e.toString());
-			e.printStackTrace();
-		}
-
-//	log.printLog("getComma() : retval >> " + tmp.toString());
-
-		return  tmp.toString();
-
-	} // End of getComma
-    
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­¿¡¼­ ÁÖ¾îÁø Çü½Ä ÀÚ¸´¼ö ¸¸Å­ ¼Ò¼ýÁ¡ÀÌÇÏ °ªÀ» ¾ò´Â´Ù.
-	 *
-	 * @param pnum String   ¼ýÀÚ ¹®ÀÚ¿­
-	 * @param fnum String   ÀÚ¸´¼ö Çü½Ä
-	 * @return String       ¼Ò¼ýÁ¡ ÀÌÇÏ¿¡ ÇØ´çÇÏ´Â ¹®ÀÚ¿­
-	 */
-	private static String makeFract(String pnum, String fnum){
-	//  Log log = new Log("/db2/nwww/src/test/nf.log");
-		int plen= pnum.length();
-		int flen = fnum.length();
-		try{
-			if(plen == flen) {
-				return pnum;
-			}else if(plen < flen){
-				String retval = pnum;
-				for(int i=plen ; i<flen ; i++){
-					retval = retval +"0";
-				}
-				return retval;
-			}else{
-				return pnum.substring(0,flen);
-			}       
-		}catch(Exception e){
-			e.printStackTrace();
-			//log.printLog(e.toString());
-		}
-		return "";
-
-	} // End of makeFract
-
-
-	/**
-	 * ÁÖ¾îÁø ¼­ºí¸´ ¿äÃ»¿¡¼­ ¿øÇÏ´Â ÀÌ¸§ÀÇ ¸Å°³º¯¼ö¸¦ Ã£¾Æ ±× °ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-	 * ÀÌ ¶§, ÇØ´ç ¸Å°³º¯¼ö°¡ ¾ø°Å³ª ºó ¹®ÀÚ¿­ÀÌ¸é, ±âº»°ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param req javax.servlet.http.HttpServletRequest ¼­ºí¸´ ¿äÃ»
-	 * @param name String   ¸Å°³º¯¼öÀÇ ÀÌ¸§ 
-	 * @param init String   ¸Å°³º¯¼öÀÇ ±âº»°ª 
-	 * @see javax.servlet.http.HttpServletRequest.getParameter
-	 */
-	public static String getParameter(javax.servlet.http.HttpServletRequest req,
-								String name, String init)
-	{
-		String value = req.getParameter(name);
-
-		if( value != null){
-			if( value.equals(""))   
-				return init;
-			else
-				return value;
-		}else {
-			return init;
-		}
-
-	} // End of getParameter
-
-
-
-	/**
-	 * ÁÖ¾îÁø ¼­ºí¸´ ¿äÃ»¿¡¼­ ¿øÇÏ´Â ÀÌ¸§ÀÇ ¸Å°³º¯¼ö¸¦ Ã£¾Æ ¿ìÃø Á¤·ÄµÈ(¾ÕºÎºÐ¿¡ °ø¹éÀÌ Ã¤¿öÁø) °ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-	 * ÀÌ ¶§, ÇØ´ç ¸Å°³º¯¼ö°¡ ¾ø°Å³ª ºó ¹®ÀÚ¿­ÀÌ¸é,
-	 * ÁÖ¾îÁø ±æÀÌ¸¸Å­ °ø¹é¹®ÀÚ·Ñ Ã¤¿î ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param req javax.servlet.http.HttpServletRequest ¼­ºí¸´ ¿äÃ»
-	 * @param name String   ¸Å°³º¯¼öÀÇ ÀÌ¸§ 
-	 * @param init String   ¸Å°³º¯¼öÀÇ ±âº»°ª 
-	 * @see javax.servlet.http.HttpServletRequest.getParameter
-	 */
-	public static String getParameter(javax.servlet.http.HttpServletRequest req, String name, int len) {
-
-		String value = "";
-
-		value = req.getParameter(name);
-		if( value == null )
-			value = getString(len);
-		else if ( value.length() != len )
-			value = getString(value, len);
-
-		return value;
-	} // End of getParameter
-
-
-	/**
-	 * ÁÖ¾îÁø ³¯Â¥ Çü½ÄÀÇ ¹®ÀÚ¿­¿¡¼­ "yyyy-MM-dd" Çü½ÄÀÇ ¹®ÀÚ¿­À» ¹ÝÈ¯ÇÑ´Ù.
-	 * ÁÖ¾îÁø ¹®ÀÚ¿­ÀÌ ³¯Â¥ Çü½ÄÀÌ ¾Æ´Ñ °æ¿ì ¿¹¿Ü¸¦ ¹ß»ýÇÑ´Ù.
-	 *
-	 * @param strText String ³¯Â¥ Çü½ÄÀÇ ¹®ÀÚ¿­
-	 * @return String        "yyyy-MM-dd" Çü½ÄÀÇ ¹®ÀÚ¿­
-	 * @exception IllegalArgumentException ÁÖ¾îÁø ¹®ÀÚ¿­ÀÌ ³¯Â¥ Çü½ÄÀÌ ¾Æ´Ñ °æ¿ì
-	 */
-	public static String parseYYYYMMDD (String strText)
-					throws IllegalArgumentException
-	{
-		String strReturn = new String();
-
-		try {
-
-			SimpleDateFormat dateChecker = new SimpleDateFormat("yyyy-MM-dd");
-
-			if ( strText.length() == 10 ) {
-
-				if ( strText.charAt(4) == strText.charAt(7) ) {
-					strReturn = strText.substring(0, 4)
-						+ "-" + strText.substring(5, 7)
-						+ "-" + strText.substring(8, 10);
-
-				} else {
-					throw new IllegalArgumentException();
-				}
-
-			} else if (strText.length() == 8) {
-
-				strReturn = strText.substring(0, 4)
-					+ "-" + strText.substring(4, 6)
-					+ "-" + strText.substring(6, 8);
-
-			} else if ( strText.length() == 0 ) {
-
-				//strReturn = "1111-11-11";
-				strReturn = "";
-
-			} else {
-				throw new IllegalArgumentException();
-			} // End of if-else
-
-			dateChecker.parse(strReturn, new ParsePosition (0) );
-
-		} catch (java.lang.Exception ex) {
-
-			throw new IllegalArgumentException(ex.toString());
-
-		} // End of try-catch
-
-
-		return strReturn;
-
-	} // End of parseYYYYMMDD
-
-
-
-	/**
-	 * ÁÖ¾îÁø °èÁÂ¹øÈ£¿¡ ÇÏÀÌÇÂ(-)ÀÌ ÀÖ´Â °æ¿ì, ´ë½¬¸¦ Á¦°ÅÇÏ°í
-	 * ¼ýÀÚ°¡ ¾Æ´Ñ ¹®ÀÚ°¡ Æ÷ÇÔ(ÇÏÀÌÇÂ Á¦¿Ü)µÈ °æ¿ì ¿¹¿Ü¸¦ ¹ß»ýÇÑ´Ù.
-	 *
-	 * @param strText String °èÁÂ¹øÈ£
-	 * @return String        ÇÏÀÌÇÂ(-)ÀÌ Á¦°ÅµÈ °èÁÂ¹øÈ£
-	 * @exception IllegalArgumentException ¼ýÀÚ°¡ ¾Æ´Ñ ¹®ÀÚ(ÇÏÀÌÇÂ Á¦¿Ü)°¡ Æ÷ÇÔµÈ °æ¿ì
-	 */
-	public static String parseGjNo (String strText)
-					throws IllegalArgumentException
-	{
-		String strReturn = new String();
-
-		try {
-
-			if ( strText.indexOf("-") >= 0 ) {
-				strReturn = delString(strText, "-");
-			} else {
-				strReturn = strText;
-			}
-
-			for (int nDash = 0; nDash < strReturn.length(); nDash++) {
-
-				if ( (strReturn.charAt(nDash) < '0')
-					|| (strReturn.charAt(nDash) > '9') )
-				{
-					throw new IllegalArgumentException();
-				} // End of if
-
-			} // End of for
-
-		} catch (java.lang.Exception ex) {
-
-			throw new IllegalArgumentException(ex.toString());
-
-		} // End of try-catch
-
-		return strReturn;
-
-	} // End of parseGjNo
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¹è¿­ÀÇ Àü/¹Ý°¢ ¿©ºÎ¿¡ °ü°è¾øÀÌ ¾ç ³¡ÀÇ °ø¹é¹®ÀÚ¸¦ Á¦°ÅÇÑ´Ù.<br>
-	 * String Å¬·¡½ºÀÇ trim ¸Þ¼Òµå´Â Àü°¢ °ø¹é¹®ÀÚ¸¦ trimÇÏÁö ¸øÇÑ´Ù.<br>
-	 * '¡¡'(Àü°¢¹®ÀÚ ½ºÆäÀÌ½º)¿Í - String Å¬·¡½ºÀÇ trim ¸Þ¼Òµå¿¡¼­Ã³·³ -
-	 * ' '(½ºÆäÀÌ½º)º¸´Ù ÀÛ°Å³ª °°Àº ¹®ÀÚÀÎ °æ¿ì °ø¹é¹®ÀÚ·Î °£ÁÖÇÏ¿© trimÇÑ´Ù.
-	 *
-	 * @param szTxt String      ¼Ò½º ¹®ÀÚ¹è¿­
-	 * @return java.lang.String trimÇÑ ¹®ÀÚ¿­
-	 */
-	public static String trim(String strTxt) {
-        if(strTxt==null) return "";
-		char [] szTxt = strTxt.toCharArray();
-		int len = szTxt.length;
-		int st = 0;
-		while ( (st < len) && 
-				((szTxt[st] <= ' ') || (szTxt[st] == '¡¡')) ) {
-			st++;
-		}
-		while ( (st < len) && 
-				((szTxt[len - 1] == '¡¡') || (szTxt[len - 1] <= ' ')) ) {
-			len--;
-		}
-        
-		if ((st > 0) || (len < szTxt.length)) {
-			if (st == len)
-				return new String("");
-			else            
-				return new String(szTxt, st, (len-st));
-		} else {
-			return new String(szTxt);
-		}
-	} // End of trim
-
-
-	/**
-	 * ÁÖ¾îÁø ¹®ÀÚ¹è¿­ÀÇ Àü/¹Ý°¢ ½ºÆäÀÌ½º¸¦ Á¦°ÅÇÑ´Ù.<br>
-	 * Áï, ¹®ÀÚ¿­¿¡¼­ ¸ðµç Àü°¢/¹Ý°£ ½ºÆäÀÌ½º°¡ Á¦°ÅµÈ
-	 * »õ·Î¿î ¹®ÀÚ¿­À» StringÀ» ¹ÝÈ¯ÇÑ´Ù..
-	 *
-	 * @param szTxt String      ¼Ò½º ¹®ÀÚ¹è¿­
-	 * @return java.lang.String trimÇÑ ¹®ÀÚ¿­
-	 */
-	public static String deleteAllSpace(String strTxt) {
-		if (strTxt == null) {
-			strTxt = "";
-		}  
-		int origin_length = strTxt.length();
-        
-		if ( origin_length == 0 ) {
-			return new String("");
-		} else {
-			char source[] = strTxt.toCharArray();
-			int  source_length = source.length;
-			StringBuffer target = new StringBuffer();
-			for (int i=0; i< source_length;i++) {
-				if ((source[i] != ' ') &&
-					(source[i] != ' ')) {
-					target = target.append(source,i,1);
-				}
-			}
-			String newString = target.toString();
-			if (newString == null ) {
-			   newString = "";
-			}          
-   
-			return newString;
-		}
-	}
-
-	/**
-	 * ÁÖ¾îÁø ¼­ºí¸´ ¿äÃ»¿¡¼­ ¿øÇÏ´Â ÀÌ¸§ÀÇ ¸Å°³º¯¼ö¸¦ Ã£¾Æ ±× °ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-	 * ÀÌ ¶§, ÇØ´ç ¸Å°³º¯¼ö°¡ ¾ø°Å³ª ºó ¹®ÀÚ¿­ÀÌ¸é, ±âº»°ªÀ» ¹ÝÈ¯ÇÑ´Ù.
-	 *
-	 * @param name String   ¸Å°³º¯¼öÀÇ ÀÌ¸§ 
-	 * @param init String   ¸Å°³º¯¼öÀÇ ±âº»°ª 
-	 */
-	public static String chkNull(String strVal, String init)
-	{
-
-		if( strVal != null){
-			if( strVal.equals(""))  
-				return init;
-			else
-				return strVal;
-		}else {
-			return init;
-		}
-
-	} // End of chkNull  ÃÖÃæ¿­ ¸¸µë...2001³â 12¿ù 26ÀÏ
-
-	
-	/**
-	 * Å×½ºÆ® ÄÚµå¸¦ Æ÷ÇÔÇÏ´Â main() ¸Þ¼Òµå
-	 * @param args ½ÇÇà¿¡ ÇÊ¿äÇÑ ÀÎÀÚ ¸®½ºÆ®
-	 * @throws Exception main() ¸Þ¼Òµå ¼öÇà ½Ã ¹ß»ýÇÏ´Â Exception
-	 */
-	public static void main(String [] args) throws Exception {
-		
-		
-		
-//		System.out.println(rPadding("°¡", 4, '0'));
-//		System.out.println(rPadding("°¡", 3, '0'));
-//		System.out.println(lPadding("°¡³ª", 1, '0'));
-//		System.out.println(lPadding("°¡³ª", 6, '0'));
-//		System.out.println(getToday("HHmmss"));
-//		System.out.println(getToday("HHmmss"));
-//		System.out.println(getToday("HHmmss"));
-//		System.out.println(getToday("HHmmss"));
-//		System.out.println(getToday("yyyyMMddHHmmss"));
-//		System.out.println("["+doublePadding(123.45678,16,2)+"]"); //[012345]
-//		System.out.println("["+doubleDotPadding(123.45678,16,2)+"]"); //[123.45]
-//		
-//		System.out.println("["+doubleDotPadding(123.45678,10,2,' ')+"]"); //[    123.45]
-//		
-//		System.out.println(new Timestamp(getTimeInMillis("20050420181010", "yyyyMMddHHmmss")));
-//		System.out.println("["+trim(new String("   123   456  "))+"]");
-//        System.out.println("["+trim(null)+"]");
-////	    String today = FormatUtil.getToday();
-////	    System.out.println("######### " + getDate(today));
-////	    
-////	    System.out.println(new Timestamp(getTimeInMillis("20041010", "yyyyMMdd")));
-////	    
-////	    
-////	    
-////	    System.out.println(getTimeInMillis("2004-01", "yyyy-MM")); 
-////	    
-////	    String testString = "AAA";
-////	    String sString = FormatUtil.append0x1f(testString);
-////	    System.out.println("source String : " + StringUtil.printFormattedToHexString(testString) + " -> appendedString : " + StringUtil.printFormattedToHexString(sString));
-////	    System.out.println("appendedString String : " + StringUtil.printFormattedToHexString(sString) + " -> remove appendedString : " + StringUtil.printFormattedToHexString(sString.trim()));
-////	    System.out.println("appendedString String : " + StringUtil.printFormattedToHexString(sString) + " -> remove appendedString : " + StringUtil.printFormattedToHexString(FormatUtil.removeTail0x1f(sString)));
-////	    
-////	    System.out.println("FormatUtil.lPadding(testString, 10, '0') : [" + FormatUtil.lPadding(testString, 10, '0'));
-////	    System.out.println("FormatUtil.rPadding(testString, 10, '0') : [" + FormatUtil.rPadding(testString, 10, '0'));
-////        
-////        testString = "Áßº¹µÈ °Å·¡°íÀ¯¹øÈ£ÀÔ´Ï´Ù.|BICÄÚµå:NACFKRS0XXX|°Å·¡°íÀ¯¹øÈ£:FS04ZZ090702";
-////        System.out.println(FormatUtil.rPadding(testString, 60, ' '));
 //	
-//        System.out.println(doublePadding(123456789012345.012,17,2));
-//        System.out.println(doubleDotPadding(12345678901234.012,17,2));
-    }//end of main()
-	/**
-	 * +- ±âÈ£°¡ ÀÖ´Â ±Ý¾×À» parsingÇÑ´Ù 
-	 * @param amount ±Ý¾×
-	 * @return
-	 */
-	public static long parseSignedAmount(String amount) {
-		char sign = amount.charAt(0);
-		if (sign == '-' || sign == '+') {
-			String value = amount.substring(1);
-			long retValue = Long.parseLong(value);
-			if (sign == '-')
-				retValue = - retValue;
-			
-			return retValue;
-		}
-		return Long.parseLong(amount);
-	}
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ÕºÎºÐ¿ï¿½ ï¿½Ö´ï¿½ '0'ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * È£ï¿½ï¿½Æ®ï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Þ¹ï¿½ï¿½ï¿½ CICS COMMAREAï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½ ï¿½ï¿½ì¿¡ ï¿½ÕºÎºÐ¿ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
+//	 * '0'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ''ï¿½ï¿½ ï¿½ï¿½ì¿¡ defaultï¿½ï¿½ï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½Ø´ï¿½
+//	 *
+//	 * @param str String    ï¿½Õ¿ï¿½ 0ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½) ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param deflt         default ï¿½ï¿½
+//	 * @return String       ï¿½Õ¿ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ '0'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ''ï¿½ï¿½ ï¿½ï¿½ì¿¡ defaultï¿½ï¿½ï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½Ø´ï¿½
+//	 */ 
+////	public static String trimZero(String str, String deflt) {
+////		String retval = new String();
+////
+////		try{
+////			retval = str.trim();
+////			if (retval == null || retval.equals("") || retval.length() == 0){
+////				return "";
+////			}
+////			if( retval.substring(0,1).equals("0")){
+////				int cnt = retval.length();
+////				for(int i= 0; i< cnt ; i++){
+////					if(retval.substring(0,1).equals("0") ){
+////						retval = retval.substring(1);
+////					}else{
+////						break;
+////					}
+////				}
+////			}
+////
+////		}catch(Exception e){
+////			System.err.println("error :trimZero() in UtilFmt : "+e.toString());
+////		}
+////
+////		if(StringUtil.isNull(retval)){
+////			retval = deflt;
+////		}
+////		
+////		return retval;  
+////
+////	} // End of trimZero
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ÞºÎºï¿½ 2ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½ Ã³ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+//	 * ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ÞºÎºï¿½ 2ï¿½Ú¸ï¿½ ï¿½Ù·ï¿½ ï¿½Õ¿ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½(.)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target String ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String       ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String makeRate(String target) {
+//		target = trimZero(target.trim());
+//		int len = target.length();
+//		if(len == 0 || target.equals("") || target == null){
+//			return "";
+//		}
+//		if(len <=2 ){
+//			return "0." +target;
+//		}else{
+//			return target.substring(0,len-2) + "." + target.substring(len-2);
+//		}
+//
+//	} // End of makeRate
+//
+//	// ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ð¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½....
+//	// ï¿½ï¿½ float_lengthï¿½Ú¸ï¿½ï¿½ï¿½Å­ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·ï¿½ Ã³ï¿½ï¿½ï¿½Ï°ï¿½ '.'ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...
+//	public static String makeRate(String target,int float_length) {
+//		target = trimZero(target.trim());
+//		int len = target.length();
+//		if(len == 0 || target.equals("") || target == null){
+//			return "";
+//		}
+//		if(len <= float_length ){
+//			return "0." +target;
+//		}else{
+//			return ( target.substring(0,len-float_length) + "."
+//					 + target.substring(len-float_length) );
+//		}             
+//	}
+//
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½Å­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 * ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ÂµÇ¸ï¿½ ï¿½Èµï¿½.
+//	 * @param target String ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param fmt String    ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @param cutLength int ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Úºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String subStrMakeFormat(String target, String fmt,int cutLength){
+//		
+//		if(target == null || target.length() == 0) 
+//			return "";
+//		
+//		if(cutLength < 0 ) 
+//			return target;
+//		
+//		String ret = "";
+//		if(target.length() > cutLength ) {
+//			ret = target.substring(0,target.length()-cutLength);
+//		} else {
+//			ret = target;
+//		}
+//		
+//		ret = makeFormat(ret,fmt);
+//		return ret;
+//	}
+//	
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target String ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param fmt String    ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(String target, String fmt) {
+//		String retval = new String();
+//		String sign = "";
+//
+//		try{
+//			fmt = trimZero(fmt.trim());
+//			char first = fmt.charAt(0);
+//
+//			if( first == 'd' || first == 'D') {
+//				if(target.length() != 6){
+//					throw new java.lang.Exception("Date Incorrect");
+//				}
+//				retval = makeDate(target);
+//			}else{
+//				switch(first){
+//					case 'S' :
+//					case 's' :
+//						 sign = "S";
+//					case '9' :
+//						if(!"0".equals(target))
+//							target = trimZero(target.trim());
+//						
+//						if (target == null || target.equals("") || target.length() == 0){
+//							return "0";
+//						}
+////						if (target.length() > 0 || target.indexOf('-') > 0 ){
+////							return "-1";
+////						}
+//						retval = makeNumeric(target, fmt, sign);
+//						break;
+//					default : 
+//						retval = "";
+//				}
+//			}
+//		}catch(java.lang.Exception e){
+//			e.printStackTrace();
+//		//  log.printLog(e.toString());
+//		}
+//
+//		return retval;
+//
+//	} // End of makeFormat
+//
+//
+//
+//	/**
+//	 * floatï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target float  ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ float
+//	 * @param fmt String    ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(float target, String fmt){
+//		return makeFormat( String.valueOf(target), fmt);
+//	}
+//
+//
+//	/**
+//	 * floatï¿½ï¿½ï¿½ï¿½ "9.99"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target float  ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ float
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(float target){
+//		return makeFormat( String.valueOf(target), "9.99");
+//	}
+//
+//
+//	/**
+//	 * doubleï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target double ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ double
+//	 * @param fmt String    ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(double target, String fmt){
+//		return makeFormat( Double.toString(target), fmt);
+//	}
+//
+//	/**
+//	 * doubleï¿½ï¿½ï¿½ï¿½ "9.99"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target double ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ double
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static  String makeFormat(double target){
+//		return makeFormat( String.valueOf(target), "9.99");
+//	}
+//
+//
+//	/**
+//	 * doubleï¿½ï¿½ï¿½ï¿½ "9" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target double ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ double
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(long target){
+//		return makeFormat( String.valueOf(target), "9");
+//	}
+//
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "9.99" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ "9" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target String ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(String target){
+//		if(target.indexOf('.') > -1 ){
+//			return makeFormat( target, "9.99");
+//		}else{
+//			return makeFormat( target, "9");
+//		}
+//	}
+//
+//    
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È­ï¿½Ï¿ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target String ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param code int      ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 *                      "9" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 1
+//	 *                      "9.99" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 2
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */ 
+//	public static String makeFormat(String target, int code){
+//		if (code == 1) {
+//			return makeFormat( target,"9") ;
+//		} else if( code == 2) {
+//			return makeFormat( target,"9.99");
+//		} else {
+//			return "unknown code";
+//		}
+//	}
+//
+//    
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Delimiter)ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param date String   ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 *                      ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ÔµÇ¾ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ ï¿½Ê¾Ò°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+//	 * @param fmt String    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Delimiter)
+//	 * @return String       ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Delimiter)ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String makeDate(String date, String fmt) {
+//
+//		String yy = new String();
+//		String mm = new String();
+//		String dd = new String();
+//		String retval = date;
+//		if(retval.indexOf(fmt) == -1)
+//		{
+//			try{
+//				if(date.length() == 6){
+//					yy = date.substring(0,2);
+//					mm = date.substring(2,4);
+//					dd =  date.substring(4,6);
+//					retval = yy + fmt + mm + fmt + dd;
+//				}else if(date.length() == 8){
+//					yy = date.substring(0,4);
+//					mm = date.substring(4,6);
+//					dd =  date.substring(6,8);
+//					retval = yy + fmt + mm + fmt + dd;
+//				}
+//			}catch(java.lang.StringIndexOutOfBoundsException e){
+//				e.printStackTrace();
+//			}
+//		}   
+//		return retval;
+//
+//	} // End of makeDate
+//
+//
+//	/**
+//	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (/)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Delimiter)ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½Â¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param date String   ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 *                      ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ÔµÇ¾ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ ï¿½Ê¾Ò°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+//	 * @return String       ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(/)ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String makeDate(String date){
+//		return makeDate(date,"/");
+//	}
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½Â´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 * CGIï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼Òµï¿½ï¿½Ì´ï¿½.
+//	 *
+//	 * @param src String ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½Â´ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param fmt String ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return int  0(OK) ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½Â´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
+//	 *              ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½. 
+//	 *              ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+//	 *              ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å©ï¿½â¸¦ ï¿½Ê°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½: SIZE_OVER
+//	 *              ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡: TYPE_MISMATCH
+//	 *              ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ä¡: DATE_INCORRECT
+//	 *              ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: FAIL
+//	 * @deprecated  CGIï¿½ï¿½ï¿½ï¿½ È£È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 */
+//	public static int chkDataFormat(String src, String fmt) {
+//		char sign = ' ';
+//		int yy, mm, dd;
+//		try{    
+//		switch(fmt.charAt(0)){
+//			case 'x' : // ï¿½ï¿½ï¿½Ú¿ï¿½
+//			case 'X' :
+//				if( src.length() > fmt.length() ){
+//				for( int i= 0; i< src.length() ; i++){
+//					if(src.charAt(i) < ' '){
+//						return TYPE_MISMATCH ;
+//					}
+//				}
+//				}
+//				break;
+//			case 's' : // ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//			case 'S' :
+//				sign = 'S';
+//			case '9' : // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//				if( src.length() > fmt.length() ){
+//					return SIZE_OVER ;
+//				}
+//				for( int i= 0; i< src.length() ; i++){
+//					switch(src.charAt(i) ){
+//						case '-' :
+//						case '+' :
+//							if( sign != 'S'){
+//								return TYPE_MISMATCH;
+//							}
+//							break;
+//						case ',' :
+//						case '.' :
+//							break;
+//						default :
+//							if( !Character.isDigit(src.charAt(i)) ){
+//								return TYPE_MISMATCH;
+//							}
+//							break;
+//					}
+//				}
+//				break;
+//			case 'd' : // ï¿½ï¿½Â¥
+//			case 'D' :
+//				if( src.length() !=6 ){
+//					return DATE_INCORRECT;
+//				}
+//				yy = Integer.valueOf(src.substring(0,2)).intValue();
+//				mm = Integer.valueOf(src.substring(2,4)).intValue();
+//				dd = Integer.valueOf(src.substring(4,6)).intValue();
+//
+//				if(yy < 10 ){
+//					yy += 100;
+//				}               
+//				if( isLeapYear(1900 + yy) ) {
+//					maxdd[1] +=1;
+//				}
+//				if( yy < 0 || yy > 199 || mm <= 0 || mm > 12 ||
+//					dd <= 0 || dd > maxdd[mm-1] ){
+//						return DATE_INCORRECT;
+//				}
+//				break;
+//			default : // ï¿½ï¿½Å¸
+//				return FAIL;
+//		}
+//		}catch(Exception e){
+//			e.printStackTrace();
+//			return FAIL;
+//		}
+//		return OK;
+//	} // End of chkDataFormat
+//
+//
+//	/**
+//	 * ï¿½Ê¿ï¿½ï¿½ ï¿½ï¿½È£ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ï°ï¿½ï¿½ï¿½
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ ï¿½Â´ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½Ò¼ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ä¿ï¿½
+//	 * Ãµï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½(,)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param target String ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param fmt String    ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param sign String   ï¿½ï¿½È£ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½Ý¾ï¿½ ï¿½Êµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	private static String makeNumeric(String target, String fmt, String sign) {
+//	//Log log = new Log("/db2/nwww/src/test/nf.log");
+//		String fract = "";
+//		String retval = "";
+//		String tmp = "";
+//
+////log.printLog("target >> " + target);
+//
+//  try {
+//		// COMMAREA ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ì¿¡ï¿½ï¿½ ....È°ï¿½ï¿½ï¿½...
+//		// ï¿½Ï¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½Ù²Ù´ï¿½ ï¿½ï¿½ì¿¡ï¿½ï¿½ ï¿½Èµï¿½..ï¿½ï¿½ï¿½ï¿½...
+//		// HOSTï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...
+//		/*************************************************
+//		J => -1  } => -0   ï¿½ï¿½) 12J => -121
+//		K => -2
+//		L => -3
+//		M => -4
+//		N => -5
+//		O => -6
+//		P => -7
+//		Q => -8
+//		R => -9
+//		*************************************************/
+//		int target_size = target.length();
+//		String last_char = target.substring(target_size - 1, target_size);
+//		if ( last_char.equals("J")) {
+//			target = "-" + target.substring(0,target_size -1)+"1";
+//		} else if ( last_char.equals("K")) {
+//			target = "-" + target.substring(0,target_size -1)+"2";
+//		} else if ( last_char.equals("L")) {
+//			target = "-" + target.substring(0,target_size -1)+"3";
+//		} else if ( last_char.equals("M")) {
+//			target = "-" + target.substring(0,target_size -1)+"4";
+//		} else if ( last_char.equals("N")) {
+//			target = "-" + target.substring(0,target_size -1)+"5";
+//		} else if ( last_char.equals("O")) {
+//			target = "-" + target.substring(0,target_size -1)+"6";
+//		} else if ( last_char.equals("P")) {
+//			target = "-" + target.substring(0,target_size -1)+"7";
+//		} else if ( last_char.equals("Q")) {
+//			target = "-" + target.substring(0,target_size -1)+"8";
+//		} else if ( last_char.equals("R")) {
+//			target = "-" + target.substring(0,target_size -1)+"9";
+//		} else if ( last_char.equals("}")) {
+//			target = "-" + target.substring(0,target_size -1)+"0";
+//		}       
+//
+//		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ó°ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½Îºï¿½....
+//
+//		// sign ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//		float target_value = 0;
+//		try { 
+//		  target_value = Float.valueOf(target).floatValue(); 
+//		} catch(Exception float_error) {
+//		  target_value = 0;  
+//		} 
+//		if( target_value < 0 ){
+//				sign = "-";
+//				target = target.substring(1);
+//		}else if( sign == "S") {
+//				sign = "+";
+//		}else{
+//				sign = ""; // no sign
+//		}
+//
+//		//ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//		int pidx = target.indexOf('.');
+//		int fpidx = fmt.indexOf('.');
+//
+//		if( pidx >= 0 && fpidx >= 0) {
+//			if(pidx == 0){  
+//				tmp = "0";
+//			}else{
+//				tmp = target.substring(0, pidx);//ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½Ì»ï¿½
+//			}
+//			if(pidx+1 > target.length()){
+//				pidx = pidx-1;
+//			}
+//			if(fpidx+1 > fmt.length()){
+//				fpidx = fpidx-1;
+//			}
+//			fract = "." + makeFract(target.substring(pidx+1), fmt.substring(fpidx+1) );
+//
+////log.printLog("74 : fract " + fract);
+//		}else if( pidx >=0 && fpidx < 0){ //ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//			tmp = target.substring(0,pidx);
+//
+//		}else if( pidx < 0 && fpidx >= 0){ //ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+////			int len = (fmt.length()-1) - fpidx;
+//			tmp = target;
+//			fract = "." + makeFract("", fmt.substring(fpidx+1) );
+//		}else{
+//			tmp = target;
+//		}
+//
+//		retval = getComma(tmp);
+////log.printLog("returned retval >> " + retval);
+//	}catch(Exception e){
+//		//log.printLog(e.toString());
+//		e.printStackTrace();
+//	}
+//		return sign + retval + fract;
+//
+//	} // End of makeNumeric
+//            
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ Ãµï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½(,)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. 
+//	 *
+//	 * @param target String ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String       Ãµï¿½ï¿½ï¿½ï¿½ Ç¥ï¿½ï¿½(,)ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @see #delString
+//	 */
+//	public static String getComma(String target){
+//	//  Log log = new Log("/db2/nwww/src/test/nf.log");
+//		if(target == null){
+//			return "";
+//		}
+//		StringBuffer tmp = new StringBuffer(target);
+//		int len = tmp.length();
+//		int cnt = len/3;
+//
+//	//','ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		if( len <=3){
+//			return target;
+//		}
+//
+//		try{
+//			for(int i=1; i<= cnt ; i++){
+//				int offset = len -i*3;
+//				if( offset !=0){
+//					tmp.insert(offset,','); 
+//				}
+//			}   
+//		}catch(Exception e){
+//			//log.printLog(e.toString());
+//			e.printStackTrace();
+//		}
+//
+////	log.printLog("getComma() : retval >> " + tmp.toString());
+//
+//		return  tmp.toString();
+//
+//	} // End of getComma
+//    
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½Å­ ï¿½Ò¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â´ï¿½.
+//	 *
+//	 * @param pnum String   ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @param fnum String   ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * @return String       ï¿½Ò¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	private static String makeFract(String pnum, String fnum){
+//	//  Log log = new Log("/db2/nwww/src/test/nf.log");
+//		int plen= pnum.length();
+//		int flen = fnum.length();
+//		try{
+//			if(plen == flen) {
+//				return pnum;
+//			}else if(plen < flen){
+//				String retval = pnum;
+//				for(int i=plen ; i<flen ; i++){
+//					retval = retval +"0";
+//				}
+//				return retval;
+//			}else{
+//				return pnum.substring(0,flen);
+//			}       
+//		}catch(Exception e){
+//			e.printStackTrace();
+//			//log.printLog(e.toString());
+//		}
+//		return "";
+//
+//	} // End of makeFract
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 * ï¿½ï¿½ ï¿½ï¿½, ï¿½Ø´ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½Ì¸ï¿½, ï¿½âº»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param req javax.servlet.http.HttpServletRequest ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»
+//	 * @param name String   ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ 
+//	 * @param init String   ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ 
+//	 * @see javax.servlet.http.HttpServletRequest.getParameter
+//	 */
+//	public static String getParameter(javax.servlet.http.HttpServletRequest req,
+//								String name, String init)
+//	{
+//		String value = req.getParameter(name);
+//
+//		if( value != null){
+//			if( value.equals(""))   
+//				return init;
+//			else
+//				return value;
+//		}else {
+//			return init;
+//		}
+//
+//	} // End of getParameter
+//
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Äµï¿½(ï¿½ÕºÎºÐ¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 * ï¿½ï¿½ ï¿½ï¿½, ï¿½Ø´ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½Ì¸ï¿½,
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¸ï¿½Å­ ï¿½ï¿½ï¿½é¹®ï¿½Ú·ï¿½ Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param req javax.servlet.http.HttpServletRequest ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»
+//	 * @param name String   ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ 
+//	 * @param init String   ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ 
+//	 * @see javax.servlet.http.HttpServletRequest.getParameter
+//	 */
+//	public static String getParameter(javax.servlet.http.HttpServletRequest req, String name, int len) {
+//
+//		String value = "";
+//
+//		value = req.getParameter(name);
+//		if( value == null )
+//			value = getString(len);
+//		else if ( value.length() != len )
+//			value = getString(value, len);
+//
+//		return value;
+//	} // End of getParameter
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ "yyyy-MM-dd" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ü¸ï¿½ ï¿½ß»ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param strText String ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @return String        "yyyy-MM-dd" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 * @exception IllegalArgumentException ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½
+//	 */
+//	public static String parseYYYYMMDD (String strText)
+//					throws IllegalArgumentException
+//	{
+//		String strReturn = new String();
+//
+//		try {
+//
+//			SimpleDateFormat dateChecker = new SimpleDateFormat("yyyy-MM-dd");
+//
+//			if ( strText.length() == 10 ) {
+//
+//				if ( strText.charAt(4) == strText.charAt(7) ) {
+//					strReturn = strText.substring(0, 4)
+//						+ "-" + strText.substring(5, 7)
+//						+ "-" + strText.substring(8, 10);
+//
+//				} else {
+//					throw new IllegalArgumentException();
+//				}
+//
+//			} else if (strText.length() == 8) {
+//
+//				strReturn = strText.substring(0, 4)
+//					+ "-" + strText.substring(4, 6)
+//					+ "-" + strText.substring(6, 8);
+//
+//			} else if ( strText.length() == 0 ) {
+//
+//				//strReturn = "1111-11-11";
+//				strReturn = "";
+//
+//			} else {
+//				throw new IllegalArgumentException();
+//			} // End of if-else
+//
+//			dateChecker.parse(strReturn, new ParsePosition (0) );
+//
+//		} catch (java.lang.Exception ex) {
+//
+//			throw new IllegalArgumentException(ex.toString());
+//
+//		} // End of try-catch
+//
+//
+//		return strReturn;
+//
+//	} // End of parseYYYYMMDD
+//
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(-)ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½, ï¿½ë½¬ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½
+//	 * ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ü¸ï¿½ ï¿½ß»ï¿½ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param strText String ï¿½ï¿½ï¿½Â¹ï¿½È£
+//	 * @return String        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(-)ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½ ï¿½ï¿½ï¿½Â¹ï¿½È£
+//	 * @exception IllegalArgumentException ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½Ôµï¿½ ï¿½ï¿½ï¿½
+//	 */
+//	public static String parseGjNo (String strText)
+//					throws IllegalArgumentException
+//	{
+//		String strReturn = new String();
+//
+//		try {
+//
+//			if ( strText.indexOf("-") >= 0 ) {
+//				strReturn = delString(strText, "-");
+//			} else {
+//				strReturn = strText;
+//			}
+//
+//			for (int nDash = 0; nDash < strReturn.length(); nDash++) {
+//
+//				if ( (strReturn.charAt(nDash) < '0')
+//					|| (strReturn.charAt(nDash) > '9') )
+//				{
+//					throw new IllegalArgumentException();
+//				} // End of if
+//
+//			} // End of for
+//
+//		} catch (java.lang.Exception ex) {
+//
+//			throw new IllegalArgumentException(ex.toString());
+//
+//		} // End of try-catch
+//
+//		return strReturn;
+//
+//	} // End of parseGjNo
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¹è¿­ï¿½ï¿½ ï¿½ï¿½/ï¿½Ý°ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¹®ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.<br>
+//	 * String Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ trim ï¿½Þ¼Òµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¹®ï¿½Ú¸ï¿½ trimï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ´ï¿½.<br>
+//	 * 'ï¿½ï¿½'(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½)ï¿½ï¿½ - String Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ trim ï¿½Þ¼Òµå¿¡ï¿½ï¿½Ã³ï¿½ï¿½ -
+//	 * ' '(ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½)ï¿½ï¿½ï¿½ï¿½ ï¿½Û°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¹®ï¿½Ú·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ trimï¿½Ñ´ï¿½.
+//	 *
+//	 * @param szTxt String      ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¹è¿­
+//	 * @return java.lang.String trimï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String trim(String strTxt) {
+//        if(strTxt==null) return "";
+//		char [] szTxt = strTxt.toCharArray();
+//		int len = szTxt.length;
+//		int st = 0;
+//		while ( (st < len) && 
+//				((szTxt[st] <= ' ') || (szTxt[st] == 'ï¿½ï¿½')) ) {
+//			st++;
+//		}
+//		while ( (st < len) && 
+//				((szTxt[len - 1] == 'ï¿½ï¿½') || (szTxt[len - 1] <= ' ')) ) {
+//			len--;
+//		}
+//        
+//		if ((st > 0) || (len < szTxt.length)) {
+//			if (st == len)
+//				return new String("");
+//			else            
+//				return new String(szTxt, st, (len-st));
+//		} else {
+//			return new String(szTxt);
+//		}
+//	} // End of trim
+//
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¹è¿­ï¿½ï¿½ ï¿½ï¿½/ï¿½Ý°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.<br>
+//	 * ï¿½ï¿½, ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½/ï¿½Ý°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Åµï¿½
+//	 * ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ Stringï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½..
+//	 *
+//	 * @param szTxt String      ï¿½Ò½ï¿½ ï¿½ï¿½ï¿½Ú¹è¿­
+//	 * @return java.lang.String trimï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
+//	 */
+//	public static String deleteAllSpace(String strTxt) {
+//		if (strTxt == null) {
+//			strTxt = "";
+//		}  
+//		int origin_length = strTxt.length();
+//        
+//		if ( origin_length == 0 ) {
+//			return new String("");
+//		} else {
+//			char source[] = strTxt.toCharArray();
+//			int  source_length = source.length;
+//			StringBuffer target = new StringBuffer();
+//			for (int i=0; i< source_length;i++) {
+//				if ((source[i] != ' ') &&
+//					(source[i] != ' ')) {
+//					target = target.append(source,i,1);
+//				}
+//			}
+//			String newString = target.toString();
+//			if (newString == null ) {
+//			   newString = "";
+//			}          
+//   
+//			return newString;
+//		}
+//	}
+//
+//	/**
+//	 * ï¿½Ö¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 * ï¿½ï¿½ ï¿½ï¿½, ï¿½Ø´ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½Ì¸ï¿½, ï¿½âº»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ñ´ï¿½.
+//	 *
+//	 * @param name String   ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ 
+//	 * @param init String   ï¿½Å°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ 
+//	 */
+//	public static String chkNull(String strVal, String init)
+//	{
+//
+//		if( strVal != null){
+//			if( strVal.equals(""))  
+//				return init;
+//			else
+//				return strVal;
+//		}else {
+//			return init;
+//		}
+//
+//	} // End of chkNull  ï¿½ï¿½ï¿½æ¿­ ï¿½ï¿½ï¿½ï¿½...2001ï¿½ï¿½ 12ï¿½ï¿½ 26ï¿½ï¿½
+//
+//	
+//	/**
+//	 * ï¿½×½ï¿½Æ® ï¿½Úµå¸¦ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ main() ï¿½Þ¼Òµï¿½
+//	 * @param args ï¿½ï¿½ï¿½à¿¡ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®
+//	 * @throws Exception main() ï¿½Þ¼Òµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Ï´ï¿½ Exception
+//	 */
+//	public static void main(String [] args) throws Exception {
+//		
+//		
+//		
+////		System.out.println(rPadding("ï¿½ï¿½", 4, '0'));
+////		System.out.println(rPadding("ï¿½ï¿½", 3, '0'));
+////		System.out.println(lPadding("ï¿½ï¿½ï¿½ï¿½", 1, '0'));
+////		System.out.println(lPadding("ï¿½ï¿½ï¿½ï¿½", 6, '0'));
+////		System.out.println(getToday("HHmmss"));
+////		System.out.println(getToday("HHmmss"));
+////		System.out.println(getToday("HHmmss"));
+////		System.out.println(getToday("HHmmss"));
+////		System.out.println(getToday("yyyyMMddHHmmss"));
+////		System.out.println("["+doublePadding(123.45678,16,2)+"]"); //[012345]
+////		System.out.println("["+doubleDotPadding(123.45678,16,2)+"]"); //[123.45]
+////		
+////		System.out.println("["+doubleDotPadding(123.45678,10,2,' ')+"]"); //[    123.45]
+////		
+////		System.out.println(new Timestamp(getTimeInMillis("20050420181010", "yyyyMMddHHmmss")));
+////		System.out.println("["+trim(new String("   123   456  "))+"]");
+////        System.out.println("["+trim(null)+"]");
+//////	    String today = FormatUtil.getToday();
+//////	    System.out.println("######### " + getDate(today));
+//////	    
+//////	    System.out.println(new Timestamp(getTimeInMillis("20041010", "yyyyMMdd")));
+//////	    
+//////	    
+//////	    
+//////	    System.out.println(getTimeInMillis("2004-01", "yyyy-MM")); 
+//////	    
+//////	    String testString = "AAA";
+//////	    String sString = FormatUtil.append0x1f(testString);
+//////	    System.out.println("source String : " + StringUtil.printFormattedToHexString(testString) + " -> appendedString : " + StringUtil.printFormattedToHexString(sString));
+//////	    System.out.println("appendedString String : " + StringUtil.printFormattedToHexString(sString) + " -> remove appendedString : " + StringUtil.printFormattedToHexString(sString.trim()));
+//////	    System.out.println("appendedString String : " + StringUtil.printFormattedToHexString(sString) + " -> remove appendedString : " + StringUtil.printFormattedToHexString(FormatUtil.removeTail0x1f(sString)));
+//////	    
+//////	    System.out.println("FormatUtil.lPadding(testString, 10, '0') : [" + FormatUtil.lPadding(testString, 10, '0'));
+//////	    System.out.println("FormatUtil.rPadding(testString, 10, '0') : [" + FormatUtil.rPadding(testString, 10, '0'));
+//////        
+//////        testString = "ï¿½ßºï¿½ï¿½ï¿½ ï¿½Å·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½Ô´Ï´ï¿½.|BICï¿½Úµï¿½:NACFKRS0XXX|ï¿½Å·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£:FS04ZZ090702";
+//////        System.out.println(FormatUtil.rPadding(testString, 60, ' '));
+////	
+////        System.out.println(doublePadding(123456789012345.012,17,2));
+////        System.out.println(doubleDotPadding(12345678901234.012,17,2));
+//    }//end of main()
+//	/**
+//	 * +- ï¿½ï¿½È£ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ý¾ï¿½ï¿½ï¿½ parsingï¿½Ñ´ï¿½ 
+//	 * @param amount ï¿½Ý¾ï¿½
+//	 * @return
+//	 */
+//	public static long parseSignedAmount(String amount) {
+//		char sign = amount.charAt(0);
+//		if (sign == '-' || sign == '+') {
+//			String value = amount.substring(1);
+//			long retValue = Long.parseLong(value);
+//			if (sign == '-')
+//				retValue = - retValue;
+//			
+//			return retValue;
+//		}
+//		return Long.parseLong(amount);
+//	}
 }

@@ -8,6 +8,9 @@ public class WebAppConstant {
 	public static final String URL_INDEX = "index.web";
 	public static final String URL_NOTIFICATION_LIST = "notice.web";
 	public static final String URL_NOTIFICATION_DETAIL = "notice_detail.web";
+	public static final String URL_NOTIFICATION_INSERT_FORM = "notice_insert_form.web";
+	public static final String URL_NOTIFICATION_INSERT = "notice_insert.web";
+	public static final String URL_NOTIFICATION_DELETE = "notice_delete.web";
 	public static final String URL_MAP = "map.web";
 	
 	/**
@@ -20,14 +23,15 @@ public class WebAppConstant {
 	 */
 	public static final String JSP_NOTICE_LIST = "notice_list";
 	public static final String JSP_NOTICE_DETAIL = "notice_detail";
+	public static final String JSP_NOTICE_INSERT_FORM = "notice_insert_form";
 	public static final String JSP_MAP = "map2";
 	
 	/**
-	 * »Ø∞Êø° µ˚∂Û ¥Ÿ∏• DB∏¶ º±≈√
-	 * KEB : ø©±‚:)
-	 * RBP : ∂Û¡Ó∫£∏Æ∆ƒ¿Ã DB
+	 * ÌôòÍ≤®Ïóê Îî∞Îùº DB
+	 * KEB :
+	 * RBP : 
 	 */
-	public static final String LOCATION = "KEB";  //
+	public static final String LOCATION = "RBP";  //
 	public static final String KEB = "KEB";  //
 	public static final String RBP = "RBP";  //
 	

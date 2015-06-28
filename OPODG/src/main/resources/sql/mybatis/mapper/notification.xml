@@ -21,43 +21,57 @@
 	up_id,
 	up_date
 	FROM notice
-	ORDER BY seq DESC
-	LIMIT #{_LIST_START_RECORD},#{_LIST_END_RECORD}
+	order by seq desc
+    LIMIT ${off},${row};
     	]]>
   </select>
   <select id="getNoticeDetail" parameterType="hashmap" resultType="hashmap">
    	<![CDATA[
-    SELECT 
-		seq,
-		category,
-		title,
-		link_url,
-		content,
-		search_yn,
-		search_end_date,
-		reg_id,
-		reg_date,
-		up_id,
-		up_date
-	 FROM notice
-     WHERE seq = #{seq}
+SELECT 
+seq,
+category,
+title,
+link_url,
+content,
+search_yn,
+search_end_date,
+reg_id,
+reg_date,
+up_id,
+up_date
+FROM notice
+WHERE seq = ${seq}
     	]]>
   </select>
   <insert id="setNotice" parameterType="hashmap">
    	<![CDATA[
-	insert into notice values(
-		#{seq},
-		#{category},
-		#{title},
-		#{link_url},
-		#{content},
-		#{search_yn},
-		#{search_end_date},
-		#{reg_id},
-		#{reg_date},
-		'',
-		''
-	)
+insert into notice(
+category,
+title,
+link_url,
+content,
+search_yn,
+search_end_date,
+reg_id,
+reg_date,
+up_id,
+up_date
+)values(
+#{category},
+#{title},
+#{link_url},
+#{content},
+#{search_yn},
+#{search_end_date},
+#{reg_id},
+#{reg_date},
+'',
+''
+)
     	]]>
   </insert>
+  <delete id="delNotice" parameterType="hashmap">
+  	Delete from notice
+	WHERE seq = ${seq}
+  </delete>
 </mapper> 
