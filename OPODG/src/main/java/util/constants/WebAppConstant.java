@@ -31,7 +31,7 @@ public class WebAppConstant {
 	 * KEB :
 	 * RBP : 
 	 */
-	public static final String LOCATION = "RBP";  //
+	public static final String LOCATION = "KEB";  //
 	public static final String KEB = "KEB";  //
 	public static final String RBP = "RBP";  //
 	
