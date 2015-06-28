@@ -33,6 +33,6 @@ public class WebAppConstant {
 	 */
 	public static final String LOCATION = "KEB";  //
 	public static final String KEB = "KEB";  //
-	public static final String RBP = "RBP";  //
+	public static final String RBP = "RBP";  // 
 	
 }
