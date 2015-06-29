@@ -34,3 +34,17 @@
 
 <!-- [mysqldump] -->
 <!-- default-character-set = utf8 -->
+
+<!-- create table notice( -->
+<!-- seq int auto_increment primary key, -->
+<!-- category varchar(2), -->
+<!-- title varchar(100), -->
+<!-- link_url varchar(200), -->
+<!-- content varchar(3000), -->
+<!-- search_yn varchar(1), -->
+<!-- search_end_date varchar(8), -->
+<!-- reg_id varchar(10), -->
+<!-- reg_date varchar(8), -->
+<!-- up_id varchar(10), -->
+<!-- up_date varchar(8) -->
+<!-- ) -->

@@ -6,23 +6,23 @@
   <select id="getNoticeCnt" resultType="string">
     SELECT count(*) FROM notice  
   </select>
-   <select id="getNoticeList" resultType="hashmap">
+   <select id="getNoticeList" parameterType="hashmap" resultType="hashmap">
    	<![CDATA[
-	SELECT 
-	seq,
-	category,
-	title,
-	link_url,
-	content,
-	search_yn,
-	search_end_date,
-	reg_id,
-	reg_date,
-	up_id,
-	up_date
-	FROM notice
-	order by seq desc
-    LIMIT ${off},${row};
+SELECT 
+seq,
+category,
+title,
+link_url,
+content,
+search_yn,
+search_end_date,
+reg_id,
+reg_date,
+up_id,
+up_date
+FROM notice
+order by seq desc
+LIMIT ${start},${end}
     	]]>
   </select>
   <select id="getNoticeDetail" parameterType="hashmap" resultType="hashmap">

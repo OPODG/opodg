@@ -37,9 +37,10 @@
         		<div class="jqm-block-content">
         			<h3>Item 01</h3>
 
-        			<p><a href="pages/" data-ajax="false">Introduction</a></p>
-        			<p><a href="<%=WebAppConstant.URL_NOTIFICATION_LIST %>?page=list" data-transition="slide">Notification(ok)</a></p>
-        			<p><a href="loader/" data-ajax="false">Consumer Center</a></p>
+        			<p><a href="<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide">Introduction</a></p>
+        			<p><a href="<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide">Notification</a></p>
+        			<p><a href="<%=WebAppConstant.URL_MAP %>" data-ajax="false">map</a></p>
+<!--         			<p><a href="loader/" data-ajax="false">Consumer Center</a></p> -->
         		</div>
         	</div>
         	<div class="ui-block-b">
@@ -47,7 +48,7 @@
         			<h3>Item 02</h3>
 
         			<p><a href="theme-default/" data-ajax="false">Community</a></p>
-        			<p><a href="<%=WebAppConstant.URL_MAP %>" data-ajax="false">map</a></p>
+        			
         		</div>
         	</div>        	
         </div>

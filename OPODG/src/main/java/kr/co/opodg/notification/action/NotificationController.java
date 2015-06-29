@@ -42,35 +42,33 @@ public class NotificationController {
 	 */
 	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_LIST)
 	public ModelAndView goList( HttpServletRequest request, HttpServletResponse response) throws Exception{
-		String page = request.getParameter("page");
-		String code = request.getParameter("code");
-		String currentPage = request.getParameter("currentPage");
-		if(currentPage==null){
-			currentPage="0";
+		int rowNum = WebAppConstant.LIST_CNT_NOTIFICATION;
+		String nextPageNum = request.getParameter("nextPageNum");
+		System.out.println("nextPageNum:1:"+nextPageNum);
+		if(nextPageNum==null){
+			nextPageNum="0";
 		}
-		logger.info("NotificationController goBoard() page:{}.::"+WebAppConstant.LOCATION, page);
 		ModelAndView mv = new ModelAndView();
 		
 		String nextPage = "";
-		int count =0;
+		int totalCnt =0;
 		nextPage=WebAppConstant.JSP_NOTICE_LIST;
 		ArrayList arr = null;
 		HashMap hm = new HashMap();
-		if(WebAppConstant.KEB.equals(WebAppConstant.LOCATION)){
-			hm.put("ROW_CNT", 10);
-			hm.put("PAGE", 1);
-			count = query.selectOne("test.getAPT");
-			arr = (ArrayList) query.selectList("test.getAPTList",hm);	
-		}else{
-			hm.put("off", 0);
-			hm.put("row", 10);
-			count = Integer.parseInt((String)query.selectOne("notification.getNoticeCnt"));
-			arr = (ArrayList) query.selectList("notification.getNoticeList");
-		}
+		int start = 0;
+		int end = 0;
+		start = Integer.parseInt(nextPageNum) * rowNum;
+		end = start+rowNum;
+		System.out.println("start::"+start+"//end::"+end);
+		hm.put("start", start);
+		hm.put("end", end);
+		totalCnt = Integer.parseInt((String)query.selectOne("notification.getNoticeCnt"));
+		arr = (ArrayList) query.selectList("notification.getNoticeList",hm);
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
 		mv.addObject("arr", arr );
-		mv.addObject("count",count);
-		mv.addObject("currentPage",currentPage);
-		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage+"_"+WebAppConstant.LOCATION);
+		mv.addObject("totalCnt",totalCnt);
+		mv.addObject("currentPage",nextPageNum);
+		
 		return mv;		
 	}
 	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_DETAIL)
@@ -83,20 +81,12 @@ public class NotificationController {
 		
 		String nextPage = "";
 		HashMap hm = new HashMap();
-		if(WebAppConstant.KEB.equals(WebAppConstant.LOCATION)){
-			nextPage=WebAppConstant.JSP_NOTICE_DETAIL;
-			hm.put("code", "'"+code+"'");
-			hm = query.selectOne("getAPTDetail", hm);
-			mv.addObject("hm", hm );
-		}else{
-			nextPage=WebAppConstant.JSP_NOTICE_DETAIL;
-			hm.put("seq", "'"+code+"'");
-			hm = query.selectOne("notification.getNoticeDetail", hm);
-			mv.addObject("hm", hm );
-			logger.info("NotificationController godetail."+hm);
-			logger.info("NotificationController godetail."+hm.get("seq"));
-		}
-		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage+"_"+WebAppConstant.LOCATION);
+		nextPage=WebAppConstant.JSP_NOTICE_DETAIL;
+		hm.put("seq", "'"+code+"'");
+		hm = query.selectOne("notification.getNoticeDetail", hm);
+		mv.addObject("hm", hm );
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
+		
 		return mv;		
 	}
 	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_INSERT_FORM)
@@ -104,8 +94,7 @@ public class NotificationController {
 		logger.info("NotificationController goInsertForm() code:{}.");
 		ModelAndView mv = new ModelAndView();
 		String nextPage = WebAppConstant.JSP_NOTICE_INSERT_FORM;
-		System.out.println(WebAppConstant.CT_NOTIFICATION+nextPage+"_"+WebAppConstant.LOCATION);
-		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage+"_"+WebAppConstant.LOCATION);
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);			
 		return mv;		
 	}
 	
@@ -124,7 +113,7 @@ public class NotificationController {
 		hm.put("reg_id", id);
 		hm.put("reg_date", "20150628");
 		query.insert("setNotice", hm);
-		logger.info("NotificationController goInsert() code:{}.");
+		logger.info("NotificationController goInsert() code:{}.");	
 		return "redirect:"+WebAppConstant.URL_NOTIFICATION_LIST;		
 	}
 	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_DELETE)
