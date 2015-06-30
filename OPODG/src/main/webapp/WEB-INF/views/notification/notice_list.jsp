@@ -37,12 +37,12 @@ function goDetail(code){
 	f.submit();
 }
 function goPage(){
-	var f = document.form1;
+	var f = document.notice_list;
 	document.getElementById("nextPageNum").value=$("select[name=select-v-5e]").val();
 	f.submit();
 }
 function goNextPage(){
-	var f = document.form1;
+	var f = document.notice_list;
 	<%
 	boolean ynN = true;
 	if(currentPage+1==totalPage){
@@ -57,7 +57,7 @@ function goNextPage(){
 	<%}%>
 }
 function goPrePage(){
-	var f = document.form1;
+	var f = document.notice_list;
 	<%
 	boolean ynP = true;
 	if(currentPage==0){
@@ -76,7 +76,7 @@ function goPrePage(){
 	<input type="hidden" id="page" name="page" value="detail">
 	<input type="hidden" id="code" name="code" value=""/>
 </form>
-<form id="form1" name="form1" method="POST" action="/notice.web">
+<form id="notice_list" name="notice_list" method="POST" action="<%=request.getContextPath() %>/notice.web">
 	<input type="hidden" id="nextPageNum" name="nextPageNum" value="">
 </form>
 	<div data-role="header" class="jqm-header">
@@ -94,7 +94,7 @@ function goPrePage(){
         		HashMap hm = (HashMap)arr.get(i);
         		int seq = (Integer)hm.get("seq") ;
         %>
-				<li><a href="<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&pageNo=<%=request.getAttribute("pageNo") %>&code=<%=seq %>" data-transition="slide"><%=hm.get("title") %></a></li> 
+				<li><a href="<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&pageNo=<%=request.getAttribute("pageNo") %>&seq=<%=seq %>" data-transition="slide"><%=hm.get("title") %></a></li> 
 		       <%
         	}
         %>

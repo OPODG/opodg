@@ -32,6 +32,7 @@ public class NotificationController {
 	public ModelAndView goList( HttpServletRequest request, HttpServletResponse response) throws Exception{
 		int rowNum = WebAppConstant.LIST_CNT_NOTIFICATION;
 		String nextPageNum = request.getParameter("nextPageNum");
+		logger.info("NotificationController goList() nextPageNum:{}.", nextPageNum);
 		System.out.println("nextPageNum:1:"+nextPageNum);
 		if(nextPageNum==null){
 			nextPageNum="0";
@@ -63,14 +64,14 @@ public class NotificationController {
 	public ModelAndView goDetail( HttpServletRequest request, HttpServletResponse response) throws Exception{
 
 		String page = request.getParameter("page");
-		String code = request.getParameter("code");
-		logger.info("NotificationController goBoard() code:{}.", code);
+		String seq = request.getParameter("seq");
+		logger.info("NotificationController goBoard() code:{}.", seq);
 		ModelAndView mv = new ModelAndView();
 		
 		String nextPage = "";
 		HashMap hm = new HashMap();
 		nextPage=WebAppConstant.JSP_NOTICE_DETAIL;
-		hm.put("seq", "'"+code+"'");
+		hm.put("seq", "'"+seq+"'");
 		hm = query.selectOne("notification.getNoticeDetail", hm);
 		mv.addObject("hm", hm );
 		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
