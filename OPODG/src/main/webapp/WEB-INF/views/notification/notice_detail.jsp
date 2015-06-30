@@ -31,7 +31,7 @@
 		}
 		function goModify(){
 			var f = document.deleteF;
-			f.action = "<%=WebAppConstant.URL_NOTIFICATION_MODIFY_FORM %>";
+			f.action = "<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_MODIFY_FORM %>";
 			f.submit();
 		}
 	</script>
@@ -42,7 +42,7 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content jqm-content">
-		<form id="deleteF" name="deleteF" method="POST" action="<%=WebAppConstant.URL_NOTIFICATION_DELETE %>">
+		<form id="deleteF" name="deleteF" method="POST" action="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_DELETE %>">
 		<input type="hidden" id="seq" name="seq" value="<%=hm.get("seq") %>"/>
 		</form>
 		<p>seq : <%=hm.get("seq") %></p>

@@ -38,7 +38,7 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content jqm-content">
-		<form id="modify" name="modify" method="POST" action="<%=WebAppConstant.URL_NOTIFICATION_MODIFY %>">
+		<form id="modify" name="modify" method="POST" action="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_MODIFY %>">
 			 <input type="hidden" data-mini="true" name="seq" id="seq" value="<%=hm.get("seq") %>">
 		     <label for="text-4">ID:</label><input type="text" data-mini="true" name="id" id="id" value="<%=hm.get("reg_id") %>" disabled="disabled">
 		     <label for="text-5">Title:</label><input type="text" data-clear-btn="true" data-mini="true" name="title" id="title" value="<%=hm.get("title") %>">

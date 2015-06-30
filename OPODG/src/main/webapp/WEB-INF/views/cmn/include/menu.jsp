@@ -3,8 +3,8 @@
 <div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
    	<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
 		<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web" data-transition="slide">Home</a></li>
-		<li data-filtertext="opodg introduction"><a href="<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide">Introduction</a></li>
-		<li data-filtertext="notification"><a href="<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide">Notification</a></li>
+		<li data-filtertext="opodg introduction"><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide">Introduction</a></li>
+		<li data-filtertext="notification"><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide">Notification</a></li>
 		<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
 			<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
 				<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
@@ -19,7 +19,7 @@
 				</ul>
 			</div>
 		</li>
-		<li data-filtertext="Community"><a href="map.web" data-ajax="false">map</a></li>
+		<li data-filtertext="Community"><a href="<%=request.getContextPath() %>/map.web" data-ajax="false">map</a></li>
      </ul>
 </div><!-- /panel -->
 <!-- TODO: This should become an external panel so we can add input to markup (unique ID) -->
@@ -27,8 +27,8 @@
 	<div class="jqm-search">
 		<ul class="jqm-list" data-filter-placeholder="Search demos..." data-filter-reveal="true">
 			<li data-filtertext="opodg demos homepage" data-icon="home"><a href="index.web" data-transition="slide">Home</a></li>
-			<li data-filtertext="opodg introduction"><a href="<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Introduction</a></li>
-			<li data-filtertext="notification"><a href="<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Notification</a></li>
+			<li data-filtertext="opodg introduction"><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Introduction</a></li>
+			<li data-filtertext="notification"><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Notification</a></li>
 			<li data-role="collapsible" data-enhanced="true" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
 				<h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
 					<a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d">
@@ -43,7 +43,7 @@
 					</ul>
 				</div>
 			</li>
-			<li data-filtertext="Community"><a href="map.web" data-ajax="false">map</a></li>
+			<li data-filtertext="Community"><a href="<%=request.getContextPath() %>/map.web" data-ajax="false">map</a></li>
 		</ul>
 	</div>
 </div><!-- /panel -->

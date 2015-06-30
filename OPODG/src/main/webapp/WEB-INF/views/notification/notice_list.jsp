@@ -94,7 +94,7 @@ function goPrePage(){
         		HashMap hm = (HashMap)arr.get(i);
         		int seq = (Integer)hm.get("seq") ;
         %>
-				<li><a href="<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&pageNo=<%=request.getAttribute("pageNo") %>&seq=<%=seq %>" data-transition="slide"><%=hm.get("title") %></a></li> 
+				<li><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_DETAIL %>?page=detail&pageNo=<%=request.getAttribute("pageNo") %>&seq=<%=seq %>" data-transition="slide"><%=hm.get("title") %></a></li> 
 		       <%
         	}
         %>
@@ -110,7 +110,7 @@ function goPrePage(){
 		        </select>
 		        <a href="#" onclick="goNextPage();return false;" class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-right">&nbsp;</a>
 		    </fieldset>
-			<a href="<%=WebAppConstant.URL_NOTIFICATION_INSERT_FORM %>" class="ui-btn ui-btn-inline" data-transition="slide"  data-ajax="false">INSERT</a>
+			<a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_INSERT_FORM %>" class="ui-btn ui-btn-inline" data-transition="slide"  data-ajax="false">INSERT</a>
 		</div>
 <div class="ui-field-contain">
 

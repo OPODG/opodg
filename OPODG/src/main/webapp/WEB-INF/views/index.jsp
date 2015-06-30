@@ -37,9 +37,9 @@
         		<div class="jqm-block-content">
         			<h3>Item 01</h3>
 
-        			<p><a href="<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide">Introduction</a></p>
-        			<p><a href="<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide">Notification</a></p>
-        			<p><a href="<%=WebAppConstant.URL_MAP %>" data-ajax="false">map</a></p>
+        			<p><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_INTRODUCTION %>" data-transition="slide">Introduction</a></p>
+        			<p><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_LIST %>" data-transition="slide">Notification</a></p>
+        			<p><a href="<%=request.getContextPath() %>/<%=WebAppConstant.URL_MAP %>" data-ajax="false">map</a></p>
 <!--         			<p><a href="loader/" data-ajax="false">Consumer Center</a></p> -->
         		</div>
         	</div>

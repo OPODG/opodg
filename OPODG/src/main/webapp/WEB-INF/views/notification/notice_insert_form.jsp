@@ -35,7 +35,7 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content jqm-content">
-		<form id="form1" name="form1" method="POST" action="<%=WebAppConstant.URL_NOTIFICATION_INSERT %>">
+		<form id="form1" name="form1" method="POST" action="<%=request.getContextPath() %>/<%=WebAppConstant.URL_NOTIFICATION_INSERT %>">
 		     <label for="text-4">ID:</label><input type="text" data-mini="true" name="id" id="id" value="">
 		     <label for="text-5">Title:</label><input type="text" data-clear-btn="true" data-mini="true" name="title" id="title" value="">
 		    <label for="textarea-4">Contents:</label><textarea data-mini="true" cols="40" rows="80" name="contents" id="contents"><%=request.getContextPath() %></textarea>
