@@ -104,6 +104,45 @@ public class NotificationController {
 		logger.info("NotificationController goInsert() code:{}.");	
 		return "redirect:"+WebAppConstant.URL_NOTIFICATION_LIST;		
 	}
+	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_MODIFY_FORM)
+
+	public ModelAndView goModifyForm( HttpServletRequest request, HttpServletResponse response) throws Exception{
+		String seq = request.getParameter("seq");
+		logger.info("NotificationController goModifyForm() code:{}.", seq);
+		ModelAndView mv = new ModelAndView();
+		
+		String nextPage = "";
+		HashMap hm = new HashMap();
+		nextPage=WebAppConstant.JSP_NOTICE_MODIFY_FORM;
+		hm.put("seq", "'"+seq+"'");
+		hm = query.selectOne("notification.getNoticeDetail", hm);
+		mv.addObject("hm", hm );
+		mv.setViewName(WebAppConstant.CT_NOTIFICATION+nextPage);
+		
+		return mv;		
+	}
+	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_MODIFY)
+	public String goModify( HttpServletRequest request, HttpServletResponse response) throws Exception{
+		String seq = request.getParameter("seq");
+		logger.info("NotificationController goDelete() seq:{}.",seq);
+		String id = request.getParameter("id");
+		String title = request.getParameter("title");
+		String contents = request.getParameter("contents");
+		HashMap hm = new HashMap();
+		hm.put("seq", "'"+seq+"'");
+		hm.put("category", "00");
+		hm.put("title", title);
+		hm.put("link_url", "");
+		hm.put("content", contents);
+		hm.put("search_yn", "Y");
+		hm.put("search_end_date", "99991231");
+		hm.put("reg_id", id);
+		hm.put("reg_date", "20150930");
+		hm.put("up_id", id);
+		hm.put("up_date", "20150630");
+		query.update("doModify", hm);
+		return "redirect:"+WebAppConstant.URL_NOTIFICATION_LIST;		
+	}
 	@RequestMapping(value = WebAppConstant.URL_NOTIFICATION_DELETE)
 	public String goDelete( HttpServletRequest request, HttpServletResponse response) throws Exception{
 		String seq = request.getParameter("seq");
@@ -113,4 +152,5 @@ public class NotificationController {
 		query.delete("delNotice", hm);
 		return "redirect:"+WebAppConstant.URL_NOTIFICATION_LIST;		
 	}
+	
 }

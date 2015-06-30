@@ -10,6 +10,8 @@ public class WebAppConstant {
 	public static final String URL_NOTIFICATION_DETAIL = "notice_detail.web";
 	public static final String URL_NOTIFICATION_INSERT_FORM = "notice_insert_form.web";
 	public static final String URL_NOTIFICATION_INSERT = "notice_insert.web";
+	public static final String URL_NOTIFICATION_MODIFY_FORM = "notice_modify_form.web";
+	public static final String URL_NOTIFICATION_MODIFY = "notice_modify.web";
 	public static final String URL_NOTIFICATION_DELETE = "notice_delete.web";
 	public static final String URL_INTRODUCTION = "introduction.web";
 	public static final String URL_MAP = "map.web";
@@ -26,6 +28,7 @@ public class WebAppConstant {
 	public static final String JSP_NOTICE_LIST = "notice_list";
 	public static final String JSP_NOTICE_DETAIL = "notice_detail";
 	public static final String JSP_NOTICE_INSERT_FORM = "notice_insert_form";
+	public static final String JSP_NOTICE_MODIFY_FORM = "notice_modify_form";
 	public static final String JSP_INTRODUCTION = "introduction";
 	public static final String JSP_MAP = "map2";
 	

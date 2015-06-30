@@ -3,6 +3,7 @@
 <%@ page session="false" %>
 <%@ page import="java.util.*"%>
 <%@ page import="util.*" %>
+<%@ page import="util.constants.*"%>
 <!DOCTYPE html>
 <html>
 
@@ -25,13 +26,8 @@
 %>
 <div data-role="page" class="jqm-demos jqm-home">
 	<script>
-		function goDelete(){
-			var f = document.deleteF;
-			f.submit();
-		}
 		function goModify(){
-			var f = document.deleteF;
-			f.action = "<%=WebAppConstant.URL_NOTIFICATION_MODIFY_FORM %>";
+			var f = document.modify;
 			f.submit();
 		}
 	</script>
@@ -42,15 +38,14 @@
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content jqm-content">
-		<form id="deleteF" name="deleteF" method="POST" action="<%=WebAppConstant.URL_NOTIFICATION_DELETE %>">
-		<input type="hidden" id="seq" name="seq" value="<%=hm.get("seq") %>"/>
+		<form id="modify" name="modify" method="POST" action="<%=WebAppConstant.URL_NOTIFICATION_MODIFY %>">
+			 <input type="hidden" data-mini="true" name="seq" id="seq" value="<%=hm.get("seq") %>">
+		     <label for="text-4">ID:</label><input type="text" data-mini="true" name="id" id="id" value="<%=hm.get("reg_id") %>" disabled="disabled">
+		     <label for="text-5">Title:</label><input type="text" data-clear-btn="true" data-mini="true" name="title" id="title" value="<%=hm.get("title") %>">
+		    <label for="textarea-4">Contents:</label><textarea data-mini="true" cols="40" rows="80" name="contents" id="contents"><%=hm.get("content") %></textarea>
 		</form>
-		<p>seq : <%=hm.get("seq") %></p>
-		<p>title : <%=hm.get("title") %></p>
-		<p>content : <%=hm.get("content") %></p>
 		<a href="#" class="ui-btn ui-btn-inline" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
 		<a href="#" class="ui-btn ui-btn-inline" onclick="goModify();return false;" data-transition="slide">MODIFY</a>
-		<a href="#" class="ui-btn ui-btn-inline" onclick="goDelete();return false;" data-transition="slide">DELETE</a>
 	</div><!-- /content -->
 <%@ include file="../cmn/include/footer.jsp" %>
 <%@ include file="../cmn/include/menu.jsp" %>

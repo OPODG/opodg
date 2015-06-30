@@ -74,4 +74,18 @@ up_date
   	Delete from notice
 	WHERE seq = ${seq}
   </delete>
+  <update id="doModify"  parameterType="hashmap">
+  	Update notice set 
+  	category = #{category} ,
+	title = #{title} ,
+	link_url = #{link_url} ,
+	content = #{content} ,
+	search_yn = #{search_yn} ,
+	search_end_date = #{search_end_date} ,
+	reg_id = #{reg_id} ,
+	reg_date = #{reg_date} ,
+	up_id = #{up_id} ,
+	up_date = #{up_date} 
+	WHERE seq = ${seq}
+  </update>
 </mapper> 
