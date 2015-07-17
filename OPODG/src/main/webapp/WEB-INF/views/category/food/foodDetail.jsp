@@ -26,7 +26,7 @@
 
 		<p>서울특별시 서초구 서초동 1565-8번지</p>
 		<h2>Tel: (02)586-0032</h2>
-<div data-role="tabs" id="tabs" data-position="fixed">
+<div data-role="tabs" id="tabs" data-position="fixed" >
   <div data-role="navbar">
     <ul>
 		<li><a href="#one" data-ajax="false">상세</a></li>
