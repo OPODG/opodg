@@ -19,6 +19,29 @@
 </head>
 <body>
 <div data-role="page" class="">
+<script>
+$(function() {
+    $('#execute1').click(function(){
+    	var data = {
+    			id : "",
+    			pw : ""
+    	}
+		$.ajax({
+		    url : "test1.web",
+		    dataType : "json",
+		    type : "post",
+		    data : data,
+		    success: function(data) {
+		        alert("성공:"+data.KEY);
+		    },
+		    error:function(request,status,error){
+		        alert("code:"+request.status+"\n"+"error:"+error);
+		    }
+		})
+    })
+ 
+});
+</script>
 <%@ include file="../../cmn/include/header_back.jsp" %>
 
 	<div role="main" class="ui-content jqm-content">
@@ -55,6 +78,7 @@
 			<li><a href="#">쌈촌</a></li>
 			<li><a href="#">암소 한마리</a></li>
 			<li><a href="#">흑돈가</a></li>
+			<li><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini"  id="execute1">login</a></li>
 		</ul>
 		
 	</div><!-- /content -->

@@ -13,12 +13,12 @@
         <intercept-url pattern="/login_duplicate.web" access="IS_AUTHENTICATED_ANONYMOUSLY" />
         <intercept-url pattern="/j_spring_security_logout" access="IS_AUTHENTICATED_ANONYMOUSLY" />
         <intercept-url pattern="/index.web" access="IS_AUTHENTICATED_ANONYMOUSLY" />
-        <intercept-url pattern="/**" access="ROLE_USER" />
+<!--         <intercept-url pattern="/**" access="ROLE_USER" /> -->
         <form-login login-page="/login.web"
                     username-parameter="id"
                     password-parameter="pw"    
                     login-processing-url="/loginProcess.web"
-                    default-target-url="/login_success.web"
+                    default-target-url="/index.web"
                     authentication-failure-url="/login_fail.web"
                     always-use-default-target='true'
                     />

@@ -6,14 +6,26 @@
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+		<param-value>/WEB-INF/spring/root-context.xml,/WEB-INF/spring/security-context.xml</param-value>
 	</context-param>
 	
 	<!-- Creates the Spring Container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+    <!-- 스프링 세션  리스너 등록 -->
+    <listener>
+        <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
+    </listener>
+    <!-- 스프링 보안 필터 -->
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>  
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
@@ -30,21 +42,6 @@
 		
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
-		<url-pattern>*.web</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-<filter>
-    <filter-name>Encoding Filter</filter-name>
-    <filter-class>
-   org.springframework.web.filter.CharacterEncodingFilter
-  </filter-class>
-    <init-param>
-      <param-name>Encoding</param-name>
-      <!-- UTF-8 인경우 -->
-      <param-value>UTF-8</param-value>
-    </init-param>
-  </filter>
-  <filter-mapping>
-    <filter-name>Encoding Filter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
 </web-app>
