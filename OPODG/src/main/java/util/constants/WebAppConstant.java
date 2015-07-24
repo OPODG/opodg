@@ -6,22 +6,13 @@ public class WebAppConstant {
 	 * URL
 	 */
 	public static final String URL_INDEX = "index.web";
-	public static final String URL_NOTIFICATION_LIST = "notice.web";
-	public static final String URL_NOTIFICATION_DETAIL = "notice_detail.web";
-	public static final String URL_NOTIFICATION_INSERT_FORM = "notice_insert_form.web";
-	public static final String URL_NOTIFICATION_INSERT = "notice_insert.web";
-	public static final String URL_NOTIFICATION_MODIFY_FORM = "notice_modify_form.web";
-	public static final String URL_NOTIFICATION_MODIFY = "notice_modify.web";
-	public static final String URL_NOTIFICATION_DELETE = "notice_delete.web";
-	public static final String URL_INTRODUCTION = "introduction.web";
-	public static final String URL_MAP = "map.web";
+	public static final String URL_FOOD_LIST = "foodList.web";
+	public static final String URL_FOOD_DETAIL = "foodDetail.web";
 	
 	/**
 	 * JSP Category
 	 */
-	public static final String CT_NOTIFICATION = "/notification/";
-	public static final String CT_INTRODUCTION = "/instroduction/";
-	public static final String CT_MAP = "/map/";
+	public static final String CT_FOOD = "/category/food/";
 	/**
 	 * JSP fileName
 	 */

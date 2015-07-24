@@ -23,11 +23,11 @@
 $(function() {
     $('#execute1').click(function(){
     	var data = {
-    			id : "",
-    			pw : ""
+    			id : "123",
+    			pw : "123"
     	}
 		$.ajax({
-		    url : "test1.web",
+		    url : "test_Ajax.web",
 		    dataType : "json",
 		    type : "post",
 		    data : data,
@@ -84,7 +84,6 @@ $(function() {
 	</div><!-- /content -->
 <%@ include file="../../cmn/include/footer.jsp" %>
 <%-- <%@ include file="cmn/include/menu.jsp" %> --%>
-<%@ include file="../../login/login.jsp" %>
 </div><!-- /page -->
 </body>
 </html>

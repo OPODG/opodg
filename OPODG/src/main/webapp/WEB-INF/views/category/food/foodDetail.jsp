@@ -53,7 +53,6 @@
 	</div><!-- /content -->
 <%@ include file="../../cmn/include/footer.jsp" %>
 <%-- <%@ include file="cmn/include/menu.jsp" %> --%>
-<%@ include file="../../login/login.jsp" %>
 </div><!-- /page -->
 </body>
 </html>

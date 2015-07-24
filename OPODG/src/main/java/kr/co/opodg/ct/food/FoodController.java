@@ -27,21 +27,21 @@ public class FoodController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
-	@RequestMapping(value = "foodList.web")
+	@RequestMapping(value = WebAppConstant.URL_FOOD_LIST)
 	public String getList(Locale locale, Model model) {
 		logger.info("FoodController_getList", locale);
 		
-		return "/category/food/foodList";
+		return WebAppConstant.CT_FOOD+"foodList";
 	}
 	
-	@RequestMapping(value = "foodDetail.web")
+	@RequestMapping(value = WebAppConstant.URL_FOOD_DETAIL)
 	public String getDetail(Locale locale, Model model) {
 		logger.info("FoodController_getList", locale);
 		
-		return "/category/food/foodDetail";
+		return WebAppConstant.CT_FOOD+"foodDetail";
 	}
 	@ResponseBody
-	@RequestMapping(value = "test1.web", method = RequestMethod.POST)
+	@RequestMapping(value = "test_Ajax.web", method = RequestMethod.POST)
 	public HashMap<String, Object> checkId(@RequestParam HashMap<String, Object> param) {
 	     
 	    System.out.println(param);
