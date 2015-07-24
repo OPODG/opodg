@@ -16,12 +16,9 @@ public class WebAppConstant {
 	/**
 	 * JSP fileName
 	 */
-	public static final String JSP_NOTICE_LIST = "notice_list";
-	public static final String JSP_NOTICE_DETAIL = "notice_detail";
-	public static final String JSP_NOTICE_INSERT_FORM = "notice_insert_form";
-	public static final String JSP_NOTICE_MODIFY_FORM = "notice_modify_form";
-	public static final String JSP_INTRODUCTION = "introduction";
-	public static final String JSP_MAP = "map2";
+	public static final String JSP_INDEX = "index";
+	public static final String JSP_FOOD_LIST = "foodList";
+	public static final String JSP_FOOD_DETAIL = "foodDetail";
 	
 	/*
 	 * Notification List Count

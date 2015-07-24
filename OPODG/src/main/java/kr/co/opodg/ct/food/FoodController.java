@@ -31,14 +31,14 @@ public class FoodController {
 	public String getList(Locale locale, Model model) {
 		logger.info("FoodController_getList", locale);
 		
-		return WebAppConstant.CT_FOOD+"foodList";
+		return WebAppConstant.CT_FOOD+WebAppConstant.JSP_FOOD_LIST;
 	}
 	
 	@RequestMapping(value = WebAppConstant.URL_FOOD_DETAIL)
 	public String getDetail(Locale locale, Model model) {
 		logger.info("FoodController_getList", locale);
 		
-		return WebAppConstant.CT_FOOD+"foodDetail";
+		return WebAppConstant.CT_FOOD+WebAppConstant.JSP_FOOD_DETAIL;
 	}
 	@ResponseBody
 	@RequestMapping(value = "test_Ajax.web", method = RequestMethod.POST)

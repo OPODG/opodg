@@ -35,7 +35,7 @@ public class IndexController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "index";
+		return WebAppConstant.JSP_INDEX;
 	}
 	
 }
