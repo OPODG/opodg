@@ -1,4 +1,4 @@
-package kr.co.opodg.cmn.action;
+package kr.co.opodg.action.cmn;
 
 import java.text.DateFormat;
 import java.util.Date;

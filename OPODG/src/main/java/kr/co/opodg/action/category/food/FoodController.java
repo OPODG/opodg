@@ -1,4 +1,4 @@
-package kr.co.opodg.ct.food;
+package kr.co.opodg.action.category.food;
 
 import java.text.DateFormat;
 import java.util.Date;
